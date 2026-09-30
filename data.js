@@ -17,6 +17,7 @@ const dataCondo = [
     { title: "소노호텔앤리조트 노블리안 골드", sub: "50평형 객실과 골프·웰니스 혜택", tag: "전국 체인", link: "sono-gold/" },
     { title: "소노호텔앤리조트 노블리안 로얄", sub: "압도적인 60평형과 최상위 골프·레저 혜택", tag: "전국 체인", link: "sono-royal/" },
     { title: "소노호텔앤리조트 노블리안 실버", sub: "실속 있는 40평형 객실과 온 가족 레저 혜택", tag: "전국 체인", link: "sono-silver/" },
+    { title: "포레스트 리솜 G40 회원권", sub: "대자연 속 프라이빗 별장, 36평형 힐링 리조트", tag: "전국 체인", link: "resom-g40/" },
 ];
 
 const dataHotel = [
