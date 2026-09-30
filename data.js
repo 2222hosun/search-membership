@@ -25,6 +25,7 @@ const dataHotel = [
     { title: "콘래드호텔 피트니스 PULSE8", sub: "도심 속 완벽한 에너지 충전, 여의도 랜드마크", tag: "서울 여의도", link: "conrad-pulse8/" },
     { title: "반트 피트니스 회원권", sub: "강남 도심 속 하이엔드 웰니스 타워팰리스", tag: "서울 강남", link: "vant-fitness/" },
     { title: "웨스틴 파르나스 코스모폴리탄", sub: "강남 도심 속 하이엔드 웰니스", tag: "서울 강남", link: "cosmopolitan/" },
+    { title: "그랜드 인터컨티넨탈 메트로폴리탄", sub: "강남 테헤란로 중심, 도심 속 오아시스", tag: "서울 강남", link: "metropolitan/" }
 ];
 
 const dataUnnamed = [
