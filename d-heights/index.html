@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 네이버/구글 검색 상위 노출용 SEO -->
+    <title>디하이츠CC 회원권 분양 및 혜택 안내 | 서치회원권</title>
+    <meta name="description" content="필리핀 클락 경제특구 내 명문 36홀 디하이츠CC(구 썬밸리) 신규 회원권 분양. 정회원/지정회원 그린피 면제, 힐튼 호텔 연계 프리미엄 혜택 및 장기 자산 가치 안내.">
+    <meta name="keywords" content="디하이츠CC, 디하이츠CC회원권, 디하이츠분양, 클락골프, 필리핀골프, 클락힐튼, 해외골프회원권, 서치회원권">
+
+    <!-- 카카오톡/문자 공유 시 Open Graph (폴더명 d-heights 기준) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="디하이츠CC 회원권 신규 분양 및 혜택 안내 | 서치회원권" />
+    <meta property="og:description" content="해발 370m 고원에서 만나는 36홀 다이내믹 코스와 힐튼의 완벽한 호캉스. 2085년까지 보장되는 압도적 혜택을 확인하세요." />
+    <!-- 오픈메타 썸네일 1.jpg 지정 -->
+    <meta property="og:image" content="https://www.searchmembership.co.kr/d-heights/1.jpg" />
+    <meta property="og:url" content="https://www.searchmembership.co.kr/d-heights" />
+
+    <!-- Tailwind CSS, 아이콘, 애니메이션 스크립트 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#143831',
+                            light: '#f7fafc',
+                            accent: '#c5a880', /* 밝은 샴페인 골드 통일 */
+                            accentDark: '#a38760',
+                            gray: '#4a5568'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        /* 모바일 가독성 최적화 word-break: keep-all 적용 */
+        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfc; color: #333; word-break: keep-all; scroll-behavior: smooth; }
+        
+        .hero-bg { background-size: cover; background-position: center; background-attachment: fixed; position: relative; }
+        .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
+        
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.98); 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(226, 232, 240, 0.8); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03), 0 10px 15px rgba(0, 0, 0, 0.05); 
+            border-left: 4px solid #c5a880;
+            border-radius: 1rem;
+        }
+        
+        /* 양쪽 박스 밸런스를 맞추기 위해 flex-col과 justify-between 적용 */
+        .overview-box {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03), 0 10px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #c5a880;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* 높이가 달라도 위아래 간격을 균일하게 분배 */
+            height: 100%;
+        }
+        .overview-item {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid #f1f5f9;
+            flex: 1; /* 항목별 높이를 유연하게 채움 */
+        }
+        .overview-item:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+            margin-top: 1.25rem; /* 간격 보정 */
+        }
+
+        #content-membership h3, #content-membership h4 {
+            font-size: 1.25rem !important;
+            font-weight: 700 !important;
+            color: #1a202c !important;
+            margin-bottom: 0.5rem !important;
+        }
+        #content-membership p, #content-membership span, #content-membership div {
+            font-size: 0.95rem !important;
+            color: #4a5568 !important;
+        }
+        #content-membership ul li {
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            color: #1a202c !important;
+        }
+
+        table { border-collapse: separate; border-spacing: 0; width: 100%; }
+        th, td { border-bottom: 1px solid #e2e8f0; font-size: 0.95rem; }
+        th { background-color: #f8fafc; font-size: 0.85rem; letter-spacing: 0.05em; }
+
+        .icon-circle { width: 48px; height: 48px; border-radius: 50%; background-color: #f7fafc; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #c5a880; font-size: 1.5rem; flex-shrink: 0; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- 상단 네비게이션 -->
+    <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col justify-center leading-none">
+                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                </div>
+            </div>
+            <a href="../index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
+                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+            </a>
+        </div>
+    </nav>
+    <div class="h-20 w-full"></div>
+
+    <!-- 메인 배너 (1.webp 적용) -->
+    <header id="hero-bg" class="hero-bg h-[80vh] min-h-[600px] flex flex-col items-center justify-center relative overflow-hidden text-center px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('1.webp');">
+        <div class="absolute inset-0 bg-black/35 z-0"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-2 flex flex-col items-center justify-center animate__animated animate__fadeInUp mt-0">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-white/10 border border-white/25 backdrop-blur-md text-brand-accent text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-5 shadow-sm">
+                PREMIUM GLOBAL GOLF
+            </span>
+            <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">디하이츠CC 회원권</h1>
+            
+            <div class="space-y-3 text-gray-100 text-base md:text-lg font-light drop-shadow-md mb-6 leading-relaxed">
+                <p>해발 370m 고원의 다이내믹한 36홀 명문 코스</p>
+                <p>클락 경제특구의 완벽한 인프라와 힐튼 호텔의 럭셔리 호캉스</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- 호재 안내 배너 -->
+        <section class="bg-brand-dark py-4 text-white">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <p class="text-xs md:text-sm tracking-wide text-brand-accent font-semibold">
+                    비즈니스 네트워킹과 완벽한 힐링의 완성! 2085년까지 보장되는 확정 조건의 신규 분양 기회를 잡으세요.
+                </p>
+            </div>
+        </section>
+
+        <!-- ① 기본 정보 (레이아웃 밸런스 최적화 적용) -->
+        <section id="info" class="section-padding bg-white relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 animate__animated animate__fadeIn scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">CLUB OVERVIEW</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">디하이츠CC(구 썬밸리) 기본 운영 정보입니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
+                    <div class="overview-box">
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-map-pin"></i></div>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">위치 (필리핀 클락)</h3>
+                                <p class="text-gray-600 text-sm mt-1 leading-relaxed">
+                                    클락 경제특구 (Clark Freeport Zone) 내 위치<br>
+                                    <span class="text-xs text-gray-500">T-304 Jose Abad Santos Avenue</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-flag"></i></div>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">코스 규모</h3>
+                                <p class="text-gray-600 text-sm mt-1">총 36홀 (파144)<br><span class="text-xs text-gray-500">클락 회원제 18홀 + 썬밸리 대중제 18홀</span></p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-airplane-tilt"></i></div>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">교통 및 접근성</h3>
+                                <p class="text-gray-600 text-sm mt-1 leading-relaxed">
+                                    • 인천 출발 시 4시간 ~ 4시간 30분 직항<br>
+                                    • 클락 국제공항 및 코리아타운에서 차량 15분
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-box">
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-buildings"></i></div>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">숙박 및 부대시설</h3>
+                                <p class="text-gray-600 text-sm mt-1 leading-relaxed">
+                                    • 308실 힐튼 클락 선밸리 리조트 인프라 완비<br>
+                                    • 248실 규모 전용 리조트, 사우나, 수영장, 키즈클럽
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-star"></i></div>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">주요 특징</h3>
+                                <p class="text-gray-600 text-sm mt-1 leading-relaxed">
+                                    • 해발 370m 고지대로 연중 시원하고 쾌적함<br>
+                                    • 최고급 양잔디 페어웨이 및 산악형 코스<br>
+                                    • 2085년까지 보장되는 장기적 권리 가치
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ② 위치 안내 -->
+        <section id="location" class="section-padding bg-brand-light relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-12 items-center scroll-anim">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
+                        <div class="w-16 h-1 bg-brand-accent rounded-full mb-6"></div>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            필리핀 클락 경제특구 중심에 자리 잡아, 공항에서 매우 가까우며 치안이 철저하여 밤낮으로 안전하고 쾌적한 일정을 소화할 수 있습니다.
+                        </p>
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 space-y-4">
+                            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                                <span class="flex items-center gap-2 font-medium text-gray-800"><i class="ph ph-airplane text-brand-accent"></i> 비행시간</span>
+                                <span class="text-brand-accent font-semibold text-sm">인천 출발 약 4시간 ~ 4시간 30분</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                                <span class="flex items-center gap-2 font-medium text-gray-800"><i class="ph ph-car text-brand-accent"></i> 공항 이동 거리</span>
+                                <span class="text-gray-600 text-sm">클락 국제공항에서 차량 약 15분</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-1">
+                                <span class="flex items-center gap-2 font-medium text-gray-800"><i class="ph ph-storefront text-brand-accent"></i> 코리아타운</span>
+                                <span class="text-gray-700 font-medium text-sm text-right">차량 약 15분 내외 (다양한 인프라)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white h-[400px]">
+                        <!-- 클락 디하이츠 관련 사용자 제공 Google Maps 코드 적용 -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30803.736455766037!2d120.4988810550284!3d15.187585583182907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33968d6101387beb%3A0x4d35f1d52f526dea!2z65SU7ZWY7J207LigIOumrOyhsO2KuCDqs6jtlIQgJiDsu6jtirjrpqwg7YG065-9!5e0!3m2!1sko!2skr!4v1790855070002!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ③ 부대시설 및 코스 전경 (이미지 지연로딩 완벽 적용, 6장) -->
+        <section id="facilities" class="section-padding bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">COURSE & FACILITIES</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">압도적인 스케일의 코스 뷰와 완벽한 호캉스를 위한 힐튼 인프라입니다.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 2.webp -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="rounded-xl overflow-hidden shadow mb-4">
+                                <img src="2.webp" alt="디하이츠CC 코스전경 1" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">아라얏 산의 절경</h4>
+                            <p class="text-sm text-gray-600">페어웨이 너머로 웅장한 아라얏(Arayat) 국립공원의 파노라마 뷰가 경이롭게 펼쳐집니다.</p>
+                        </div>
+                    </div>
+                    <!-- 3.webp -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="rounded-xl overflow-hidden shadow mb-4">
+                                <img src="3.webp" alt="디하이츠CC 코스전경 2" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">최고급 양잔디 코스</h4>
+                            <p class="text-sm text-gray-600">촘촘하고 푹신한 최고급 양잔디와 러프의 조화로 샷의 쾌감과 공략의 재미를 극대화합니다.</p>
+                        </div>
+                    </div>
+                    <!-- 4.webp -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="rounded-xl overflow-hidden shadow mb-4">
+                                <img src="4.webp" alt="디하이츠CC 코스전경 3" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">다이내믹 36홀 스케일</h4>
+                            <p class="text-sm text-gray-600">회원제 18홀과 대중제 18홀의 조화로움 속에서 짜릿한 도전 욕구를 자극하는 산악형 코스입니다.</p>
+                        </div>
+                    </div>
+                    <!-- 5.webp -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="rounded-xl overflow-hidden shadow mb-4">
+                                <img src="5.webp" alt="디하이츠CC 코스전경 4" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">해발 370m 고원의 상쾌함</h4>
+                            <p class="text-sm text-gray-600">동남아시아의 무더위 속에서도 산에서 불어오는 시원한 바람 덕분에 연중 쾌적한 플레이가 가능합니다.</p>
+                        </div>
+                    </div>
+                    <!-- 6.webp -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="rounded-xl overflow-hidden shadow mb-4">
+                                <img src="6.webp" alt="디하이츠CC 코스전경 5" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">여유로운 필드의 품격</h4>
+                            <p class="text-sm text-gray-600">넓고 시원하게 뻗은 코스는 마치 이국적인 휴양지에 온 듯한 압도적인 스케일을 선사합니다.</p>
+                        </div>
+                    </div>
+                    <!-- 7.webp (힐튼 호텔) -->
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="rounded-xl overflow-hidden shadow mb-4">
+                                <img src="7.webp" alt="힐튼 클락 선밸리 리조트 전경" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">힐튼 클락 선밸리 리조트</h4>
+                            <p class="text-sm text-gray-600">308실 규모의 럭셔리 체인과 최고급 피트니스, 사우나, 수영장 등 비골퍼도 만족하는 완벽한 호캉스 인프라입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ④ 신규 분양 회원권 종류 및 혜택 -->
+        <section id="membership" class="section-padding bg-brand-light">
+            <div id="content-membership" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">MEMBERSHIP GUIDE</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">장기적인 골프 플랜을 위한 스페셜 및 프리미엄 신규 분양 혜택입니다.</p>
+                </div>
+
+                <!-- 자격기한 및 공통 혜택 알림 박스 -->
+                <div class="mb-10 w-full bg-white border border-brand-accent/30 rounded-xl p-5 md:p-6 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-4 scroll-anim">
+                    <div class="w-12 h-12 rounded-full bg-brand-accent/10 border border-brand-accent/30 flex items-center justify-center text-brand-accent text-xl flex-shrink-0">
+                        <i class="ph ph-crown"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-1 text-center sm:text-left">공통 혜택 및 회원 자격 기한</span>
+                        <p class="text-sm md:text-base font-semibold text-gray-800 leading-relaxed text-center sm:text-left">
+                            <span class="text-brand-accentDark font-bold">자격 보장:</span> 2085년 12월 2일까지 장기적인 권리 보장<br>
+                            <span class="text-brand-accentDark font-bold">공통 혜택:</span> 정회원 1인 및 지정회원 1인 <b>그린피 전면 면제</b>, 힐튼 호텔 20% 할인 (정회원 동반 시 20% 추가 할인)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
+                    <!-- 스페셜(Special) 분양 -->
+                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-dark">
+                        <h3 class="text-xl font-bold mb-2">스페셜 (Special) 회원권</h3>
+                        <p class="text-lg font-bold text-brand-accent mb-4">분양가: 5,000만원 <span class="text-sm text-gray-500 font-normal">(2,000,000페소)</span></p>
+                        <div class="my-3 border-b border-gray-200"></div>
+                        <ul class="text-sm text-gray-600 space-y-2.5">
+                            <li>• <strong>기본 혜택:</strong> 정회원 1인 + 지정회원 1인 그린피 면제</li>
+                            <li>• <strong>동반자 할인:</strong> 전원 그린피 30% 할인 (1팀 4인 기준)</li>
+                            <li>• <strong>위임 혜택 (정회원만 가능):</strong> 연 총 15회<br>
+                                <span class="pl-3 text-xs text-gray-500">- 비수기 (4~10월) 8회 (주중, 주말)</span><br>
+                                <span class="pl-3 text-xs text-gray-500">- 성수기 (11~3월) 7회 (주중, 주말)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 프리미엄(Premium) 분양 -->
+                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-accent">
+                        <h3 class="text-xl font-bold mb-2">프리미엄 (Premium) 회원권</h3>
+                        <p class="text-lg font-bold text-brand-accent mb-4">분양가: 1억원 <span class="text-sm text-gray-500 font-normal">(4,000,000페소)</span></p>
+                        <div class="my-3 border-b border-gray-200"></div>
+                        <ul class="text-sm text-gray-600 space-y-2.5">
+                            <li>• <strong>기본 혜택:</strong> 정회원 1인 + 지정회원 1인 그린피 면제</li>
+                            <li>• <strong>동반자 할인:</strong> 전원 그린피 50% 할인 (1팀 4인 기준)</li>
+                            <li>• <strong>위임 혜택 (정회원만 가능):</strong> 연 총 22회<br>
+                                <span class="pl-3 text-xs text-gray-500">- 비수기 (4~10월) 12회 (주중, 주말)</span><br>
+                                <span class="pl-3 text-xs text-gray-500">- 성수기 (11~3월) 10회 (주중, 주말)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑤ 예약 및 위임 규정 (안내사항) -->
+        <section id="extra-guides" class="section-padding bg-white border-t border-gray-200/60">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">RESERVATION & RULES</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">체계적인 위임 예약 및 휴양 시설 이용 규정 안내</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-100 shadow-sm mb-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2"><i class="ph ph-calendar-check text-brand-accent mr-2"></i>예약 및 위임 필수 규정</h3>
+                        <ul class="space-y-4 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <i class="ph ph-check-circle text-lg text-brand-accent mt-0.5"></i>
+                                <div>
+                                    <strong>위임 예약 권한</strong>
+                                    <p class="mt-1 text-gray-600">명시된 규정에 따라 오직 <span class="font-bold text-brand-dark">'정회원'</span>을 통해서만 위임 예약 신청이 가능합니다. 비즈니스 고객이나 지인들에게 라운딩을 위임할 때 반드시 확인해 주세요.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="ph ph-clock text-lg text-brand-accent mt-0.5"></i>
+                                <div>
+                                    <strong>성수기 / 비수기 일정 배분</strong>
+                                    <p class="mt-1 text-gray-600">등급(스페셜/프리미엄)별로 배정된 성수기(11월~3월)와 비수기(4월~10월) 횟수 한도 내에서 주중 및 주말 일정을 자유롭게 조율하여 사용하실 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="ph ph-airplane-in-flight text-lg text-brand-accent mt-0.5"></i>
+                                <div>
+                                    <strong>항공·숙박 연계 사전 부킹 권장</strong>
+                                    <p class="mt-1 text-gray-600">힐튼 호텔 할인은 라운딩 일정과 연계하여 사전 예약하는 것이 원칙입니다. 특히 동남아 골프 성수기(겨울철)에는 수요가 몰려 마감이 빠르므로 항공권 발권과 함께 <b>최소 1~2개월 전 미리 일정을 픽스</b>하시길 강력히 권장합니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 하단 상담 연결 박스 -->
+    <section id="consult" class="py-12 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 scroll-anim">
+            <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-brand-accent opacity-10 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-white opacity-5 blur-2xl"></div>
+
+                <div class="relative z-10">
+                    <p class="text-brand-accent font-medium tracking-widest text-sm md:text-[15px] mb-3">최고의 여유와 휴식을 완성하는 특별한 선택</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        성공적인 비즈니스 네트워킹의 완성<br class="hidden sm:inline"/> 2085년까지 이어지는 든든한 골프 라이프
+                    </h2>
+                    <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-base md:text-lg leading-relaxed font-normal">
+                        실시간 정확한 분양 조건 확인부터 안전한 책임 거래까지 약속드립니다
+                    </p>
+                    <a href="tel:010-6263-9552" class="inline-flex items-center justify-center gap-2.5 sm:gap-3 w-full sm:w-auto bg-brand-accent hover:bg-brand-accentDark text-white px-5 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(197,160,89,0.3)] whitespace-nowrap">
+                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                            <i class="ph-fill ph-phone-call text-lg sm:text-xl"></i>
+                        </div>
+                        <span>실시간 분양 · 입회 상담</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [푸터] -->
+    <footer class="bg-[#071714] text-stone-200 py-16 text-sm border-t border-white/10 mt-auto w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-white font-bold text-lg tracking-tight mb-1">서치회원권</p>
+                    <p class="text-stone-300 text-sm leading-relaxed font-normal">
+                        골프 · 콘도 · 피트니스 회원권거래소<br>
+                        (사)한국골프회원권경영인협회 정회원사
+                    </p>
+                    <p class="text-stone-300 text-sm font-normal">담당: 이호선 과장</p>
+                    <div class="pt-2">
+                        <a href="https://blog.naver.com/PostList.naver?blogId=2-hosun&from=postList&categoryNo=13" target="_blank" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/20 shadow-sm">
+                            <span class="text-green-400 font-bold">N</span> 매매 후기 바로가기
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-white font-bold text-base tracking-wide uppercase text-brand-accent mb-1">Menu</p>
+                    <ul class="flex flex-col gap-y-2 text-stone-300 text-sm font-medium">
+                        <li><a href="../about.html" class="hover:text-white transition">서치회원권 소개</a></li>
+                        <li><a href="../index.html#search-box" class="hover:text-white transition">회원권 혜택과 시세 안내</a></li>
+                        <li><a href="../index.html#unnamed" class="hover:text-white transition">무기명 골프</a></li>
+                        <li><a href="#consult" class="hover:text-white transition">1:1 맞춤 상담 신청</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-white font-bold text-base tracking-wide uppercase text-brand-accent mb-1">Contact Center</p>
+                    <p class="text-stone-300 text-sm leading-relaxed font-normal">
+                        회원권서치(주)<br>
+                        경기 성남시 분당구 성남대로 926, 603호<br>(야탑동, 분당메트로)
+                    </p>
+                    <div class="flex flex-col gap-y-1 pt-1">
+                        <a href="tel:010-6263-9552" class="text-white text-base md:text-lg font-bold flex items-center gap-2 hover:text-brand-accent transition w-fit">
+                            <svg class="w-4 h-4 text-brand-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
+                            </svg>
+                            <span>010-6263-9552</span>
+                        </a>
+                        <p class="text-brand-accent text-xs md:text-sm font-semibold pl-6">24시간 연중무휴 상담 가능</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-stone-300">
+                <p class="leading-relaxed font-normal">
+                    본 웹사이트의 골프·콘도·휘트니스 회원권 시세 및 혜택 정보는 참고용이며, 실제 거래 가격과 다를 수 있습니다.<br class="hidden sm:inline">
+                    제공된 정보에 대한 법적 책임을 지지 않으며, 모든 정보의 저작권은 서치회원권에 있습니다.
+                </p>
+                <p class="text-stone-400 whitespace-nowrap">Copyright ⓒ 서치회원권 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
