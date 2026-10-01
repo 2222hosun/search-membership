@@ -110,15 +110,30 @@
                 복잡하고 어려운 회원권 거래, 정확한 시세부터 명의개서까지.<br class="hidden sm:inline">
                 회원권서치 이호선 과장이 고객의 입장에서 함께 고민하고 동행해 드리겠습니다.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-3.5 w-full max-w-md sm:max-w-none mx-auto">
-                <a href="tel:010-6263-9552" class="w-full sm:w-[260px] bg-goldColor text-white font-bold text-[17px] py-3.5 rounded-xl shadow-lg hover:bg-goldDark transition flex items-center justify-center gap-2.5">
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md sm:max-w-none mx-auto">
+                <!-- 전화 상담 버튼 (왼쪽 박스만 골드 컬러 적용) -->
+                <a href="tel:010-6263-9552" class="w-full sm:w-auto bg-goldColor hover:bg-goldDark text-white px-6 py-3.5 rounded-xl font-bold text-[15px] sm:text-[17px] transition-all duration-300 flex items-center justify-center gap-2.5 shadow-lg">
                     <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716,21 3,14.284 3,6V5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
                     </svg>
-                    <span>010-6263-9552 바로 상담</span>
+                    <span>010-6263-9552</span>
                 </a>
-                <a href="#search-box" class="w-full sm:w-[260px] border border-white/40 bg-white/15 backdrop-blur-sm text-white font-semibold text-[17px] py-3.5 rounded-xl hover:bg-white/25 transition flex items-center justify-center">
-                    회원권 안내 전체 보기 →
+              
+                <!-- 카카오톡 문의 버튼 -->
+                <a href="http://pf.kakao.com/_MXnxiX/chat" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-black/40 hover:bg-black/60 border border-white/20 text-white px-6 py-3.5 rounded-xl font-bold text-[15px] sm:text-[17px] transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md shadow-lg">
+                    <svg class="w-5 h-5 text-[#FEE500] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 4C6.477 4 2 7.582 2 12c0 2.518 1.419 4.767 3.633 6.186-.234 1.114-1.026 3.424-1.064 3.551-.039.127.042.186.138.125.076-.048 2.92-1.895 4.095-2.735C9.805 19.67 10.875 19.8 12 19.8c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
+                    </svg>
+                    <span>카카오톡 문의</span>
+                </a>
+              
+                <!-- 전체 보기 버튼 -->
+                <a href="#search-box" class="w-full sm:w-auto bg-black/40 hover:bg-black/60 border border-white/20 text-white px-6 py-3.5 rounded-xl font-bold text-[15px] sm:text-[17px] transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md shadow-lg">
+                    <span>회원권 전체 보기</span>
+                    <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -315,12 +330,20 @@
                     </p>
                 </div>
 
-                <div class="mt-6 w-full max-w-sm">
-                    <a href="tel:010-6263-9552" class="w-full bg-goldColor text-white font-bold text-[17px] py-3.5 rounded-xl shadow-lg hover:bg-goldDark transition flex items-center justify-center gap-2.5">
+                <!-- 하단 상담 버튼 영역 수정 -->
+                <div class="mt-6 w-full max-w-md flex gap-3 mx-auto">
+                    <a href="tel:010-6263-9552" class="w-1/2 bg-goldColor text-white font-bold text-[15px] sm:text-[17px] py-3.5 rounded-xl shadow-lg hover:bg-goldDark transition flex items-center justify-center gap-2">
                         <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
                         </svg>
-                        <span>010-6263-9552 바로 상담</span>
+                        <span>전화 상담</span>
+                    </a>
+                    
+                    <a href="http://pf.kakao.com/_MXnxiX/chat" target="_blank" rel="noopener noreferrer" class="w-1/2 bg-[#FEE500] text-[#191919] font-bold text-[15px] sm:text-[17px] py-3.5 rounded-xl shadow-lg hover:bg-[#F4DC00] transition flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5 text-[#191919] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4C6.477 4 2 7.582 2 12c0 2.518 1.419 4.767 3.633 6.186-.234 1.114-1.026 3.424-1.064 3.551-.039.127.042.186.138.125.076-.048 2.92-1.895 4.095-2.735C9.805 19.67 10.875 19.8 12 19.8c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
+                        </svg>
+                        <span>카톡 문의</span>
                     </a>
                 </div>
             </div>
