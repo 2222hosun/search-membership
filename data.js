@@ -37,5 +37,5 @@ const dataUnnamed = [
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
 const dataExclusive = [
-    { title: "디하이츠CC 회원권", sub: "클락의 대자연을 품은 하이엔드 힐링 골프의 정점", tag: "필리핀 클락", link: "/" },
+    { title: "디하이츠CC 회원권", sub: "클락의 대자연을 품은 하이엔드 힐링 골프의 정점", tag: "필리핀 클락", link: "d-heights/" },
 ];
