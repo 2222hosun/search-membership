@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- 보안 및 소유권 인증 -->
     <meta name="naver-site-verification" content="3eeb6e47ab4fe68e6160a4bc519742c438673e72" />
     <meta name="google-site-verification" content="ZXyScKjzmC2699OFzQ6Ly_RP8Y4o2jgYtFIj2rOPQ-8" />
     
-    <title>서치회원권 - 골프·콘도·피트니스 회원권 혜택과 시세 안내</title>
-    <meta name="description" content="합리적인 매매가 가이드와 1:1 맞춤 컨설팅으로 안전한 책임 거래를 약속드립니다.">
+    <!-- 1. 캐시 제어 및 보안 헤더 (재방문 로딩 속도 극대화 및 보안 강화) -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     
-    <meta property="og:title" content="서치회원권 - 골프·콘도·피트니스 회원권 혜택과 시세 안내">
-    <meta property="og:description" content="합리적인 매매가 가이드와 1:1 맞춤 컨설팅으로 안전한 책임 거래를 약속드립니다.">
+    <!-- 2. SEO 최적화 (검색 엔진 상위 노출용) -->
+    <title>서치회원권 - 골프·콘도·피트니스 회원권 혜택과 시세 안내</title>
+    <meta name="description" content="(사)한국골프회원권경영인협회 정회원사. 전국 골프, 콘도, 피트니스 회원권 실거래가 시세, 분양, 무기명 골프 안내. 합리적인 매매가 가이드와 1:1 맞춤 컨설팅으로 안전한 책임 거래를 약속드립니다.">
+    <meta name="keywords" content="골프회원권, 회원권시세, 콘도회원권, 피트니스회원권, 헬스회원권, 무기명회원권, 회원권거래소, 서치회원권">
+    
+    <!-- 3. 파비콘 및 애플 터치 아이콘 (브랜드 인지도 및 스마트폰 홈 화면 최적화) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- 4. 오픈 메타 (Open Graph) (카톡/SNS 공유 시 완벽한 미리보기 생성) -->
+    <meta property="og:title" content="서치회원권 - 프리미엄 회원권 거래의 기준">
+    <meta property="og:description" content="실시간 시세 안내부터 안전한 명의개서까지. 골프·콘도·피트니스 회원권 책임 거래.">
     <meta property="og:image" content="https://www.searchmembership.co.kr/main.jpg">
+    <meta property="og:url" content="https://www.searchmembership.co.kr">
     <meta property="og:type" content="website">
 
+    <!-- 5. 구조화된 데이터 (Schema.org / JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "서치회원권",
+      "url": "https://www.searchmembership.co.kr",
+      "logo": "https://www.searchmembership.co.kr/main.jpg",
+      "description": "안전하고 스마트한 골프, 콘도, 피트니스 회원권 거래소",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "010-6263-9552",
+        "contactType": "customer service",
+        "areaServed": "KR",
+        "availableLanguage": "Korean"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS 설정 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,8 +57,8 @@
                     colors: {
                         deepGreen: '#143831',
                         cardIvory: '#F9F6F0',
-                        goldColor: '#c5a880', /* 반얀트리 샴페인 골드로 일괄 변경 */
-                        goldDark: '#a38760'   /* 호버용 어두운 골드 */
+                        goldColor: '#c5a880', 
+                        goldDark: '#a38760'  
                     }
                 }
             }
@@ -41,7 +76,7 @@
         }
         .break-keep { word-break: keep-all; }
         
-        /* 스크롤바 디자인 추가 (선택사항, 반얀트리 스타일) */
+        /* 스크롤바 디자인 */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #c5a880; border-radius: 4px; }
@@ -95,7 +130,7 @@
 
     <div class="h-20 w-full"></div>
 
-    <!-- 히어로 배너 -->
+    <!-- 히어로 배너 (지연 로딩 제외 영역: 첫 화면이므로 바로 로딩되어야 함) -->
     <section class="bg-deepGreen text-white relative flex flex-col justify-center items-center text-center px-4 py-24 md:py-36 min-h-[75vh] overflow-hidden w-full">
         <div class="absolute inset-0 bg-black/45 z-0"></div>
         <div class="absolute inset-0 bg-cover bg-center z-n1 opacity-45" style="background-image: url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=1920');"></div>
@@ -112,23 +147,18 @@
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md sm:max-w-none mx-auto">
-                <!-- 전화 상담 버튼 (왼쪽 박스만 골드 컬러 적용) -->
                 <a href="tel:010-6263-9552" class="w-full sm:w-auto bg-goldColor hover:bg-goldDark text-white px-6 py-3.5 rounded-xl font-bold text-[15px] sm:text-[17px] transition-all duration-300 flex items-center justify-center gap-2.5 shadow-lg">
                     <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
                     </svg>
                     <span>010-6263-9552</span>
                 </a>
-              
-                <!-- 카카오톡 문의 버튼 -->
                 <a href="http://pf.kakao.com/_MXnxiX/chat" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-black/40 hover:bg-black/60 border border-white/20 text-white px-6 py-3.5 rounded-xl font-bold text-[15px] sm:text-[17px] transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md shadow-lg">
                     <svg class="w-5 h-5 text-[#FEE500] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 4C6.477 4 2 7.582 2 12c0 2.518 1.419 4.767 3.633 6.186-.234 1.114-1.026 3.424-1.064 3.551-.039.127.042.186.138.125.076-.048 2.92-1.895 4.095-2.735C9.805 19.67 10.875 19.8 12 19.8c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
                     </svg>
                     <span>카카오톡 문의</span>
                 </a>
-              
-                <!-- 전체 보기 버튼 -->
                 <a href="#search-box" class="w-full sm:w-auto bg-black/40 hover:bg-black/60 border border-white/20 text-white px-6 py-3.5 rounded-xl font-bold text-[15px] sm:text-[17px] transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md shadow-lg">
                     <span>회원권 전체 보기</span>
                     <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -161,7 +191,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="bg-white border border-stone-200 rounded-2xl p-7 shadow-sm flex flex-col justify-between hover:border-goldColor transition duration-200">
                 <div>
                     <span class="text-xs font-bold text-goldColor tracking-widest uppercase">KEY POINT 02</span>
@@ -173,7 +202,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="bg-white border border-stone-200 rounded-2xl p-7 shadow-sm flex flex-col justify-between hover:border-goldColor transition duration-200">
                 <div>
                     <span class="text-xs font-bold text-goldColor tracking-widest uppercase">KEY POINT 03</span>
@@ -195,8 +223,8 @@
         </div>
     </section>
 
-    <!-- 회원권 안내 -->
-    <main id="search-box" class="w-full bg-white border-y border-stone-200/80 py-20 md:py-24 shadow-sm">
+    <!-- 회원권 안내 (통합 검색의 중심 영역) -->
+    <main id="search-box" class="w-full bg-white border-y border-stone-200/80 py-20 md:py-24 shadow-sm scroll-mt-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-10 flex flex-col items-center">
                 <div class="w-11 h-11 rounded-full bg-goldColor flex items-center justify-center text-white mb-3 shadow-md">
@@ -205,13 +233,26 @@
                     </svg>
                 </div>
                 <span class="text-xs md:text-sm text-goldColor tracking-[0.25em] uppercase font-bold">SEARCH MEMBERSHIP GUIDE</span>
-                <h2 class="text-2xl md:text-4xl font-bold text-deepGreen mt-1.5 tracking-tight break-keep">회원권 안내</h2>
-                <p class="text-stone-600 text-sm md:text-base mt-2.5 break-keep font-normal">
+                <h2 id="search-title" class="text-2xl md:text-4xl font-bold text-deepGreen mt-1.5 tracking-tight break-keep">회원권 안내</h2>
+                <p id="search-desc" class="text-stone-600 text-sm md:text-base mt-2.5 break-keep font-normal">
                     골프 · 콘도 · 피트니스 회원권의 상세 혜택과 시세를 안내해 드립니다.
                 </p>
             </div>
 
-            <div class="flex justify-center mb-8">
+            <!-- 통합 검색창 (안내 문구 수정) -->
+            <div class="mb-8">
+                <div class="relative max-w-xl mx-auto z-20">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-stone-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </span>
+                    <input type="text" id="search-input" onkeyup="filterItems()" placeholder="골프 · 콘도 · 헬스 · 무기명 통합 검색" class="w-full pl-11 pr-4 py-3 bg-stone-50 border border-stone-300 rounded-xl text-sm md:text-[15px] focus:border-goldColor focus:outline-none focus:ring-2 focus:ring-goldColor/20 shadow-sm transition">
+                </div>
+            </div>
+
+            <!-- 카테고리 탭 (검색 시 숨겨짐) -->
+            <div id="tabs-container" class="flex justify-center mb-8 transition-opacity duration-300">
                 <div class="inline-flex p-1.5 bg-stone-100 rounded-2xl gap-1.5 border border-stone-200/60">
                     <button onclick="switchTab('golf')" id="tab-golf" class="px-5 md:px-6 py-2 rounded-xl text-sm md:text-base font-bold transition bg-deepGreen text-white shadow-sm flex items-center gap-2 whitespace-nowrap">
                         <span>골프</span>
@@ -228,17 +269,7 @@
                 </div>
             </div>
 
-            <div class="mb-8">
-                <div class="relative max-w-xl mx-auto">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-stone-400">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
-                    </span>
-                    <input type="text" id="search-input" onkeyup="filterItems()" placeholder="골프장 · 리조트 · 피트니스 이름으로 검색" class="w-full pl-11 pr-4 py-3 bg-stone-50 border border-stone-300 rounded-xl text-sm md:text-[15px] focus:border-goldColor focus:outline-none shadow-sm transition">
-                </div>
-            </div>
-
+            <!-- 카드 렌더링 그리드 -->
             <div id="items-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-6xl mx-auto"></div>
 
             <div class="text-center mt-10">
@@ -251,7 +282,7 @@
     </main>
 
     <!-- 프리미엄 분양 안내 -->
-    <section id="exclusive-offering" class="w-full bg-[#F5F2EB] py-20 md:py-24 border-b border-stone-200/80 relative overflow-hidden scroll-mt-20">
+    <section id="exclusive-offering" class="w-full bg-[#F5F2EB] py-20 md:py-24 border-b border-stone-200/80 relative overflow-hidden scroll-mt-20 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12 flex flex-col items-center">
                 <div style="width: 44px; height: 44px; min-width: 44px; min-height: 44px;" class="rounded-full bg-goldColor flex items-center justify-center text-white mb-3.5 shadow-md">
@@ -282,7 +313,7 @@
     </section>
 
     <!-- 무기명 골프 -->
-    <section id="unnamed" class="w-full bg-[#F9F6F0] text-stone-800 py-20 md:py-24 border-b border-stone-200/80 relative overflow-hidden scroll-mt-20">
+    <section id="unnamed" class="w-full bg-[#F9F6F0] text-stone-800 py-20 md:py-24 border-b border-stone-200/80 relative overflow-hidden scroll-mt-20 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <div class="text-center mb-12 flex flex-col items-center">
                 <div style="width: 44px; height: 44px; min-width: 44px; min-height: 44px;" class="rounded-full bg-goldColor flex items-center justify-center text-white mb-3.5 shadow-md">
@@ -330,7 +361,6 @@
                     </p>
                 </div>
 
-                <!-- 하단 상담 버튼 영역 수정 -->
                 <div class="mt-6 w-full max-w-md flex gap-3 mx-auto">
                     <a href="tel:010-6263-9552" class="w-1/2 bg-goldColor text-white font-bold text-[15px] sm:text-[17px] py-3.5 rounded-xl shadow-lg hover:bg-goldDark transition flex items-center justify-center gap-2">
                         <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -468,6 +498,7 @@
 
     <script src="data.js"></script>
     <script>
+        // 모바일 메뉴 제어
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -482,10 +513,12 @@
             });
         });
 
+        // 탭 및 더보기 제어 변수
         let currentCategory = 'golf';
         let isExpanded = false;
         const INITIAL_LIMIT = 10;
 
+        // 데이터 안전 불러오기
         const safeDataGolf = typeof dataGolf !== 'undefined' ? dataGolf : [];
         const safeDataCondo = typeof dataCondo !== 'undefined' ? dataCondo : [];
         const safeDataHotel = typeof dataHotel !== 'undefined' ? dataHotel : [];
@@ -521,149 +554,184 @@
                 }
             });
 
+            // 탭 클릭 시에는 기본 상태로 렌더링
+            document.getElementById('exclusive-offering').style.display = 'block';
+            document.getElementById('unnamed').style.display = 'block';
+            
             renderItems();
         }
 
-        function renderItems(filterKeyword = '') {
-            updateCategoryCounts();
-            const grid = document.getElementById('items-grid');
-            const data = getActiveData();
+        // 통합 검색 마법 로직
+        function filterItems() {
+            const keyword = document.getElementById('search-input').value.trim();
+            isExpanded = false; // 검색 시 더보기 상태 초기화
             
-            const filtered = data.filter(item => 
-                item.title.toLowerCase().includes(filterKeyword.toLowerCase()) || 
-                (item.sub && item.sub.toLowerCase().includes(filterKeyword.toLowerCase())) ||
-                (item.tag && item.tag.toLowerCase().includes(filterKeyword.toLowerCase()))
-            );
-            const visibleItems = isExpanded ? filtered : filtered.slice(0, INITIAL_LIMIT);
+            const exclusiveSection = document.getElementById('exclusive-offering');
+            const unnamedSection = document.getElementById('unnamed');
+            const tabsContainer = document.getElementById('tabs-container');
+            const searchTitle = document.getElementById('search-title');
+            const searchDesc = document.getElementById('search-desc');
 
-            if(filtered.length === 0) {
-                grid.innerHTML = `<div class="col-span-1 sm:col-span-2 py-16 text-center text-stone-400 text-sm">등록된 회원권 정보가 없습니다. 유선(010-6263-9552)으로 문의하시면 실시간 시세를 확인해 드립니다.</div>`;
-                document.getElementById('load-more-btn').classList.add('hidden');
-                return;
-            }
-
-            grid.innerHTML = visibleItems.map(item => {
-                const targetHref = item.link ? item.link : (item.id ? `/detail.html?name=${item.id}` : '#');
-                const targetAttr = (targetHref.startsWith('http') || targetHref.endsWith('.html')) ? 'target="_blank"' : '';
+            if (keyword !== '') {
+                // 검색어 입력 시: 하단 단락 숨김 및 제목 변경
+                exclusiveSection.style.display = 'none';
+                unnamedSection.style.display = 'none';
+                tabsContainer.style.opacity = '0';
+                setTimeout(() => tabsContainer.style.display = 'none', 300);
                 
-                return `
-                <a href="${targetHref}" ${targetAttr} class="bg-stone-50 border border-stone-200/90 hover:border-goldColor rounded-2xl p-5 shadow-sm hover:shadow-md flex items-center justify-between transition-all duration-200 group">
-                    <div class="pr-3">
-                        <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-                            <span class="text-[11px] font-bold tracking-wider px-2.5 py-0.5 rounded bg-white text-deepGreen border border-stone-200 group-hover:bg-goldColor/15 group-hover:border-goldColor/30 group-hover:text-goldColor transition whitespace-nowrap">${item.tag}</span>
-                            <h3 class="text-[15px] md:text-base font-bold text-deepGreen tracking-tight">${item.title}</h3>
-                        </div>
-                        <p class="text-xs md:text-[13px] text-stone-500 font-normal tracking-tight">${item.sub}</p>
-                    </div>
-                    <div class="w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center flex-shrink-0 group-hover:border-goldColor group-hover:bg-goldColor transition">
-                        <svg class="w-4 h-4 text-stone-400 group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </a>
-                `;
-            }).join('');
+                searchTitle.innerText = `"${keyword}" 검색 결과`;
+                searchDesc.innerText = "전체 회원권 및 분양, 무기명 매물 통합 검색 결과입니다.";
+
+                // 모든 데이터 끌어모으기 (일반+분양+무기명)
+                const allData = [...safeDataGolf, ...safeDataCondo, ...safeDataHotel, ...safeDataExclusive, ...safeDataUnnamed];
+                
+                // 중복 데이터 방지 (title 기준)
+                const uniqueData = Array.from(new Map(allData.map(item => [item.title, item])).values());
+                
+                // 필터링 (제목, 서브설명, 태그, 그리고 몰래 숨겨둔 keyword 속성까지 검사)
+                const filtered = uniqueData.filter(item => {
+                    const term = keyword.toLowerCase();
+                    return (item.title && item.title.toLowerCase().includes(term)) ||
+                           (item.sub && item.sub.toLowerCase().includes(term)) ||
+                           (item.tag && item.tag.toLowerCase().includes(term)) ||
+                           (item.subTag && item.subTag.toLowerCase().includes(term)) ||
+                           (item.keyword && item.keyword.toLowerCase().includes(term));
+                });
+                
+                renderGridHTML(filtered);
+                document.getElementById('load-more-btn').classList.add('hidden'); // 검색결과는 전부 한눈에 표시
+
+            } else {
+                // 검색 취소 시: 원래 화면으로 자연스럽게 복구
+                exclusiveSection.style.display = 'block';
+                unnamedSection.style.display = 'block';
+                tabsContainer.style.display = 'flex';
+                setTimeout(() => tabsContainer.style.opacity = '1', 10);
+                
+                searchTitle.innerText = "회원권 안내";
+                searchDesc.innerText = "골프 · 콘도 · 피트니스 회원권의 상세 혜택과 시세를 안내해 드립니다.";
+                
+                renderItems();
+            }
+        }
+
+        // 평소 탭 상태 렌더링
+        function renderItems() {
+            updateCategoryCounts();
+            const data = getActiveData();
+            const visibleItems = isExpanded ? data : data.slice(0, INITIAL_LIMIT);
+            
+            renderGridHTML(visibleItems);
 
             const moreBtn = document.getElementById('load-more-btn');
             const moreText = document.getElementById('load-more-text');
 
-            if(filtered.length <= INITIAL_LIMIT) {
+            if(data.length <= INITIAL_LIMIT) {
                 moreBtn.classList.add('hidden');
             } else {
                 moreBtn.classList.remove('hidden');
                 if(isExpanded) {
                     moreText.innerText = "접기 ∧";
                 } else {
-                    moreText.innerText = `더보기 +${filtered.length - INITIAL_LIMIT}건`;
+                    moreText.innerText = `더보기 +${data.length - INITIAL_LIMIT}건`;
                 }
             }
         }
 
+        // HTML 카드 그려주는 공통 함수 (통합 검색 지원형)
+        function renderGridHTML(items) {
+            const grid = document.getElementById('items-grid');
+            
+            if(items.length === 0) {
+                grid.innerHTML = `<div class="col-span-1 sm:col-span-2 py-16 text-center text-stone-400 text-sm md:text-base font-medium">검색하신 조건에 맞는 회원권이 없습니다.<br><br>유선(<a href="tel:010-6263-9552" class="text-goldColor font-bold underline underline-offset-4">010-6263-9552</a>)으로 문의하시면 조건에 맞는 회원권을 찾아 안내해 드립니다.</div>`;
+                return;
+            }
+
+            grid.innerHTML = items.map(item => {
+                const targetHref = item.link ? item.link : (item.id ? `/detail.html?name=${item.id}` : '#');
+                const isTel = targetHref.startsWith('tel:');
+                const targetAttr = (!isTel && (targetHref.startsWith('http') || targetHref.endsWith('.html') || targetHref.endsWith('/'))) ? 'target="_blank"' : '';
+                
+                // 특별 매물(특판, 무기명 등) 시각적 차별화
+                const isSpecial = item.tag && (item.tag.includes('특판') || item.tag.includes('특급') || item.tag.includes('무기명'));
+                const bgClass = isSpecial ? 'bg-amber-50/40 border-goldColor/40 hover:bg-amber-50' : 'bg-stone-50 border-stone-200/90 hover:border-goldColor hover:bg-white';
+                const tagBgClass = isSpecial ? 'bg-goldColor text-white' : 'bg-white text-deepGreen border border-stone-200 group-hover:bg-goldColor/15 group-hover:border-goldColor/30 group-hover:text-goldColor';
+                const iconBgClass = isSpecial ? 'bg-goldColor text-white' : 'bg-white border border-stone-200 text-stone-400';
+
+                return `
+                <a href="${targetHref}" ${targetAttr} class="${bgClass} border rounded-2xl p-5 shadow-sm hover:shadow-md flex items-center justify-between transition-all duration-200 group">
+                    <div class="pr-3">
+                        <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                            <span class="text-[11px] font-bold tracking-wider px-2.5 py-0.5 rounded transition whitespace-nowrap ${tagBgClass}">${item.tag || ''}</span>
+                            ${item.subTag ? `<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-200/60 text-stone-600 border border-stone-200">${item.subTag}</span>` : ''}
+                            <h3 class="text-[15px] md:text-base font-bold text-deepGreen tracking-tight group-hover:text-goldColor transition">${item.title}</h3>
+                        </div>
+                        <p class="text-xs md:text-[13px] text-stone-500 font-normal tracking-tight break-keep">${item.sub || ''}</p>
+                    </div>
+                    <div class="w-8 h-8 rounded-full ${iconBgClass} flex items-center justify-center flex-shrink-0 group-hover:border-goldColor group-hover:bg-goldColor group-hover:text-white transition">
+                        <svg class="w-4 h-4 transition" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </a>
+                `;
+            }).join('');
+        }
+
         function toggleShowMore() {
             isExpanded = !isExpanded;
-            const keyword = document.getElementById('search-input').value;
-            renderItems(keyword);
+            renderItems();
         }
 
-        function filterItems() {
-            const keyword = document.getElementById('search-input').value;
-            isExpanded = false;
-            renderItems(keyword);
-        }
-
-        // 무기명 골프 리스트 렌더링 함수
+        // 무기명 골프 하단 리스트 렌더링
         function renderUnnamedList() {
             const container = document.getElementById('unnamed-grid');
             if (!container) return;
-
             if (!safeDataUnnamed || safeDataUnnamed.length === 0) {
                 container.innerHTML = `<div class="col-span-1 sm:col-span-2 py-10 text-center text-stone-400 text-sm">등록된 추천 무기명 골프 회원권 정보가 없습니다.</div>`;
                 return;
             }
-
-            container.innerHTML = safeDataUnnamed.map(item => {
-                const targetHref = item.link ? item.link : '#';
-                const isTel = targetHref.startsWith('tel:');
-                const targetAttr = (!isTel && (targetHref.startsWith('http') || targetHref.endsWith('.html'))) ? 'target="_blank"' : '';
-                const isSpecial = item.tag.includes('특판');
-
-                return `
-                    <a href="${targetHref}" ${targetAttr} class="${isSpecial ? 'bg-amber-50/50 border border-goldColor/40 hover:bg-amber-50' : 'bg-[#FAF8F5] border border-stone-200/90 hover:border-goldColor hover:bg-white'} rounded-xl p-5 transition-all duration-200 flex items-center justify-between group shadow-sm hover:shadow-md">
-                        <div class="pr-3">
-                            <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-                                <span class="text-[11px] font-bold px-2 py-0.5 rounded ${isSpecial ? 'bg-goldColor text-white' : 'bg-goldColor/15 text-deepGreen border border-goldColor/30'}">${item.tag}</span>
-                                ${item.subTag ? `<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-200/60 text-stone-600 border border-stone-200">${item.subTag}</span>` : ''}
-                                <h4 class="text-base font-bold text-deepGreen group-hover:text-goldColor transition">${item.title}</h4>
-                            </div>
-                            <p class="text-xs md:text-[13px] text-stone-500 font-normal">${item.sub}</p>
-                        </div>
-                        <div class="w-8 h-8 rounded-full ${isSpecial ? 'bg-goldColor text-white' : 'bg-white border border-stone-200 text-stone-400'} flex items-center justify-center flex-shrink-0 group-hover:bg-goldColor group-hover:text-white group-hover:border-goldColor transition">
-                            <svg class="w-4 h-4 transition" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </a>
-                `;
-            }).join('');
+            container.innerHTML = safeDataUnnamed.map(item => createCardHTML(item)).join('');
         }
 
-        // 프리미엄 분양 안내 리스트 렌더링 함수
+        // 프리미엄 분양 하단 리스트 렌더링
         function renderExclusiveList() {
             const container = document.getElementById('exclusive-grid');
             if (!container) return;
-
             if (!safeDataExclusive || safeDataExclusive.length === 0) {
                 container.innerHTML = `<div class="col-span-1 sm:col-span-2 py-10 text-center text-stone-400 text-sm">등록된 분양 회원권 정보가 없습니다.</div>`;
                 return;
             }
-
-            container.innerHTML = safeDataExclusive.map(item => {
-                const targetHref = item.link ? item.link : '#';
-                const targetAttr = (targetHref.startsWith('http') || targetHref.endsWith('.html')) ? 'target="_blank"' : '';
-                const isSpecial = item.tag.includes('특판') || item.tag.includes('특급');
-
-                return `
-                    <a href="${targetHref}" ${targetAttr} class="${isSpecial ? 'bg-amber-50/50 border border-goldColor/40 hover:bg-amber-50' : 'bg-[#FAF8F5] border border-stone-200/90 hover:border-goldColor hover:bg-white'} rounded-xl p-5 transition-all duration-200 flex items-center justify-between group shadow-sm hover:shadow-md">
-                        <div class="pr-3">
-                            <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-                                <span class="text-[11px] font-bold px-2 py-0.5 rounded ${isSpecial ? 'bg-goldColor text-white' : 'bg-goldColor/15 text-deepGreen border border-goldColor/30'}">${item.tag}</span>
-                                ${item.subTag ? `<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-200/60 text-stone-600 border border-stone-200">${item.subTag}</span>` : ''}
-                                <h4 class="text-base font-bold text-deepGreen group-hover:text-goldColor transition">${item.title}</h4>
-                            </div>
-                            <p class="text-xs md:text-[13px] text-stone-500 font-normal">${item.sub}</p>
-                        </div>
-                        <div class="w-8 h-8 rounded-full ${isSpecial ? 'bg-goldColor text-white' : 'bg-white border border-stone-200 text-stone-400'} flex items-center justify-center flex-shrink-0 group-hover:bg-goldColor group-hover:text-white group-hover:border-goldColor transition">
-                            <svg class="w-4 h-4 transition" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </a>
-                `;
-            }).join('');
+            container.innerHTML = safeDataExclusive.map(item => createCardHTML(item)).join('');
         }
 
-        let selectedTradeVal = '매도';
+        // 하단 고정 단락용 카드 생성기 (통합 검색 시에도 디자인 통일감 유지)
+        function createCardHTML(item) {
+            const targetHref = item.link ? item.link : '#';
+            const isTel = targetHref.startsWith('tel:');
+            const targetAttr = (!isTel && (targetHref.startsWith('http') || targetHref.endsWith('.html') || targetHref.endsWith('/'))) ? 'target="_blank"' : '';
+            const isSpecial = item.tag && (item.tag.includes('특판') || item.tag.includes('특급'));
 
+            return `
+            <a href="${targetHref}" ${targetAttr} class="${isSpecial ? 'bg-amber-50/50 border border-goldColor/40 hover:bg-amber-50' : 'bg-[#FAF8F5] border border-stone-200/90 hover:border-goldColor hover:bg-white'} rounded-xl p-5 transition-all duration-200 flex items-center justify-between group shadow-sm hover:shadow-md">
+                <div class="pr-3">
+                    <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                        <span class="text-[11px] font-bold px-2 py-0.5 rounded ${isSpecial ? 'bg-goldColor text-white' : 'bg-goldColor/15 text-deepGreen border border-goldColor/30'}">${item.tag}</span>
+                        ${item.subTag ? `<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-stone-200/60 text-stone-600 border border-stone-200">${item.subTag}</span>` : ''}
+                        <h4 class="text-base font-bold text-deepGreen group-hover:text-goldColor transition">${item.title}</h4>
+                    </div>
+                    <p class="text-xs md:text-[13px] text-stone-500 font-normal break-keep">${item.sub}</p>
+                </div>
+                <div class="w-8 h-8 rounded-full ${isSpecial ? 'bg-goldColor text-white' : 'bg-white border border-stone-200 text-stone-400'} flex items-center justify-center flex-shrink-0 group-hover:bg-goldColor group-hover:text-white group-hover:border-goldColor transition">
+                    <svg class="w-4 h-4 transition" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </a>`;
+        }
+
+        // 상담 폼 제어
+        let selectedTradeVal = '매도';
         function selectTrade(btn, val) {
             document.querySelectorAll('.trade-btn').forEach(b => {
                 b.className = "trade-btn py-3.5 border border-stone-200 rounded-xl font-semibold text-stone-600 bg-stone-50 hover:bg-stone-100 transition text-center text-sm md:text-base";
@@ -687,9 +755,26 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            switchTab('golf'); // 초기 로딩 시 골프 탭 텍스트 색상 세팅
+            switchTab('golf'); // 초기 로딩 세팅
             renderUnnamedList();
             renderExclusiveList();
+
+            // 상단 메뉴 클릭 시 검색어 초기화 및 숨김 단락 복구 후 부드럽게 이동하는 마법
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const searchInput = document.getElementById('search-input');
+                    
+                    if (searchInput && searchInput.value.trim() !== '') {
+                        searchInput.value = '';
+                        filterItems(); // 지운 값으로 다시 필터링을 호출해서 복구시킴
+                    }
+                    
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
         });
     </script>
 </body>
