@@ -13,6 +13,7 @@ const dataGolf = [
     { title: "기흥CC 회원권", sub: "삼남개발 운영 36홀 정통 명문 클럽", tag: "경기 화성", link: "giheung-cc/" },
     { title: "레이크우드CC 회원권", sub: "아주그룹 운영 36홀 수도권 북부 명문", tag: "경기 양주", link: "lakewood-cc/" },
     { title: "남서울CC 회원권", sub: "강남/판교 최고 접근성과 매경오픈 개최 명문", tag: "경기 성남", link: "namseoul-cc/" },
+    { title: "뉴서울CC 회원권", sub: "문화체육관광부 운영 36홀 명문과 폭넓은 위임 혜택", tag: "경기 광주", link: "newseoul-cc/" },
 ];
 
 const dataCondo = [
