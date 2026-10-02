@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 네이버/구글 검색 상위 노출용 SEO -->
+    <title>88CC 회원권 시세 및 혜택 안내 | 서치회원권</title>
+    <meta name="description" content="대한민국 10대 골프장 88CC 회원권 실거래가 시세, 정회원 혜택, 예약 규정 및 명의개서 안내. 국가보훈부 운영의 압도적 안정성과 용인 접근성을 갖춘 명문 구장.">
+    <meta name="keywords" content="88CC, 88CC회원권, 88CC시세, 팔팔CC, 용인명문골프장, 88CC법인, 회원권거래소, 서치회원권">
+
+    <!-- 캐시 제어 및 보안 헤더 (Cache-Control & Security) -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- 파비콘 및 애플 터치 아이콘 (브랜드 아이콘 최적화) -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    
+    <!-- 카카오톡/문자 공유 시 Open Graph (폴더명 88cc 기준) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="88CC 회원권 시세 및 혜택 안내 | 서치회원권" />
+    <meta property="og:description" content="대한민국 10대 골프장에 빛나는 완벽한 코스 관리와 국가보훈부 운영의 탄탄한 재무 안정성. 88CC 회원권 실거래가 및 입회 안내." />
+    <meta property="og:image" content="https://www.searchmembership.co.kr/88cc/1.jpg" />
+    <meta property="og:url" content="https://www.searchmembership.co.kr/88cc" />
+
+    <!-- 구조화된 데이터 (Schema.org / JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GolfCourse",
+      "name": "88컨트리클럽 (88CC)",
+      "image": "https://www.searchmembership.co.kr/88cc/1.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "석성로 521번길 169",
+        "addressLocality": "용인시 기흥구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "telephone": "031-287-8811",
+      "url": "https://www.searchmembership.co.kr/88cc",
+      "description": "국가보훈부가 운영하는 수도권 36홀 명문 회원제 골프장입니다."
+    }
+    </script>
+
+    <!-- Tailwind CSS, 아이콘, 애니메이션 스크립트 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#143831',
+                            light: '#f7fafc',
+                            accent: '#c5a880',
+                            accentDark: '#a38760',
+                            gray: '#4a5568'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfc; color: #333; word-break: keep-all; scroll-behavior: smooth; }
+        
+        .hero-bg { background-size: cover; background-position: center; background-attachment: fixed; position: relative; }
+        .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
+        
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.98); 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(226, 232, 240, 0.8); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03), 0 10px 15px rgba(0, 0, 0, 0.05); 
+            border-left: 4px solid #c5a880;
+            border-radius: 1rem;
+        }
+        
+        /* 박스 비율 완벽 맞춤 수정 (위아래 여백 균등 분배) */
+        .overview-box {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03), 0 10px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #c5a880;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .overview-item {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding-top: 1.5rem;    /* 선 기준 위쪽 여백 추가 */
+            padding-bottom: 1.5rem; /* 선 기준 아래쪽 여백 */
+            border-bottom: 1px solid #f1f5f9;
+            flex: 1; /* 3개 항목이 박스 높이를 정확히 1:1:1로 나눠 가짐 */
+        }
+        .overview-item:first-child {
+            padding-top: 0; /* 첫 번째 항목은 맨 위 여백 제거하여 밸런스 맞춤 */
+        }
+        .overview-item:last-child {
+            padding-bottom: 0; /* 마지막 항목은 맨 아래 여백 제거 */
+            border-bottom: none;
+        }
+
+        table { border-collapse: separate; border-spacing: 0; width: 100%; }
+        th, td { border-bottom: 1px solid #e2e8f0; font-size: 0.95rem; }
+        th { background-color: #f8fafc; font-size: 0.85rem; letter-spacing: 0.05em; }
+
+        .icon-circle { width: 48px; height: 48px; border-radius: 50%; background-color: #f7fafc; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #c5a880; font-size: 1.5rem; flex-shrink: 0; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- 상단 네비게이션 -->
+    <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col justify-center leading-none">
+                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                </div>
+            </div>
+            <a href="../index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
+                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+            </a>
+        </div>
+    </nav>
+    <div class="h-20 w-full"></div>
+
+    <!-- 메인 배너 (1.webp 적용) -->
+    <header id="hero-bg" class="hero-bg h-[80vh] min-h-[600px] flex flex-col items-center justify-center relative overflow-hidden text-center px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('1.webp');">
+        <div class="absolute inset-0 bg-black/35 z-0"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-2 flex flex-col items-center justify-center animate__animated animate__fadeInUp mt-0">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-white/10 border border-white/25 backdrop-blur-md text-brand-accent text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-5 shadow-sm">
+                PREMIUM GOLF & HERITAGE
+            </span>
+            <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">88CC 회원권</h1>
+            <p id="hero-desc" class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">
+                대한민국 10대 명문 구장의 품격. 국가보훈부가 운영하는 압도적인 재무 안정성과 철저한 코스 관리를 경험하십시오.
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- 호재 안내 배너 -->
+        <section class="bg-brand-dark py-4 text-white shadow-inner border-b border-[#2c524a]">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <p class="text-xs md:text-sm tracking-wide text-brand-accent font-semibold flex items-center justify-center gap-2">
+                    <i class="ph-fill ph-trophy text-lg"></i>
+                    [골퍼의 선택] 빅데이터가 증명한 대한민국 10대 골프장 선정! 높은 신뢰도와 투자가치를 자랑합니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- ① 기본 정보 -->
+        <section id="info" class="section-padding bg-white relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 animate__animated animate__fadeIn scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">CLUB OVERVIEW</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">88컨트리클럽 기본 운영 정보입니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
+                    <!-- 좌측 박스 -->
+                    <div class="overview-box">
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-buildings"></i></div>
+                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">운영 주체</h3>
+                                <p class="text-gray-600 text-sm">국가보훈부 산하 88관광개발(주)</p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-flag"></i></div>
+                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">코스 규모 및 회원수</h3>
+                                <p class="text-gray-600 text-sm">회원제 36홀 (약 85만평) / 약 1,979명</p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-calendar-star"></i></div>
+                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">개장일 및 휴장일</h3>
+                                <p class="text-gray-600 text-sm">1988년 7월 8일 개장 / 연중무휴</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 우측 박스 -->
+                    <div class="overview-box">
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-calendar-blank"></i></div>
+                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">회원의 날</h3>
+                                <p class="text-gray-600 text-sm">2, 4주 일요일 및 국경일</p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-money"></i></div>
+                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">이용 요금 안내</h3>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    • 전동카트: 100,000원<br>
+                                    • 캐디피: 150,000원<br>
+                                    • 비회원: 주중 210,000원 / 주말 260,000원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="icon-circle"><i class="ph ph-star"></i></div>
+                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">특이사항</h3>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    • 개인 ↔ 법인 자유 교차 매매 가능<br>
+                                    • 법인 반구좌 입회 가능
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ② 위치 안내 -->
+        <section id="location" class="section-padding bg-brand-light relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-12 items-center scroll-anim">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
+                        <div class="w-16 h-1 bg-brand-accent rounded-full mb-6"></div>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            강남 및 수도권 전역에서 쾌속으로 닿을 수 있는 최적의 용인권 입지를 자랑합니다. 뛰어난 인프라가 88CC의 가치를 더욱 높여줍니다.
+                        </p>
+                        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 space-y-4">
+                            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                                <span class="flex items-center gap-2 font-medium text-gray-800"><i class="ph ph-map-pin text-brand-accent"></i> 주소</span>
+                                <span class="text-gray-600 text-sm text-right">경기도 용인시 기흥구<br>석성로 521번길 169</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-1">
+                                <span class="flex items-center gap-2 font-medium text-gray-800"><i class="ph ph-phone text-brand-accent"></i> 클럽하우스</span>
+                                <span class="text-gray-700 font-medium text-sm text-right">031-287-8811</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white h-[400px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b50d519824e5f%3A0x1116593bd4fa4ee!2s88CC!5e0!3m2!1sko!2skr!4v1790906733355!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ③ 시설 및 코스 소개 (동코스/서코스 이미지 6장) -->
+        <section id="facilities" class="section-padding bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">COURSE & FEATURES</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">사계절 내내 수준 높은 관리를 자랑하는 동·서코스 36홀 전경입니다.</p>
+                </div>
+
+                <div class="space-y-16">
+                    <!-- 동코스 (2, 3, 4.webp) -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-brand-accent pl-3">동 코스 (East Course)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+                                <div class="rounded-xl overflow-hidden shadow mb-4">
+                                    <img src="2.webp" alt="88CC 동코스 전경 1" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <h4 class="text-[17px] font-bold text-gray-800 mb-2">남성적이고 호쾌한 레이아웃</h4>
+                                <p class="text-sm text-gray-600">넓게 뻗은 페어웨이로 누구에게나 안정적이고 시원한 티샷의 기회를 제공합니다.</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+                                <div class="rounded-xl overflow-hidden shadow mb-4">
+                                    <img src="3.webp" alt="88CC 동코스 전경 2" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <h4 class="text-[17px] font-bold text-gray-800 mb-2">과하지 않은 최적의 난이도</h4>
+                                <p class="text-sm text-gray-600">장애물이 적절히 배치되어 있어 무리 없는 플레이 흐름과 편안한 라운드를 약속합니다.</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+                                <div class="rounded-xl overflow-hidden shadow mb-4">
+                                    <img src="4.webp" alt="88CC 동코스 전경 3" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <h4 class="text-[17px] font-bold text-gray-800 mb-2">자연림이 어우러진 경관</h4>
+                                <p class="text-sm text-gray-600">오랜 세월을 간직한 울창한 수목들이 홀을 감싸며 사계절 내내 수려한 풍광을 자아냅니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 서코스 (5, 6, 7.webp) -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-brand-accent pl-3">서 코스 (West Course)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+                                <div class="rounded-xl overflow-hidden shadow mb-4">
+                                    <img src="5.webp" alt="88CC 서코스 전경 1" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <h4 class="text-[17px] font-bold text-gray-800 mb-2">정교함을 요구하는 섬세함</h4>
+                                <p class="text-sm text-gray-600">전략적인 샷 메이킹이 필수적이며, 골퍼의 두뇌 플레이와 도전 정신을 강하게 자극합니다.</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+                                <div class="rounded-xl overflow-hidden shadow mb-4">
+                                    <img src="6.webp" alt="88CC 서코스 전경 2" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <h4 class="text-[17px] font-bold text-gray-800 mb-2">촘촘한 잔디 관리</h4>
+                                <p class="text-sm text-gray-600">매년 꾸준한 코스 투자와 철저한 관리를 통해 최상의 페어웨이 컨디션을 유지하고 있습니다.</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+                                <div class="rounded-xl overflow-hidden shadow mb-4">
+                                    <img src="7.webp" alt="88CC 서코스 전경 3" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                </div>
+                                <h4 class="text-[17px] font-bold text-gray-800 mb-2">지속적인 시설 인프라 확충</h4>
+                                <p class="text-sm text-gray-600">급수 환경 개선 등 골프장 내 부대시설 투자를 아끼지 않아 쾌적한 만족도를 높여줍니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ④ 특별 공지사항 (리무진 / 서코스 공사) -->
+        <section class="py-10 bg-gray-50 border-y border-gray-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl font-bold text-brand-dark mb-5 flex items-center gap-2">
+                    <i class="ph-fill ph-bell-ringing text-brand-accent text-2xl"></i> 88CC 추가 안내 사항
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-accent/20">
+                        <h4 class="font-bold text-gray-800 text-lg border-b pb-2 mb-3">6인승 리무진 카트 예약 안내</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• <strong>이용 요금(팀당):</strong> 4인 이하 (카트 22만/캐디피 17만) / 5인 (카트 22만/캐디피 20만)</li>
+                            <li>• <strong>예약 조건:</strong> 총 2대 한정 운영 (사전 예약실 유선 선착순 신청)</li>
+                            <li>• <strong>유의사항:</strong> 2인 이하는 예약 불가하며, 기존 카트 면제 혜택은 리무진에는 적용되지 않습니다.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-accent/20">
+                        <h4 class="font-bold text-gray-800 text-lg border-b pb-2 mb-3">서코스 환경 개선 공사</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• <strong>공사 구간:</strong> 서코스 전체</li>
+                            <li>• <strong>공사 내용:</strong> 잔디 급수 환경 개선을 위한 스프링클러 주관로 교체</li>
+                            <li>• <strong>공사 기간:</strong> 2026년 9월 5일 ~ 12월 31일 (예정)</li>
+                            <li>보다 쾌적하고 양질의 라운딩 환경을 제공하기 위한 투자입니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑤ 회원권 종류 및 혜택 -->
+        <section id="membership" class="section-padding bg-brand-light">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">MEMBERSHIP GUIDE</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">개인 및 법인 회원권 혜택과 이용 요금입니다. (개인/법인 간 자유로운 매매 가능)</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
+                    <!-- 개인회원권 -->
+                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-dark">
+                        <h3 class="text-xl font-bold mb-2">개인 회원권</h3>
+                        <p class="text-sm text-gray-500 mb-4">정회원 1인 + 가족회원 1인 구성 (직계가족 한정)</p>
+                        <div class="my-3 border-b border-gray-200"></div>
+                        <ul class="text-sm text-gray-600 space-y-2.5">
+                            <li>• <strong>정회원 요금:</strong> 주중 68,000원 / 주말 73,000원</li>
+                            <li>• <strong>가족회원 요금:</strong> 주중 95,000원 / 주말 260,000원</li>
+                        </ul>
+                    </div>
+
+                    <!-- 법인회원권 -->
+                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-accent">
+                        <h3 class="text-xl font-bold mb-2 flex items-center gap-2">법인 회원권 <span class="text-xs bg-brand-accent/20 text-brand-dark px-2 py-0.5 rounded font-semibold">반구좌 입회 가능</span></h3>
+                        <p class="text-sm text-gray-500 mb-4">정회원 1인 + 지정회원 1인 구성 (직계가족 한정 등재)</p>
+                        <div class="my-3 border-b border-gray-200"></div>
+                        <ul class="text-sm text-gray-600 space-y-2.5">
+                            <li>• <strong>정회원 요금:</strong> 주중 68,000원 / 주말 73,000원</li>
+                            <li>• <strong>지정회원 요금:</strong> 주중 95,000원 / 주말 260,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑥ 시세 안내 -->
+        <section id="price" class="section-padding bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 scroll-anim">
+                    <span class="text-sm font-bold tracking-widest text-brand-accent uppercase mb-2 block">Market Trends</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">실거래 시세 동향</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                </div>
+
+                <div class="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-100 mb-12 scroll-anim">
+                    <table class="w-full text-sm text-left">
+                        <thead class="text-xs text-gray-600 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-4 font-semibold">회원권 종류</th>
+                                <th scope="col" class="px-6 py-4 font-semibold text-right text-brand-accent">대략적 매물 시세</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr>
+                                <td class="px-6 py-4 font-semibold text-brand-dark">개인 및 법인 (반구좌 기준)</td>
+                                <td class="px-6 py-4 text-right text-brand-accent text-xl"><strong>4억 1,600만원</strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="px-6 py-3 text-[12px] text-gray-500 bg-gray-50 text-center font-normal">
+                                    ※ 88CC는 개인과 법인 시세가 동일하게 형성되어 있습니다.<br>
+                                    ※ 시세는 수급 및 시장 상황에 따라 실시간 변동될 수 있습니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑦ 예약, 절차, 서류 -->
+        <section id="extra-guides" class="section-padding bg-brand-light border-t border-gray-200/60">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">GUIDE & PROCEDURES</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 max-w-2xl mx-auto">안전한 회원권 거래 절차 및 예약 규정을 꼼꼼히 확인해 드립니다.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- 예약 방법 -->
+                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2"><i class="ph ph-calendar-check text-brand-accent mr-2"></i>예약 규정 안내</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
+                            <div>
+                                <strong class="text-brand-dark mb-2 block">평일 예약</strong>
+                                <ul class="space-y-1.5">
+                                    <li>• 2주전 09시부터 (인터넷/모바일/전화)</li>
+                                    <li>• 14일 이내 1회 예약, 내장 후 재예약 가능</li>
+                                    <li>• 정회원 예약 후 가족/일반고객 단독 내장 가능 (성수기 제외)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-brand-dark mb-2 block">주말/공휴일 예약</strong>
+                                <ul class="space-y-1.5">
+                                    <li>• 골프장 2026년 예약일정표 기준 접수</li>
+                                    <li>• 접수한 주 수요일 14시 확정</li>
+                                    <li>• 희망 코스 및 시간 순위 필수 기재</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="text-brand-dark mb-2 block">회원의 날 (2,4주 일)</strong>
+                                <ul class="space-y-1.5">
+                                    <li>• 2주전 월요일 9시 접수 (다수회원 우선 배정)</li>
+                                    <li>• 4인팀(09~11시), 3인팀(11~13시), 1~2인팀(13시 이후 조인)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 거래 절차 및 부대비용 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3"><i class="ph ph-handshake text-brand-accent mr-2"></i>안전 거래 절차</h3>
+                            <ol class="space-y-2 text-sm text-gray-600 list-decimal pl-5 marker:text-brand-accent marker:font-bold">
+                                <li><strong>매수 상담:</strong> 최적의 실시간 매물 확보</li>
+                                <li><strong>계약 체결:</strong> 계약금 입금 및 매매서류 안내</li>
+                                <li><strong>서류 접수/잔금:</strong> 입회 서류 작성 완료</li>
+                                <li><strong>명의개서 신청:</strong> 88CC 관리부 접수 및 결제</li>
+                                <li><strong>개서 완료:</strong> 심사 후 약 1주일 내 전산 등록</li>
+                                <li><strong>마무리:</strong> 취득세 고지서 및 거래 서류 정리 발송</li>
+                            </ol>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3"><i class="ph ph-calculator text-brand-accent mr-2"></i>부대비용 체크</h3>
+                            <ul class="space-y-2.5 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
+                                <li>• <strong>명의개서료:</strong> 770,000원</li>
+                                <li>• <strong>수입인지세:</strong> 150,000원</li>
+                                <li>• <strong>취득세:</strong> 매매금액의 2.2%</li>
+                                <li>• <strong>중개수수료</strong> (상담 시 별도 안내)</li>
+                                <li class="text-xs text-gray-500 pt-1 border-t border-gray-200 mt-2">※ 가족 및 법인지정 최초 등록은 무료, 이후 변경 시 330,000원의 수수료가 발생합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 준비서류 -->
+                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-200"><i class="ph ph-folder-user text-brand-accent mr-2"></i>명의개서 준비 서류</h3>
+                        <p class="text-xs text-brand-accent font-semibold mb-4 text-center md:text-left">※ 준비 서류는 개인과 법인에 따라 상이하며, 거래 시 고객님의 상황에 맞춰 꼼꼼하게 확인하여 다시 안내해 드립니다.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
+                            <!-- 매도인 -->
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <strong class="flex items-center text-gray-800 mb-2">
+                                    <i class="ph ph-export text-brand-accent text-lg mr-1.5"></i> 매도인 (양도)
+                                </strong>
+                                <ul class="space-y-1.5 pl-2 text-xs md:text-sm text-gray-700">
+                                    <li>• <strong>개인:</strong> 인감증명서 1부, 대·소 회원증 (분실 시 공고원본 및 분실각서)</li>
+                                    <li>• <strong>법인:</strong> 법인인감증명서 1부, 법인 등기부등본 1부, 사업자등록증 1부, 대·소 회원증</li>
+                                </ul>
+                            </div>
+                            <!-- 매수인 -->
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <strong class="flex items-center text-gray-800 mb-2">
+                                    <i class="ph ph-import text-brand-accent text-lg mr-1.5"></i> 매수인 (양수)
+                                </strong>
+                                <ul class="space-y-1.5 pl-2 text-xs md:text-sm text-gray-700">
+                                    <li>• <strong>개인:</strong> 주민등록등본 1부, 신분증 사본, 이력서, 사진(3x4) 3매</li>
+                                    <li>• <strong>법인:</strong> 법인인감증명서 1부, 법인 등기부등본 1부, 사업자등록증 1부, 재직증명서, 신분증 사본, 등본, 사진 3매</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 하단 상담 연결 박스 -->
+    <section id="consult" class="py-12 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 scroll-anim">
+            <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-brand-accent opacity-10 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-white opacity-5 blur-2xl"></div>
+
+                <div class="relative z-10">
+                    <p class="text-brand-accent font-medium tracking-widest text-sm md:text-[15px] mb-3">대한민국 최고의 재무 안정성과 품격</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        88CC 회원권으로 품격 있는 비즈니스와<br class="hidden sm:inline"/> 여유로운 골프 라이프를 완성하세요
+                    </h2>
+                    <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-base md:text-lg leading-relaxed font-normal">
+                        수요가 높은 명문 구장인 만큼 매물 변동이 빠릅니다.<br>실시간 정확한 시세 확인과 안전한 책임 거래를 약속드립니다.
+                    </p>
+                    <a href="tel:010-6263-9552" class="inline-flex items-center justify-center gap-2.5 sm:gap-3 w-full sm:w-auto bg-brand-accent hover:bg-brand-accentDark text-white px-5 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(197,160,89,0.3)] whitespace-nowrap">
+                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                            <i class="ph-fill ph-phone-call text-lg sm:text-xl"></i>
+                        </div>
+                        <span>실시간 매물 · 시세 상담</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [푸터] -->
+    <footer class="bg-[#071714] text-stone-200 py-16 text-sm border-t border-white/10 mt-auto w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-white font-bold text-lg tracking-tight mb-1">서치회원권</p>
+                    <p class="text-stone-300 text-sm leading-relaxed font-normal">
+                        골프 · 콘도 · 피트니스 회원권거래소<br>
+                        (사)한국골프회원권경영인협회 정회원사
+                    </p>
+                    <p class="text-stone-300 text-sm font-normal">담당: 이호선 과장</p>
+                    <div class="pt-2">
+                        <a href="https://blog.naver.com/PostList.naver?blogId=2-hosun&from=postList&categoryNo=13" target="_blank" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/20 shadow-sm">
+                            <span class="text-green-400 font-bold">N</span> 매매 후기 바로가기
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-white font-bold text-base tracking-wide uppercase text-brand-accent mb-1">Menu</p>
+                    <ul class="flex flex-col gap-y-2 text-stone-300 text-sm font-medium">
+                        <li><a href="../about.html" class="hover:text-white transition">서치회원권 소개</a></li>
+                        <li><a href="../index.html#search-box" class="hover:text-white transition">회원권 혜택과 시세 안내</a></li>
+                        <li><a href="../index.html#unnamed" class="hover:text-white transition">무기명 골프</a></li>
+                        <li><a href="#consult" class="hover:text-white transition">1:1 맞춤 상담 신청</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <p class="text-white font-bold text-base tracking-wide uppercase text-brand-accent mb-1">Contact Center</p>
+                    <p class="text-stone-300 text-sm leading-relaxed font-normal">
+                        회원권서치(주)<br>
+                        경기 성남시 분당구 성남대로 926, 603호<br>(야탑동, 분당메트로)
+                    </p>
+                    <div class="flex flex-col gap-y-1 pt-1">
+                        <a href="tel:010-6263-9552" class="text-white text-base md:text-lg font-bold flex items-center gap-2 hover:text-brand-accent transition w-fit">
+                            <svg class="w-4 h-4 text-brand-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
+                            </svg>
+                            <span>010-6263-9552</span>
+                        </a>
+                        <p class="text-brand-accent text-xs md:text-sm font-semibold pl-6">24시간 연중무휴 상담 가능</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-stone-300">
+                <p class="leading-relaxed font-normal">
+                    본 웹사이트의 골프·콘도·휘트니스 회원권 시세 및 혜택 정보는 참고용이며, 실제 거래 가격과 다를 수 있습니다.<br class="hidden sm:inline">
+                    제공된 정보에 대한 법적 책임을 지지 않으며, 모든 정보의 저작권은 서치회원권에 있습니다.
+                </p>
+                <p class="text-stone-400 whitespace-nowrap">Copyright ⓒ 서치회원권 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -8,6 +8,7 @@ const dataGolf = [
     { title: "더시에나서울CC 회원권", sub: "수도권 인근 전통과 품격의 명문 클럽", tag: "경기 광주", link: "thesiena-seoul/" },
     { title: "제일CC 회원권", sub: "수도권 27홀 명문 정통과 추천인 폐지 호재", tag: "경기 안산", link: "jaeil/" },
     { title: "리베라CC 회원권", sub: "신안그룹 골프장 할인 혜택", tag: "경기 화성", link: "Rivera-golf/" },
+    { title: "88CC 회원권", sub: "국가보훈부 운영의 10대 명문 36홀 코스", tag: "경기 용인", link: "88cc/" },
 ];
 
 const dataCondo = [
