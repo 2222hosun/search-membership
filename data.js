@@ -10,6 +10,7 @@ const dataGolf = [
     { title: "리베라CC 회원권", sub: "신안그룹 골프장 할인 혜택", tag: "경기 화성", link: "Rivera-golf/" },
     { title: "88CC 회원권", sub: "국가보훈부 운영의 10대 명문 36홀 코스", tag: "경기 용인", link: "88cc/" },
     { title: "금강CC 회원권", sub: "KCC그룹 명문 27홀과 소수 정예 운영", tag: "경기 여주", link: "kumgang-cc/" },
+    { title: "기흥CC 회원권", sub: "삼남개발 운영 36홀 정통 명문 클럽", tag: "경기 화성", link: "giheung-cc/" },
 ];
 
 const dataCondo = [
