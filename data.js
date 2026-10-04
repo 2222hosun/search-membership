@@ -16,6 +16,7 @@ const dataGolf = [
     { title: "뉴서울CC 회원권", sub: "문화체육관광부 운영 36홀 명문과 폭넓은 위임 혜택", tag: "경기 광주", link: "newseoul-cc/" },
     { title: "뉴코리아CC 회원권", sub: "강북 최상의 접근성과 50년 전통 숲속 코스", tag: "경기 고양", link: "newkorea-cc/" },
     { title: "뉴스프링빌CC 회원권", sub: "남이천 IC 2분 초접근성과 54홀 매머드급 코스", tag: "경기 이천", link: "newspring-cc/" },
+    { title: "인천국제CC 회원권", sub: "50년 전통의 카트 없는 클래식 워킹 라운드 명문", tag: "인천", link: "incheon-cc/" },
 ];
 
 const dataCondo = [
