@@ -38,7 +38,8 @@ const dataHotel = [
     { title: "반트 피트니스 회원권", sub: "강남 도심 속 하이엔드 웰니스 타워팰리스", tag: "서울 강남", link: "vant-fitness/" },
     { title: "웨스틴 파르나스 코스모폴리탄", sub: "강남 도심 속 하이엔드 웰니스", tag: "서울 강남", link: "cosmopolitan/" },
     { title: "그랜드 인터컨티넨탈 메트로폴리탄", sub: "강남 테헤란로 중심, 도심 속 오아시스", tag: "서울 강남", link: "metropolitan/" },
-    { title: "JW 메리어트 마르퀴스", sub: "국내 최대 규모의 도심 속 프리미엄 피트니스", tag: "서울 서초", link: "marriott-fitness/" }
+    { title: "JW 메리어트 마르퀴스", sub: "국내 최대 규모의 도심 속 프리미엄 피트니스", tag: "서울 서초", link: "marriott-fitness/" },
+    { title: "여의도 메리어트 수 피트니스", sub: "여의도 중심 2,000평 프라이빗 오아시스", tag: "서울 여의도", link: "marriott-soofitness/" },
 ];
 
 const dataUnnamed = [
