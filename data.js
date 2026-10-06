@@ -19,6 +19,7 @@ const dataGolf = [
     { title: "인천국제CC 회원권", sub: "50년 전통의 카트 없는 클래식 워킹 라운드 명문", tag: "인천", link: "incheon-cc/" },
     { title: "골드CC 회원권", sub: "GA KOREA 운영 36홀 수도권 남부 명문 코스", tag: "경기 용인", link: "gold-cc/" },
     { title: "레이크사이드CC 회원권", sub: "삼성물산 운영 54홀 수도권 최고 명문 클럽", tag: "경기 용인", link: "lakeside-cc/" },
+    { title: "렉스필드CC 회원권", sub: "27홀 27색 아트코스의 자부심과 완벽한 위임 혜택", tag: "경기 여주", link: "rexfield-cc/" },
 ];
 
 const dataCondo = [
