@@ -3,7 +3,7 @@ const dataGolf = [
     { title: "자유CC 회원권", sub: "자연림 레이아웃과 스타벅스 입점 명문", tag: "경기 여주", link: "jayu/" },
     { title: "수원CC 회원권", sub: "도심 30분대 접근성 및 신코스 원그린 호재", tag: "경기 용인", link: "suwon/" },
     { title: "휘슬링락CC 회원권", sub: "대자연과 예술이 빚어낸 27홀 하이엔드", tag: "강원 춘천", link: "whistlingrock/" },
-    { title: "H1CC 회원권", sub: "수도권 남부 접근성 좋은 호반 18홀", tag: "경기 이천", link: "h1/" },
+    { title: "H1CC 회원권", sub: "수도권 남부 접근성 좋은 호반 18홀", tag: "경기 이천", link: "h1-cc/" },
     { title: "천룡CC 회원권", sub: "수려한 36홀 대자연 코스와 소수 정예 운영", tag: "충북 진천", link: "chunryung/" },
     { title: "더시에나서울CC 회원권", sub: "수도권 인근 전통과 품격의 명문 클럽", tag: "경기 광주", link: "thesiena-seoul/" },
     { title: "제일CC 회원권", sub: "수도권 27홀 명문 정통과 추천인 폐지 호재", tag: "경기 안산", link: "jaeil/" },
