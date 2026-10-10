@@ -23,6 +23,7 @@ const dataGolf = [
     { title: "비전힐스CC 회원권", sub: "신라홀딩스 운영 199명 극소수 정예 명문", tag: "경기 남양주", link: "visionhills-cc/" },
     { title: "그랜드CC 회원권", sub: "국내 최초 정통 스코틀랜드 링크스 스타일의 27홀 클럽", tag: "충북 청주", link: "grand-cc/" },
     { title: "아시아나CC 회원권", sub: "수도권 접근성이 뛰어난 36홀 명문 코스", tag: "경기 용인", link: "asiana-cc/" },
+    { title: "블루헤런CC 회원권", sub: "KLPGA 메이저 개최지, 18홀 명문 코스", tag: "경기 여주", link: "blueheron-cc/" },
 ];
 
 const dataCondo = [
