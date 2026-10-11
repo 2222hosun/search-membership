@@ -48,6 +48,7 @@ const dataHotel = [
     { title: "JW 메리어트 마르퀴스", sub: "국내 최대 규모의 도심 속 프리미엄 피트니스", tag: "서울 서초", link: "marriott-fitness/" },
     { title: "여의도 메리어트 수 피트니스", sub: "여의도 중심 2,000평 프라이빗 오아시스", tag: "서울 여의도", link: "marriott-soofitness/" },
     { title: "노보텔 앰배서더 강남 피트니스", sub: "강남 최중심 프라이빗 오아시스", tag: "서울 강남", link: "novotel-fitness/" },
+    { title: "그랜드 하얏트 올림퍼스 회원권", sub: "대체 불가능한 남산 뷰, 도심 속 피트니스", tag: "서울 용산", link: "hyatt-fitness/" },
 ];
 
 const dataUnnamed = [
