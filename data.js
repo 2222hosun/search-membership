@@ -25,6 +25,7 @@ const dataGolf = [
     { title: "아시아나CC 회원권", sub: "수도권 접근성이 뛰어난 36홀 명문 코스", tag: "경기 용인", link: "asiana-cc/" },
     { title: "블루헤런CC 회원권", sub: "KLPGA 메이저 개최지, 18홀 명문 코스", tag: "경기 여주", link: "blueheron-cc/" },
     { title: "한원CC 정·우대·무기명 회원권", sub: "전통 한옥의 멋과 대자연이 품은 50년 역사의 27홀", tag: "경기 용인", link: "hanwon-cc/" },
+    { title: "블루원용인CC 회원권", sub: "뛰어난 수도권 접근성과 우수한 코스 관리를 자랑하는 27홀", tag: "경기 용인", link: "blueone-yongin-cc/" },
 ];
 
 const dataCondo = [
