@@ -2,26 +2,55 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. 모바일 뷰포트 최적화 (확대/축소 방지로 화면 깨짐 차단) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- 네이버/구글 검색 상위 노출용 SEO -->
-    <title>반얀트리 회원권 (클럽 앤 스파 서울) 혜택 및 실거래 시세 안내 | 서치회원권</title>
-    <meta name="description" content="반얀트리 회원권(클럽 앤 스파 서울)의 혜택, 부대시설, 평생회원권 및 연회비 면제 회원권의 종류별 실거래 가격(시세)과 입회 안내입니다." />
-    <meta name="keywords" content="반얀트리 회원권, 반얀트리 클럽 앤 스파 서울, 반얀트리 피트니스 회원권, 반얀트리 평생회원권, 반얀트리 회원권 가격, 반얀트리 시세, 호텔 회원권" />
+    <!-- 2. 핵심 키워드 전진 배치 Title -->
+    <title>반얀트리 클럽 앤 스파 서울 회원권(평생/연회비면제) 혜택 및 실거래 시세 안내 | 서치회원권</title>
+    
+    <!-- 3. 메타 디스크립션 클릭 유도 설계 -->
+    <meta name="description" content="반얀트리 클럽 앤 스파 서울 회원권(평생/연회비면제) 실거래가 시세 및 객실, 피트니스, 오아시스 수영장 혜택 안내. 최고급 하이엔드 멤버십 매매 문의는 서치회원권 이호선 과장에게 연락주세요." />
+    <meta name="keywords" content="반얀트리 회원권, 반얀트리 클럽 앤 스파 서울, 반얀트리 피트니스 회원권, 반얀트리 평생회원권, 반얀트리 연회비면제 회원권, 반얀트리 시세, 서치회원권" />
 
-    <!-- 카카오톡 / 소셜 미디어 공유 (Open Graph) 메타 태그 설정 -->
+    <!-- 4. 캐니컬 태그 및 오픈메타(OG), 트위터 카드 -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/banyantree/">
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="반얀트리 회원권 (클럽 앤 스파 서울) 혜택 및 실거래 시세 안내" />
+    <meta property="og:title" content="반얀트리 클럽 앤 스파 서울 회원권 혜택 및 실거래 시세 안내 | 서치회원권" />
     <meta property="og:description" content="도심 속 완벽한 오아시스, 자연과 어우러진 남산의 품에서 진정한 웰니스와 프라이빗한 휴식을 경험하십시오." />
-    <meta property="og:image" content="https://banyantree-club.vercel.app/1.jpg" />
+    <meta property="og:image" content="https://www.searchmembership.co.kr/banyantree/1.webp" />
+    <meta property="og:url" content="https://www.searchmembership.co.kr/banyantree/" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-
-    <!-- 트위터 카드 설정 -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="반얀트리 회원권 (클럽 앤 스파 서울) 혜택 및 실거래 시세 안내" />
-    <meta name="twitter:description" content="도심 속 완벽한 오아시스, 자연과 어우러진 남산의 품에서 진정한 웰니스와 프라이빗한 휴식을 경험하십시오." />
-    <meta name="twitter:image" content="https://banyantree-club.vercel.app/1.jpg" />
+
+    <!-- 5. 크롤링 지시자 (네이버/구글 봇 고화질 이미지 적극 수집) -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- 6. 메인 이미지 사전 로드(Preload)로 초기 로딩 속도 극대화 -->
+    <link rel="preload" as="image" href="1.webp">
+
+    <!-- 7. 파비콘 및 애플 터치 아이콘 필수 포함 -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23D4B886' rx='22'/><circle cx='44' cy='44' r='18' fill='none' stroke='%231A3225' stroke-width='8'/><line x1='56' y1='56' x2='72' y2='72' stroke='%231A3225' stroke-width='8' stroke-linecap='round'/></svg>">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
+
+    <!-- 8. 구조화된 데이터(Schema.org / JSON-LD) 삽입 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "서치회원권",
+      "image": "https://www.searchmembership.co.kr/banyantree/1.webp",
+      "url": "https://www.searchmembership.co.kr/banyantree/",
+      "telephone": "010-6263-9552",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "성남대로 926, 603호",
+        "addressLocality": "성남시 분당구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      }
+    }
+    </script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -115,6 +144,7 @@
     <div class="h-20 w-full"></div>
 
     <!-- 메인 배너 -->
+    <!-- 9. H1 태그에 핵심 키워드 정확히 배치 -->
     <header class="hero-bg h-[80vh] min-h-[600px] flex items-center justify-center relative overflow-hidden text-center px-4">
         <div class="absolute inset-0 bg-black/30 z-0"></div>
         <div class="relative z-10 max-w-4xl mx-auto w-full px-2 flex flex-col items-center justify-center animate__animated animate__fadeInUp">
@@ -125,7 +155,7 @@
             
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-10 drop-shadow-md tracking-tight">
                 도심 속 완벽한 오아시스
-                <span class="block text-[#c5a880] mt-4 md:mt-5">반얀트리 클럽 앤 스파 서울</span>
+                <span class="block text-[#c5a880] mt-4 md:mt-5">반얀트리 클럽 앤 스파 서울 회원권</span>
             </h1>
             
             <p class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">
@@ -224,14 +254,15 @@
 
                 <div class="space-y-24">
                     <!-- 골프 -->
+                    <!-- 10. 이미지 검색 SEO(alt) & CLS 방지(width/height) 모두 반영 -->
                     <div class="flex flex-col lg:flex-row gap-10 items-center scroll-anim">
                         <div class="lg:w-1/2 space-y-4 w-full">
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="aspect-video sm:aspect-auto sm:h-48 overflow-hidden rounded-xl shadow-md">
-                                    <img src="5.webp" alt="골프 레인지" class="w-full h-full object-cover hover:opacity-90 transition-opacity" loading="lazy" onerror="this.src='https://placehold.co/600x400/e2e8f0/a38760?text=Golf+Range'">
+                                    <img src="5.webp" alt="반얀트리 회원권 전용 트룬 골프 아카데미 레인지" width="600" height="400" class="w-full h-full object-cover hover:opacity-90 transition-opacity" loading="lazy" onerror="this.src='https://placehold.co/600x400/e2e8f0/a38760?text=Golf+Range'">
                                 </div>
                                 <div class="aspect-video sm:aspect-auto sm:h-48 overflow-hidden rounded-xl shadow-md sm:mt-6">
-                                    <img src="6.webp" alt="스크린 골프" class="w-full h-full object-cover hover:opacity-90 transition-opacity" loading="lazy" onerror="this.src='https://placehold.co/600x400/e2e8f0/a38760?text=Screen+Golf'">
+                                    <img src="6.webp" alt="반얀트리 서울 회원권 실내 스크린 골프 시설" width="600" height="400" class="w-full h-full object-cover hover:opacity-90 transition-opacity" loading="lazy" onerror="this.src='https://placehold.co/600x400/e2e8f0/a38760?text=Screen+Golf'">
                                 </div>
                             </div>
                         </div>
@@ -252,8 +283,8 @@
                     <!-- 피트니스 & 사우나 -->
                     <div class="flex flex-col lg:flex-row-reverse gap-10 items-center scroll-anim">
                         <div class="lg:w-1/2 relative flex flex-col lg:block w-full">
-                            <img src="3.webp" alt="피트니스 센터" class="rounded-2xl shadow-xl w-full h-auto object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x533/e2e8f0/a38760?text=Fitness'">
-                            <img src="4.webp" alt="반얀트리 사우나" class="mt-4 lg:mt-0 relative lg:absolute lg:-bottom-8 lg:-left-8 w-full lg:w-1/2 rounded-xl shadow-lg lg:border-4 lg:border-white object-cover h-56 lg:h-48" loading="lazy" onerror="this.src='https://placehold.co/400x400/e2e8f0/a38760?text=Sauna'">
+                            <img src="3.webp" alt="반얀트리 클럽 앤 스파 서울 하이엔드 피트니스 센터" width="800" height="533" class="rounded-2xl shadow-xl w-full h-auto object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x533/e2e8f0/a38760?text=Fitness'">
+                            <img src="4.webp" alt="반얀트리 회원권 프리미엄 사우나 스파 시설" width="400" height="400" class="mt-4 lg:mt-0 relative lg:absolute lg:-bottom-8 lg:-left-8 w-full lg:w-1/2 rounded-xl shadow-lg lg:border-4 lg:border-white object-cover h-56 lg:h-48" loading="lazy" onerror="this.src='https://placehold.co/400x400/e2e8f0/a38760?text=Sauna'">
                         </div>
                         <div class="lg:w-1/2 mt-4 lg:mt-0">
                             <span class="text-xs font-bold tracking-widest text-brand-accent uppercase mb-2 block">Wellness & Spa</span>
@@ -272,7 +303,7 @@
                     <!-- 리조트 객실 -->
                     <div class="flex flex-col lg:flex-row gap-10 items-center scroll-anim">
                         <div class="lg:w-1/2 w-full">
-                             <img src="2.webp" alt="풀 스위트 객실" class="rounded-2xl shadow-xl w-full h-[400px] object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x533/e2e8f0/a38760?text=Pool+Suite'">
+                             <img src="2.webp" alt="반얀트리 풀 스위트 객실 프라이빗 릴렉세이션 풀" width="800" height="533" class="rounded-2xl shadow-xl w-full h-[400px] object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x533/e2e8f0/a38760?text=Pool+Suite'">
                         </div>
                         <div class="lg:w-1/2">
                             <span class="text-xs font-bold tracking-widest text-brand-accent uppercase mb-2 block">Pool Suite Stay</span>
@@ -295,28 +326,28 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4 h-40">
-                                <img src="7.webp" alt="야외 수영장" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                                <img src="7.webp" alt="반얀트리 오아시스 야외 수영장" width="400" height="300" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">야외 수영장 오아시스</h4>
                             <p class="text-xs text-gray-600">이국적인 휴양지로 변신하는 최고의 야외 수영장.</p>
                         </div>
                         <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4 h-40">
-                                <img src="8.webp" alt="실내 수영장" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                                <img src="8.webp" alt="반얀트리 회원권 전용 실내 수영장" width="400" height="300" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">실내 수영장</h4>
                             <p class="text-xs text-gray-600">성인/유아 풀 및 3개 레인의 쾌적한 자유 수영 공간.</p>
                         </div>
                         <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4 h-40">
-                                <img src="9.webp" alt="야외 코트" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                                <img src="9.webp" alt="반얀트리 멀티 코트 테니스장 야외 시설" width="400" height="300" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">야외 멀티 코트</h4>
                             <p class="text-xs text-gray-600">테니스, 피클볼, 풋살, 농구 등 다양한 야외 스포츠 지원.</p>
                         </div>
                         <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4 h-40">
-                                <img src="10.webp" alt="키즈클럽" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+                                <img src="10.webp" alt="반얀트리 프리미엄 키즈클럽" width="400" height="300" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">프리미엄 키즈클럽</h4>
                             <p class="text-xs text-gray-600">자녀들이 안전하고 유익하게 즐기는 전용 체험 공간.</p>
@@ -420,7 +451,7 @@
         <!-- ⑤ 실거래 시세 동향 -->
         <section id="price" class="section-padding bg-white border-b border-gray-200/60">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12 scroll-anim">
+                <div class="text-center mb-10 scroll-anim">
                     <span class="text-sm font-bold tracking-widest text-brand-accent uppercase mb-2 block">Market Trends</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">실거래 시세 동향</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
@@ -428,6 +459,13 @@
                         회원권 종류, 만기 여부, 혜택 구성에 따라 매물 가격 편차가 존재합니다.<br>
                         연회비 면제 회원권은 장기적 자산 가치로 인해 높은 프리미엄이 형성되어 있습니다.
                     </p>
+                </div>
+                
+                <!-- 11. 최종 시세 기준일 명시 -->
+                <div class="text-right mb-4">
+                    <span class="inline-block px-3 py-1 bg-gray-100 text-brand-dark text-sm font-bold rounded-md">
+                        최종 시세 기준일 : 2026년 10월 14일
+                    </span>
                 </div>
 
                 <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-8 flex items-start gap-4 scroll-anim">
@@ -447,11 +485,12 @@
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100">
-                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">개인 회원권</td><td class="px-6 py-4 text-gray-500">분양가 9,000만원</td><td class="px-6 py-4 text-right font-bold text-lg">8,900만원</td></tr>
-                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">개인 평생회원권</td><td class="px-6 py-4 text-gray-500">만기 없음</td><td class="px-6 py-4 text-right font-bold text-lg">9,300만원</td></tr>
-                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">개인 + 자녀1</td><td class="px-6 py-4 text-gray-500">분양 1.25억 (만기 2030)</td><td class="px-6 py-4 text-right font-bold text-lg">1억 1,700만원</td></tr>
-                            <tr class="hover:bg-gray-50 transition-colors bg-brand-light/30"><td class="px-6 py-4 font-medium text-gray-900">부부 회원권</td><td class="px-6 py-4 text-gray-500">분양 1.4억 (만기 2030)</td><td class="px-6 py-4 text-right font-bold text-lg text-brand-dark">1억 4,000만원</td></tr>
-                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">부부 + 자녀2</td><td class="px-6 py-4 text-gray-500">분양 1.8억 (만기 2030)</td><td class="px-6 py-4 text-right font-bold text-lg">1억 7,400만원</td></tr>
+                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">개인 회원권</td><td class="px-6 py-4 text-gray-500">분양가 9,000만원</td><td class="px-6 py-4 text-right font-bold text-lg">8,800만원</td></tr>
+                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">개인 평생회원권</td><td class="px-6 py-4 text-gray-500">만기 없음</td><td class="px-6 py-4 text-right font-bold text-lg">8,900만원</td></tr>
+                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">개인 + 자녀1</td><td class="px-6 py-4 text-gray-500">분양 1.2억 (만기 2031)</td><td class="px-6 py-4 text-right font-bold text-lg">1억 800만원</td></tr>
+                            <tr class="hover:bg-gray-50 transition-colors bg-brand-light/30"><td class="px-6 py-4 font-medium text-gray-900">부부 회원권</td><td class="px-6 py-4 text-gray-500">분양 1.4억 (만기 2030)</td><td class="px-6 py-4 text-right font-bold text-lg text-brand-dark">1억 3,800만원</td></tr>
+                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">부부 + 자녀1</td><td class="px-6 py-4 text-gray-500">분양 1.6억 (만기 2030)</td><td class="px-6 py-4 text-right font-bold text-lg">1억 5,300만원</td></tr>
+                            <tr class="hover:bg-gray-50 transition-colors"><td class="px-6 py-4 font-medium text-gray-900">부부 + 자녀2</td><td class="px-6 py-4 text-gray-500">분양 1.8억 (만기 2030)</td><td class="px-6 py-4 text-right font-bold text-lg">1억 6,800만원</td></tr>
                             <tr class="hover:bg-gray-50 transition-colors bg-gray-50 border-t-2 border-brand-accent"><td class="px-6 py-4 font-bold text-brand-dark">개인 연회비면제</td><td class="px-6 py-4 text-gray-500">분양 1.7억 (만기 2036)</td><td class="px-6 py-4 text-right font-bold text-xl text-brand-accent">1억 9,700만원</td></tr>
                             <tr class="hover:bg-gray-50 transition-colors bg-gray-50"><td class="px-6 py-4 font-bold text-brand-dark">부부 연회비면제</td><td class="px-6 py-4 text-gray-500">분양 2.5억 (만기 2036)</td><td class="px-6 py-4 text-right font-bold text-xl text-brand-accent">3억 2,500만원</td></tr>
                         </tbody>
@@ -501,10 +540,10 @@
                 <!-- 예약 및 매매 절차 가이드 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
                     <div>
-                        <h2 class="text-2xl font-bold text-brand-dark mb-6 flex items-center gap-3">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-6 flex items-center gap-3">
                             <div class="w-8 h-8 rounded bg-brand-accent text-white flex items-center justify-center text-sm"><i class="ph-bold ph-calendar-check"></i></div>
                             부대시설 예약 및 이용 수칙
-                        </h2>
+                        </h3>
                         <div class="space-y-4">
                             <div class="bg-gray-50 p-5 rounded-xl shadow-sm border-l-4 border-brand-accent">
                                 <h4 class="font-bold text-gray-800 mb-2">스포츠 시설 예약 권장</h4>
@@ -518,12 +557,12 @@
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-brand-dark mb-6 flex items-center gap-3">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-6 flex items-center gap-3">
                             <div class="w-8 h-8 rounded bg-gray-800 text-white flex items-center justify-center text-sm"><i class="ph-bold ph-folder-open"></i></div>
                             매매 절차 및 부대비용 안내
-                        </h2>
+                        </h3>
                         <div class="bg-gray-50 rounded-xl shadow-sm p-6 space-y-4">
-                            <h3 class="font-bold border-b pb-2 text-gray-800">1개월 단위 체계적 입회 절차</h3>
+                            <h4 class="font-bold border-b pb-2 text-gray-800">1개월 단위 체계적 입회 절차</h4>
                             <ol class="relative border-l border-gray-300 ml-3 space-y-3 text-sm text-gray-600">
                                 <li class="pl-4 relative"><div class="absolute w-2.5 h-2.5 bg-brand-accent rounded-full mt-1.5 -left-1.5"></div>양수 서류 및 <strong>기존 회원 2인 추천 접수</strong></li>
                                 <li class="pl-4 relative"><div class="absolute w-2.5 h-2.5 bg-brand-accent rounded-full mt-1.5 -left-1.5"></div>명의자 본인 클럽 방문 인터뷰</li>
@@ -540,6 +579,7 @@
     </main>
 
     <!-- 하단 상담 연결 박스 -->
+    <!-- 12. 모바일 원클릭 CTA 전화 연결 (tel:) 적용 -->
     <section class="py-12 bg-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 scroll-anim">
             <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
