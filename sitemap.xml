@@ -1,15 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- 1. 메인 홈페이지 및 소개 페이지 -->
+  <url>
+    <loc>https://www.searchmembership.co.kr/</loc>
+    <priority>1.0000</priority>
+  </url>
+  <url>
+    <loc>https://www.searchmembership.co.kr/about.html</loc>
+    <priority>0.8000</priority>
+  </url>
 
-  <url>
-       <loc>https://www.searchmembership.co.kr/</loc>
-       <lastmod>2026-10-07T09:30:43+00:00</lastmod>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://www.searchmembership.co.kr/about</loc>
-       <lastmod>2026-10-07T09:30:43+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
+  <!-- 2. 골프 회원권 상세 페이지 -->
+  <url><loc>https://www.searchmembership.co.kr/jayu/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/suwon/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/whistlingrock/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/h1-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/chunryung/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/thesiena-seoul/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/jaeil/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/Rivera-golf/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/88cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/kumgang-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/giheung-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/lakewood-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/namseoul-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/newseoul-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/newkorea-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/newspring-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/incheon-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/gold-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/lakeside-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/rexfield-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/visionhills-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/grand-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/asiana-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/blueheron-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/hanwon-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/blueone-yongin-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/solmoro-cc/</loc></url>
+
+  <!-- 3. 콘도/리조트 회원권 상세 페이지 -->
+  <url><loc>https://www.searchmembership.co.kr/sono-suite/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/resom-spa/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/sono-executive/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/sono-gold/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/sono-royal/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/sono-silver/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/resom-g40/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/resom-s30/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/resom-g50/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/resom-g70/</loc></url>
+
+  <!-- 4. 호텔 피트니스 회원권 상세 페이지 -->
+  <url><loc>https://www.searchmembership.co.kr/banyan-tree/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/shilla-fitness/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/conrad-pulse8/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/vant-fitness/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/cosmopolitan/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/metropolitan/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/marriott-fitness/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/marriott-soofitness/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/novotel-fitness/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/hyatt-fitness/</loc></url>
+
+  <!-- 5. 무기명 회원권 특별관 상세 페이지 -->
+  <url><loc>https://www.searchmembership.co.kr/unnamed-golf/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/taekwang-cc-unnamed/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/arumdaun-cc/</loc></url>
+
+  <!-- 6. 분양 안내 상세 페이지 -->
+  <url><loc>https://www.searchmembership.co.kr/d-heights-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/montvert-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/evendale-cc/</loc></url>
+
 </urlset>
