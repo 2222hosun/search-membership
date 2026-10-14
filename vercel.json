@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/h1",
+      "source": "/h1/",
       "destination": "/h1-cc/",
       "permanent": true
     }
