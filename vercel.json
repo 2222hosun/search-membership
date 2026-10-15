@@ -5,6 +5,11 @@
       "source": "/h1/",
       "destination": "/h1-cc/",
       "permanent": true
+    },
+    {
+      "source": "/d-heights/",
+      "destination": "/d-heights-cc/",
+      "permanent": true
     }
   ]
 }
