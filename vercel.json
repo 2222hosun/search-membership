@@ -38,7 +38,7 @@
       "permanent": true
     },
     {
-      "source": "whistlingrock",
+      "source": "/whistlingrock",
       "destination": "/whistlingrock-cc",
       "permanent": true
     },
