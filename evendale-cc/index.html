@@ -2,7 +2,7 @@
 <html lang="ko" class="overflow-x-hidden scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- 1. 캐시 제어 및 보안 헤더 -->
     <meta http-equiv="Cache-Control" content="max-age=31536000, public">
@@ -15,27 +15,33 @@
     <!-- 메타 디스크립션 클릭 유도 설계 -->
     <meta name="description" content="충북 청주 명문 이븐데일CC(퍼블릭 18홀) 소수 구좌 무기명 회원권 특별 분양. 그린피 전액 면제 및 차감, 100% 무기명 위임 등 압도적 비용 절감 혜택. 서치회원권에서 안전하게 상담하세요.">
     <meta name="keywords" content="이븐데일CC 회원권, 이븐데일CC 분양, 이븐데일 무기명 회원권, 법인 골프회원권, 충청도 골프 회원권, 서치회원권">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
     <!-- 캐니컬 태그 (중복 문서 방지 및 원본 주소 고정) -->
     <link rel="canonical" href="https://www.searchmembership.co.kr/evendale-cc/">
 
-    <!-- 파비콘 및 애플 터치 아이콘 필수 포함 (요청 사항 반영) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23D4B886' rx='22'/><circle cx='44' cy='44' r='18' fill='none' stroke='%231A3225' stroke-width='8'/><line x1='56' y1='56' x2='72' y2='72' stroke='%231A3225' stroke-width='8' stroke-linecap='round'/></svg>">
+    <!-- 파비콘 및 애플 터치 아이콘 필수 포함 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
 
     <!-- 카카오톡/문자 공유 시 Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="이븐데일CC 무기명 회원권 특별 분양 | 서치회원권" />
-    <meta property="og:description" content="자연의 굴곡을 품은 명문 다이디자인 코스. 압도적인 비용 절감과 완벽한 비즈니스 접대를 위한 무기명 특별 분양 혜택을 확인하세요." />
-    <meta property="og:image" content="https://www.searchmembership.co.kr/evendale-cc/1.jpg" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/evendale-cc/" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/evendale-cc/">
+    <meta property="og:title" content="이븐데일CC 무기명 회원권 특별 분양 | 서치회원권">
+    <meta property="og:description" content="충북 청주 명문 이븐데일CC(퍼블릭 18홀) 소수 구좌 무기명 회원권 특별 분양. 그린피 전액 면제 및 차감, 100% 무기명 위임 등 압도적 비용 절감 혜택. 서치회원권에서 안전하게 상담하세요.">
+    <meta property="og:image" content="https://www.searchmembership.co.kr/evendale-cc/1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- 트위터 카드 태그 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="이븐데일CC 무기명 회원권 특별 분양 | 서치회원권">
-    <meta name="twitter:description" content="충북 청주 명문 이븐데일CC 소수 구좌 무기명 특별 분양 안내.">
+    <meta name="twitter:description" content="충북 청주 명문 이븐데일CC(퍼블릭 18홀) 소수 구좌 무기명 회원권 특별 분양. 그린피 전액 면제 및 차감, 100% 무기명 위임 등 압도적 비용 절감 혜택. 서치회원권에서 안전하게 상담하세요.">
     <meta name="twitter:image" content="https://www.searchmembership.co.kr/evendale-cc/1.jpg">
+
+    <!-- 초고속 이미지 로딩(Preload) -->
+    <link rel="preload" as="image" href="1.webp" fetchpriority="high">
 
     <!-- 구조화된 데이터 (Schema.org / JSON-LD) -->
     <script type="application/ld+json">
@@ -63,13 +69,33 @@
       }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.searchmembership.co.kr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "이븐데일CC 회원권",
+          "item": "https://www.searchmembership.co.kr/evendale-cc/"
+        }
+      ]
+    }
+    </script>
 
     <!-- Tailwind CSS, 아이콘, 애니메이션 스크립트 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- 🌟 색상 테마: 디하이츠CC 딥그린(#143831) & 골드(#c5a880) 조합으로 변경 -->
+    <!-- 🌟 색상 테마: 딥그린(#143831) & 골드(#c5a880) 조합 -->
     <script>
         tailwind.config = {
             theme: {
@@ -126,23 +152,22 @@
             padding-top: 1.25rem;
             padding-bottom: 1.25rem;
             border-bottom: 1px solid #f1f5f9;
-            flex: 1; /* 균형 있는 구분을 위해 동일한 공간 할당 */
+            flex: 1;
         }
         .overview-item:first-child { padding-top: 0; }
         .overview-item:last-child { padding-bottom: 0; border-bottom: none; }
 
-        .icon-circle { width: 48px; height: 48px; border-radius: 50%; background-color: #f7fafc; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #c5a880; font-size: 1.5rem; flex-shrink: 0; } /* 골드 포인트 */
+        .icon-circle { width: 48px; height: 48px; border-radius: 50%; background-color: #f7fafc; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #c5a880; font-size: 1.5rem; flex-shrink: 0; }
         
         .mem-list li { margin-bottom: 0.5rem; line-height: 1.6; }
     </style>
 </head>
-<body class="antialiased flex flex-col min-h-screen">
+<body class="antialiased flex flex-col min-h-screen text-[16px]">
 
-    <!-- 상단 네비게이션: 딥그린 배경으로 변경 -->
+    <!-- 상단 네비게이션: 딥그린 배경 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
             <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
-                <!-- 로고 원형 아이콘 색상 조합 변경 -->
                 <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -178,10 +203,10 @@
     </header>
 
     <main class="flex-grow">
-        <!-- 호재 안내 배너: 딥그린 배경으로 변경 -->
+        <!-- 호재 안내 배너 -->
         <section class="bg-[#143831] py-4 text-white">
             <div class="max-w-5xl mx-auto px-4 text-center">
-                <p class="text-xs md:text-sm tracking-wide text-brand-accent font-semibold">
+                <p class="text-[15px] md:text-base tracking-wide text-brand-accent font-semibold">
                     소수 구좌 무기명 특별 분양! 압도적인 그린피 세이브 혜택으로 성공적인 비즈니스를 완성하세요.
                 </p>
             </div>
@@ -193,7 +218,7 @@
                 <div class="text-center mb-16 animate__animated animate__fadeIn scroll-anim">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">CLUB OVERVIEW</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500 max-w-2xl mx-auto">이븐데일 골프앤리조트 상세 운영 정보입니다.</p>
+                    <p class="text-gray-500 max-w-2xl mx-auto text-[16px]">이븐데일 골프앤리조트 상세 운영 정보입니다.</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
@@ -202,14 +227,14 @@
                             <div class="icon-circle"><i class="ph ph-buildings"></i></div>
                             <div class="flex-grow">
                                 <h3 class="font-semibold text-lg text-gray-800 mb-0.5">운영사 및 개장</h3>
-                                <p class="text-gray-600 text-sm mt-1">주식회사 경원실업 이븐데일 골프&리조트<br><span class="text-xs text-gray-500">2010년 4월 개장</span></p>
+                                <p class="text-gray-600 text-[16px] mt-1">주식회사 경원실업 이븐데일 골프&리조트<br><span class="text-sm text-gray-500">2010년 4월 개장</span></p>
                             </div>
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-flag"></i></div>
                             <div class="flex-grow">
                                 <h3 class="font-semibold text-lg text-gray-800 mb-0.5">코스 규모 및 설계</h3>
-                                <p class="text-gray-600 text-sm mt-1">대중제 18홀 (2016년 전환) / DYE DESIGN GROUP 설계<br><span class="text-xs text-gray-500">한지형 잔디(Bentgrass, Kentucky Bluegrass) 식재</span></p>
+                                <p class="text-gray-600 text-[16px] mt-1">대중제 18홀 (2016년 전환) / DYE DESIGN GROUP 설계<br><span class="text-sm text-gray-500">한지형 잔디(Bentgrass, Kentucky Bluegrass) 식재</span></p>
                             </div>
                         </div>
                     </div>
@@ -219,7 +244,7 @@
                             <div class="icon-circle"><i class="ph ph-money"></i></div>
                             <div class="flex-grow">
                                 <h3 class="font-semibold text-lg text-gray-800 mb-0.5">기본 이용 요금</h3>
-                                <div class="text-gray-600 text-sm mt-1 leading-relaxed">
+                                <div class="text-gray-600 text-[16px] mt-1 leading-relaxed">
                                     • 카트비: 100,000원 / 리무진카트 200,000원<br>
                                     • 캐디피: 1,2부 150,000원 / 3부 160,000원
                                 </div>
@@ -229,10 +254,10 @@
                             <div class="icon-circle"><i class="ph ph-info"></i></div>
                             <div class="flex-grow">
                                 <h3 class="font-semibold text-lg text-gray-800 mb-0.5">비회원 그린피</h3>
-                                <p class="text-gray-600 text-sm mt-1">
+                                <p class="text-gray-600 text-[16px] mt-1">
                                     • 주중: 160,000원 ~ 188,000원<br>
                                     • 주말: 210,000원 ~ 247,000원<br>
-                                    <span class="text-xs text-gray-500">(월별 요금 상이함)</span>
+                                    <span class="text-sm text-gray-500">(월별 요금 상이함)</span>
                                 </p>
                             </div>
                         </div>
@@ -247,7 +272,7 @@
                 <div class="text-center mb-12 scroll-anim">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-lg text-gray-700">충청권 및 수도권 주요 거주 지역에서 뛰어난 접근성을 자랑합니다.</p>
+                    <p class="text-[16px] text-gray-700">충청권 및 수도권 주요 거주 지역에서 뛰어난 접근성을 자랑합니다.</p>
                 </div>
 
                 <div class="flex flex-col lg:flex-row gap-8 items-stretch scroll-anim">
@@ -257,10 +282,10 @@
                                 <i class="ph-fill ph-car-profile"></i>
                             </div>
                             <div class="flex-grow flex justify-between items-center w-full gap-4">
-                                <h4 class="font-bold text-gray-800 text-[15px] whitespace-nowrap">주요 도로 인접</h4>
+                                <h4 class="font-bold text-gray-800 text-[16px] whitespace-nowrap">주요 도로 인접</h4>
                                 <div class="text-right">
-                                    <p class="text-[14px] font-semibold text-gray-700">중부고속도로 증평IC, 오창IC 인접</p>
-                                    <p class="text-[12px] text-gray-500 mt-1">원활하고 쾌적한 구장 진입</p>
+                                    <p class="text-[15px] font-semibold text-gray-700">중부고속도로 증평IC, 오창IC 인접</p>
+                                    <p class="text-[13px] text-gray-500 mt-1">원활하고 쾌적한 구장 진입</p>
                                 </div>
                             </div>
                         </div>
@@ -270,10 +295,10 @@
                                 <i class="ph-fill ph-map-pin-line"></i>
                             </div>
                             <div class="flex-grow flex justify-between items-center w-full gap-4">
-                                <h4 class="font-bold text-gray-800 text-[15px] whitespace-nowrap">주요 거주지 접근성</h4>
+                                <h4 class="font-bold text-gray-800 text-[16px] whitespace-nowrap">주요 거주지 접근성</h4>
                                 <div class="text-right">
-                                    <p class="text-[14px] font-semibold text-gray-700">청주, 대전, 세종 등 30~50분 내외</p>
-                                    <p class="text-[12px] text-gray-500 mt-1">수도권(서울 남부) 약 1시간 30분 소요</p>
+                                    <p class="text-[15px] font-semibold text-gray-700">청주, 대전, 세종 등 30~50분 내외</p>
+                                    <p class="text-[13px] text-gray-500 mt-1">수도권(서울 남부) 약 1시간 30분 소요</p>
                                 </div>
                             </div>
                         </div>
@@ -283,10 +308,10 @@
                                 <i class="ph-fill ph-buildings"></i>
                             </div>
                             <div class="flex-grow flex justify-between items-center w-full gap-4">
-                                <h4 class="font-bold text-gray-800 text-[15px] whitespace-nowrap">골프장 주소</h4>
+                                <h4 class="font-bold text-gray-800 text-[16px] whitespace-nowrap">골프장 주소</h4>
                                 <div class="text-right">
-                                    <p class="text-[14px] font-semibold text-gray-700">충청북도 청주시 상당구 미원면</p>
-                                    <p class="text-[12px] text-gray-500 mt-1">대신2길 31</p>
+                                    <p class="text-[15px] font-semibold text-gray-700">충청북도 청주시 상당구 미원면</p>
+                                    <p class="text-[13px] text-gray-500 mt-1">대신2길 31</p>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +330,7 @@
                 <div class="text-center mb-16 scroll-anim">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">COURSE & FACILITIES</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500 max-w-2xl mx-auto">천혜의 자연 속에 위치한 친환경 코스와 품격 있는 부대시설을 안내해 드립니다.</p>
+                    <p class="text-gray-500 max-w-2xl mx-auto text-[16px]">천혜의 자연 속에 위치한 친환경 코스와 품격 있는 부대시설을 안내해 드립니다.</p>
                 </div>
 
                 <!-- 부대시설 갤러리 -->
@@ -313,45 +338,45 @@
                     <h3 class="text-2xl font-bold text-brand-dark mb-6 pl-2 border-l-4 border-brand-accent">클럽하우스 및 부대시설</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 scroll-anim">
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition">
-                            <img src="2.webp" alt="이븐데일CC 회원권 클럽하우스 로비 전경" loading="lazy" class="w-full h-[200px] object-cover">
+                            <img src="2.webp" alt="이븐데일컨트리클럽 클럽하우스 로비 및 프론트 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover">
                             <div class="p-4">
-                                <h4 class="font-bold text-gray-800">품격 있는 로비</h4>
-                                <p class="text-xs text-gray-600 mt-1">높은 천장과 웅장한 샹들리에의 고급스러움에 당신의 몸과 마음의 휴식을 약속합니다.</p>
+                                <h4 class="font-bold text-gray-800 text-[16px]">품격 있는 로비</h4>
+                                <p class="text-[14px] text-gray-600 mt-1">높은 천장과 웅장한 샹들리에의 고급스러움에 당신의 몸과 마음의 휴식을 약속합니다.</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition">
-                            <img src="3.webp" alt="이븐데일CC 회원권 스마트 안내데스크 및 비대면 체크인" loading="lazy" class="w-full h-[200px] object-cover">
+                            <img src="3.webp" alt="이븐데일컨트리클럽 스마트 안내데스크 및 체크인 로비" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover">
                             <div class="p-4">
-                                <h4 class="font-bold text-gray-800">스마트 안내데스크</h4>
-                                <p class="text-xs text-gray-600 mt-1">품격있는 분위기, 정성이 가득한 배려로 고객님을 맞이합니다.</p>
+                                <h4 class="font-bold text-gray-800 text-[16px]">스마트 안내데스크</h4>
+                                <p class="text-[14px] text-gray-600 mt-1">품격있는 분위기, 정성이 가득한 배려로 고객님을 맞이합니다.</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition">
-                            <img src="4.webp" alt="이븐데일CC 회원권 클래식 레스토랑 전경" loading="lazy" class="w-full h-[200px] object-cover">
+                            <img src="4.webp" alt="이븐데일컨트리클럽 클래식 레스토랑 다이닝룸 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover">
                             <div class="p-4">
-                                <h4 class="font-bold text-gray-800">클래식 레스토랑</h4>
-                                <p class="text-xs text-gray-600 mt-1">기업 세미나 및 단체 행사(최대 168명 수용)가 가능한 고품격 다이닝 공간입니다.</p>
+                                <h4 class="font-bold text-gray-800 text-[16px]">클래식 레스토랑</h4>
+                                <p class="text-[14px] text-gray-600 mt-1">기업 세미나 및 단체 행사(최대 168명 수용)가 가능한 고품격 다이닝 공간입니다.</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition">
-                            <img src="5.webp" alt="이븐데일CC 회원권 스타트하우스 및 VIP 리무진 카트" loading="lazy" class="w-full h-[200px] object-cover">
+                            <img src="5.webp" alt="이븐데일컨트리클럽 스타트하우스 및 VIP 리무진 카트" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover">
                             <div class="p-4">
-                                <h4 class="font-bold text-gray-800">스타트하우스 & VIP 카트</h4>
-                                <p class="text-xs text-gray-600 mt-1">최고급 2인 시트와 냉·온풍이 적용된 프리미엄 VIP 리무진 카트 서비스를 제공합니다.</p>
+                                <h4 class="font-bold text-gray-800 text-[16px]">스타트하우스 & VIP 카트</h4>
+                                <p class="text-[14px] text-gray-600 mt-1">최고급 2인 시트와 냉·온풍이 적용된 프리미엄 VIP 리무진 카트 서비스를 제공합니다.</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition">
-                            <img src="6.webp" alt="이븐데일CC 회원권 무인 그늘집 전경" loading="lazy" class="w-full h-[200px] object-cover">
+                            <img src="6.webp" alt="이븐데일컨트리클럽 무인 그늘집 카페 스타일 인테리어" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover">
                             <div class="p-4">
-                                <h4 class="font-bold text-gray-800">그늘집 리뉴얼</h4>
-                                <p class="text-xs text-gray-600 mt-1">카페 스타일의 인테리어로 리뉴얼되어 무인 운영되며 훌륭한 포토존을 제공합니다.</p>
+                                <h4 class="font-bold text-gray-800 text-[16px]">그늘집 리뉴얼</h4>
+                                <p class="text-[14px] text-gray-600 mt-1">카페 스타일의 인테리어로 리뉴얼되어 무인 운영되며 훌륭한 포토존을 제공합니다.</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition">
-                            <img src="7.webp" alt="이븐데일CC 회원권 쾌적한 라커룸 전경" loading="lazy" class="w-full h-[200px] object-cover">
+                            <img src="7.webp" alt="이븐데일컨트리클럽 쾌적한 사우나 및 라커룸 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover">
                             <div class="p-4">
-                                <h4 class="font-bold text-gray-800">여유로운 라커룸</h4>
-                                <p class="text-xs text-gray-600 mt-1">언제나 깔끔하고 쾌적한 락카에서 라운드 후의 피로를 풀어드릴 준비가 되어 있습니다.</p>
+                                <h4 class="font-bold text-gray-800 text-[16px]">여유로운 라커룸</h4>
+                                <p class="text-[14px] text-gray-600 mt-1">언제나 깔끔하고 쾌적한 락카에서 라운드 후의 피로를 풀어드릴 준비가 되어 있습니다.</p>
                             </div>
                         </div>
                     </div>
@@ -362,39 +387,39 @@
                     <h3 class="text-2xl font-bold text-brand-dark mb-6 pl-2 border-l-4 border-brand-accent">다이(DYE) 디자인 명품 코스</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 scroll-anim">
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <img src="8.webp" alt="이븐데일CC DYE 디자인 그룹 설계 양잔디 코스 전경 1" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="8.webp" alt="이븐데일컨트리클럽 DYE 디자인 그룹 설계 양잔디 코스 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                             <div class="p-4 bg-white">
-                                <p class="text-sm font-semibold text-gray-700">DYE DESIGN GROUP 설계의 전략적인 18홀 코스</p>
+                                <p class="text-[15px] font-semibold text-gray-700">DYE DESIGN GROUP 설계의 전략적인 18홀 코스</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <img src="9.webp" alt="이븐데일CC 사계절 푸른 한지형 잔디 코스 전경 2" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="9.webp" alt="이븐데일컨트리클럽 사계절 푸른 한지형 잔디 코스 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                             <div class="p-4 bg-white">
-                                <p class="text-sm font-semibold text-gray-700">사계절 푸른 한지형(양잔디) 잔디 식재</p>
+                                <p class="text-[15px] font-semibold text-gray-700">사계절 푸른 한지형(양잔디) 잔디 식재</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <img src="10.webp" alt="이븐데일CC 핑크색 하트 벙커 시그니처 코스 전경 3" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="10.webp" alt="이븐데일컨트리클럽 핑크색 하트 벙커 시그니처 코스 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                             <div class="p-4 bg-white">
-                                <p class="text-sm font-semibold text-gray-700">원온 및 이글이 가능한 다이내믹한 홀 설계</p>
+                                <p class="text-[15px] font-semibold text-gray-700">원온 및 이글이 가능한 다이내믹한 홀 설계</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <img src="11.webp" alt="이븐데일CC 야간 LED 조명 라운딩 코스 전경 4" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="11.webp" alt="이븐데일컨트리클럽 야간 LED 조명 라운딩 코스 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                             <div class="p-4 bg-white">
-                                <p class="text-sm font-semibold text-gray-700">해발 400m 청정 지역의 탁 트인 해방감</p>
+                                <p class="text-[15px] font-semibold text-gray-700">해발 400m 청정 지역의 탁 트인 해방감</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <img src="12.webp" alt="이븐데일CC 암반 폭포 조경 코스 전경 5" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="12.webp" alt="이븐데일컨트리클럽 암반 폭포 조경 코스 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                             <div class="p-4 bg-white">
-                                <p class="text-sm font-semibold text-gray-700">암반 폭포와 터널이 돋보이는 수려한 자연 경관</p>
+                                <p class="text-[15px] font-semibold text-gray-700">암반 폭포와 터널이 돋보이는 수려한 자연 경관</p>
                             </div>
                         </div>
                         <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <img src="13.webp" alt="이븐데일CC 숲이 우거진 평온한 코스 전경 6" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="13.webp" alt="이븐데일컨트리클럽 숲이 우거진 평온한 코스 전경" width="400" height="200" loading="lazy" decoding="async" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                             <div class="p-4 bg-white">
-                                <p class="text-sm font-semibold text-gray-700">'한국 10대 뉴코스'에 빛나는 아름다운 운치</p>
+                                <p class="text-[15px] font-semibold text-gray-700">'한국 10대 뉴코스'에 빛나는 아름다운 운치</p>
                             </div>
                         </div>
                     </div>
@@ -408,11 +433,11 @@
                 <div class="text-center mb-10 scroll-anim">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">무기명 이용권 회원 모집</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-600 text-lg">이븐데일CC에서 무기명 이용권 고객(소수 구좌)을 모집합니다.<br>이용권 고객에게는 <span class="font-bold text-brand-accentDark">그린피 무료 혜택</span>을 제공합니다.</p>
+                    <p class="text-gray-600 text-[16px]">이븐데일CC에서 무기명 이용권 고객(소수 구좌)을 모집합니다.<br>이용권 고객에게는 <span class="font-bold text-brand-accentDark">그린피 무료 혜택</span>을 제공합니다.</p>
                 </div>
                 
                 <div class="text-right mb-4 pr-2">
-                    <span class="inline-block bg-white border border-gray-200 px-3 py-1 rounded text-xs text-gray-500 font-semibold shadow-sm">분양 안내 기준일: 2026년 10월</span>
+                    <span class="inline-block bg-white border border-gray-200 px-3 py-1 rounded text-xs text-gray-500 font-semibold shadow-sm">분양 안내 기준일: 2026년 10월 16일</span>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
@@ -428,7 +453,7 @@
                             </div>
                         </div>
                         <h4 class="font-bold text-gray-800 mb-3 text-lg border-b pb-2">상세 혜택</h4>
-                        <ul class="text-[15px] text-gray-700 mem-list flex-grow space-y-2">
+                        <ul class="text-[15.5px] text-gray-700 mem-list flex-grow space-y-2">
                             <li class="flex items-start"><span class="text-brand-accent mr-2 font-bold">•</span><span>연간 2,400만원 (세후 2,040만원) 그린피 선불 카드 지급 (이용권 회원가로 차감)</span></li>
                             <li class="flex items-start"><span class="text-brand-accent mr-2 font-bold">•</span><span>주중 기준 연간 85회, 주말 기준 42회 사용 가능<br><span class="text-sm text-gray-500 pl-1">- 예시) 월 주말 3회, 주중 4회 사용 가능 (9개월 기준)</span></span></li>
                             <li class="flex items-start"><span class="text-brand-accent mr-2 font-bold">•</span><span>비회원가 기준 5,370만원 세이브<br><span class="text-sm text-gray-500 pl-1">- (비회원 요금 - 주중 18만8천원/주말 24만7천원)</span></span></li>
@@ -454,7 +479,7 @@
                             </div>
                         </div>
                         <h4 class="font-bold text-gray-800 mb-3 text-lg border-b pb-2">상세 혜택</h4>
-                        <ul class="text-[15px] text-gray-700 mem-list flex-grow space-y-3">
+                        <ul class="text-[15.5px] text-gray-700 mem-list flex-grow space-y-3">
                             <li class="flex items-start"><span class="text-brand-accent mr-2 font-bold">•</span><span>연간 36회 그린피 면제</span></li>
                             <li class="flex items-start"><span class="text-brand-accent mr-2 font-bold">•</span><span>주중 24회, 주말 12회</span></li>
                             <li class="flex items-start"><span class="text-brand-accent mr-2 font-bold">•</span><span>비회원가 기준 2,990만원 세이브<br><span class="text-sm text-gray-500 pl-1">- 비회원 요금 (주중 18만8천원/주말 24만7천원)</span></span></li>
@@ -473,7 +498,7 @@
                 <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">예약 안내</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500">인터넷 홈페이지 및 모바일 웹을 통한 예약 프로세스입니다.</p>
+                    <p class="text-gray-500 text-[16px]">인터넷 홈페이지 및 모바일 웹을 통한 예약 프로세스입니다.</p>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 md:p-10 border border-gray-100 shadow-sm relative overflow-hidden">
@@ -482,26 +507,26 @@
                             <div class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
                                 <i class="ph ph-cursor-click"></i>
                             </div>
-                            <h4 class="font-bold text-gray-800 mb-2">인터넷 회원가입</h4>
-                            <p class="text-xs text-gray-500">다양한 서비스 제공을 위해 회원가입 필수</p>
+                            <h4 class="font-bold text-gray-800 mb-2 text-[16px]">인터넷 회원가입</h4>
+                            <p class="text-[13px] text-gray-500">다양한 서비스 제공을 위해 회원가입 필수</p>
                         </div>
                         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
                             <div class="w-12 h-12 bg-teal-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
                                 <i class="ph ph-calendar-plus"></i>
                             </div>
-                            <h4 class="font-bold text-gray-800 mb-2">4주전 월요일 09:00 오픈</h4>
-                            <p class="text-xs text-gray-500">해당일 전 날 23시까지 마감</p>
+                            <h4 class="font-bold text-gray-800 mb-2 text-[16px]">4주전 월요일 09:00 오픈</h4>
+                            <p class="text-[13px] text-gray-500">해당일 전 날 23시까지 마감</p>
                         </div>
                         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
                             <div class="w-12 h-12 bg-cyan-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
                                 <i class="ph ph-chat-text"></i>
                             </div>
-                            <h4 class="font-bold text-gray-800 mb-2">예약확정 문자 발송</h4>
-                            <p class="text-xs text-gray-500">홈페이지 '예약확인/취소'에서 교차 확인 필수</p>
+                            <h4 class="font-bold text-gray-800 mb-2 text-[16px]">예약확정 문자 발송</h4>
+                            <p class="text-[13px] text-gray-500">홈페이지 '예약확인/취소'에서 교차 확인 필수</p>
                         </div>
                     </div>
                     
-                    <ul class="text-sm text-gray-600 space-y-3 bg-white p-6 rounded-lg border border-gray-100">
+                    <ul class="text-[15px] text-gray-600 space-y-3 bg-white p-6 rounded-lg border border-gray-100 leading-[1.7]">
                         <li class="flex gap-2"><i class="ph ph-info text-brand-accent mt-0.5"></i> <span>이븐데일 예약은 인터넷 회원가입 후 홈페이지와 모바일 웹에서 가능합니다.</span></li>
                         <li class="flex gap-2"><i class="ph ph-info text-brand-accent mt-0.5"></i> <span>예약확정 내역은 휴대폰 문자로 발송되나, 통신상 문제로 미수신 시 클럽에서 책임지지 않으므로 반드시 홈페이지에서 확인하시기 바랍니다.</span></li>
                         <li class="flex gap-2"><i class="ph ph-info text-brand-accent mt-0.5"></i> <span>클럽에 특별한 요청이 있을 경우, 다른 날로 옮기는 걸 원칙으로 합니다.</span></li>
@@ -513,7 +538,7 @@
 
     </main>
 
-    <!-- 하단 상담 연결 박스: 딥그린 그라데이션으로 변경 -->
+    <!-- 하단 상담 연결 박스 -->
     <section id="consult" class="py-12 bg-white relative border-t border-gray-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-up">
             <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
@@ -542,18 +567,18 @@
         </div>
     </section>
 
-    <!-- [푸터]: 딥블랙 배경으로 변경 -->
+    <!-- [푸터] -->
     <footer class="bg-[#071714] text-stone-200 py-16 text-sm border-t border-white/10 mt-auto w-full">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
                 <div class="flex flex-col gap-y-2">
-                    <p class="text-white font-bold text-lg tracking-tight mb-1">서치회원권</p>
+                    <p class="text-white font-bold text-lg tracking-tight mb-1">회원권서치 주식회사</p>
                     <p class="text-stone-300 text-sm leading-relaxed font-normal">
                         골프 · 콘도 · 피트니스 회원권거래소<br>
                         (사)한국골프회원권경영인협회 정회원사
                     </p>
                     <p class="text-stone-300 text-sm font-normal">
-                        담당: 이호선 과장
+                        대표: 정성훈 | 담당: 이호선 과장
                     </p>
                     <div class="pt-2">
                         <a href="https://blog.naver.com/PostList.naver?blogId=2-hosun&from=postList&categoryNo=13" target="_blank" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/20 shadow-sm">
@@ -576,7 +601,6 @@
                 <div class="flex flex-col gap-y-2">
                     <p class="font-bold text-base tracking-wide uppercase text-brand-accent mb-1">Contact Center</p>
                     <p class="text-stone-300 text-sm leading-relaxed font-normal">
-                        회원권서치(주)<br>
                         경기 성남시 분당구 성남대로 926, 603호<br>(야탑동, 분당메트로)
                     </p>
                     <div class="flex flex-col gap-y-1 pt-1">
@@ -595,10 +619,10 @@
 
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-stone-300">
                 <p class="leading-relaxed font-normal">
-                    본 웹사이트의 골프·콘도·휘트니스 회원권 시세 및 혜택 정보는 참고용이며, 실제 거래 가격과 다를 수 있습니다.<br class="hidden sm:inline">
-                    제공된 정보에 대한 법적 책임을 지지 않으며, 모든 정보의 저작권은 서치회원권에 있습니다.
+                    본 웹사이트의 골프·콘도·휘트니스 회원권 실거래 매물가 및 혜택 정보는 참고용이며, 실제 매매 시점과 상황에 따라 다를 수 있습니다.<br class="hidden sm:inline">
+                    제공된 정보에 대한 법적 책임을 지지 않으며, 모든 정보의 저작권은 회원권서치 주식회사에 있습니다.
                 </p>
-                <p class="text-stone-400 whitespace-nowrap">Copyright ⓒ 서치회원권 All rights reserved.</p>
+                <p class="text-stone-400 whitespace-nowrap">Copyright ⓒ 회원권서치 주식회사 All rights reserved.</p>
             </div>
         </div>
     </footer>
