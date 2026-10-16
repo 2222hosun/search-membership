@@ -16,6 +16,11 @@
       "source": "/d-heights/:path*",
       "destination": "/d-heights-cc/",
       "statusCode": 301
+    },
+    {
+      "source": "/jaeil/:path*",
+      "destination": "/jaeil-cc/",
+      "statusCode": 301
     }
   ]
 }
