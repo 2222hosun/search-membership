@@ -5,16 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- 네이버/구글 검색 상위 노출용 SEO -->
-    <title>수원CC 회원권 시세 및 혜택 안내 | 서치회원권</title>
-    <meta name="description" content="수원CC 실시간 실거래가 시세, 주주회원권 및 일반회원권 주요 혜택, 신코스 원그린 통합 공사 호재, 매매 절차 안내. (사)한국골프회원권경영인협회 정회원사 서치회원권.">
+    <title>수원CC 회원권(일반/주주) 도심 속 36홀 명문 실거래 시세 및 혜택 안내 | 서치회원권</title>
+    <meta name="description" content="수원CC 일반 정회원권 및 주주회원권 실시간 매매 시세와 주요 혜택을 안내합니다. 신코스 원그린 통합 공사 호재와 도심 최고의 접근성! 안전한 거래 (사)한국골프회원권경영인협회 정회원사 서치회원권">
     <meta name="keywords" content="수원CC, 수원CC회원권, 수원CC시세, 수원컨트리클럽, 주주회원권, 회원권거래소, 서치회원권">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <!-- 카카오톡/문자 공유 시 Open Graph (폴더명 suwon 기준) -->
+    <!-- 파비콘 및 애플 터치 아이콘 필수 포함 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
+
+    <!-- 캐니컬(Canonical) URL -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/suwon-cc/">
+
+    <!-- 카카오톡/문자 공유 시 Open Graph (폴더명 suwon-cc 기준 전체 주소 일치화) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="수원CC 회원권 시세 및 혜택 안내 | 서치회원권" />
-    <meta property="og:desc" content="압도적 도심 접근성과 신코스 원그린 리뉴얼 호재로 도약하는 36홀 명문 구장 수원CC 회원권 안내." />
-    <meta property="og:image" content="https://www.searchmembership.co.kr/suwon/1.jpg" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/suwon" />
+    <meta property="og:title" content="수원CC 회원권(일반/주주) 실거래 시세 및 혜택 안내 | 서치회원권" />
+    <meta property="og:description" content="압도적 도심 접근성과 신코스 원그린 리뉴얼 호재로 도약하는 36홀 명문 구장 수원CC 회원권 실시간 매매 시세 및 입회 안내." />
+    <meta property="og:image" content="https://www.searchmembership.co.kr/suwon-cc/1.jpg" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/suwon-cc/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.searchmembership.co.kr/suwon-cc/1.jpg">
+
+    <!-- 구조화된 데이터(Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "서치회원권",
+      "url": "https://www.searchmembership.co.kr/suwon-cc/",
+      "image": "https://www.searchmembership.co.kr/suwon-cc/1.jpg",
+      "description": "수원CC 회원권 실거래 시세 및 혜택 안내. 회원권거래소 서치회원권.",
+      "telephone": "010-6263-9552",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "성남시 분당구",
+        "addressRegion": "경기도",
+        "streetAddress": "성남대로 926, 603호"
+      }
+    }
+    </script>
+
+    <!-- 초고속 이미지 로딩(Preload) -->
+    <link rel="preload" as="image" href="1.webp" fetchpriority="high">
 
     <!-- Tailwind CSS, 아이콘, 애니메이션 스크립트 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,7 +68,7 @@
                         brand: {
                             dark: '#143831',
                             light: '#f7fafc',
-                            accent: '#c5a880', /* 밝은 샴페인 골드 통일 */
+                            accent: '#c5a880',
                             accentDark: '#a38760',
                             gray: '#4a5568'
                         }
@@ -117,7 +152,7 @@
 </head>
 <body class="antialiased flex flex-col min-h-screen">
 
-    <!-- 상단 네비게이션 (자유CC / 골드 표준 1:1 일치) -->
+    <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
             <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
@@ -138,7 +173,7 @@
     </nav>
     <div class="h-20 w-full"></div>
 
-    <!-- 메인 배너 (1.webp 적용) -->
+    <!-- 메인 배너 -->
     <header id="hero-bg" class="hero-bg h-[80vh] min-h-[600px] flex flex-col items-center justify-center relative overflow-hidden text-center px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('1.webp');">
         <div class="absolute inset-0 bg-black/35 z-0"></div>
         
@@ -147,12 +182,12 @@
                 PREMIUM CITY GOLF
             </span>
             <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">수원CC 회원권</h1>
-            <p id="hero-desc" class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">분당·수원권에서 가장 사랑받는 도심 속 하이엔드 골프장입니다. 신코스 원그린 통합 등 대규모 시설 개선을 통해 더욱 다이내믹하고 현대적인 명문 코스로 재탄생하고 있는 수원CC의 가치를 선점해 보세요.</p>
+            <p id="hero-desc" class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">분당·수원권에서 가장 사랑받는 도심 속 하이엔드 골프장입니다. 신코스 원그린 통합 등 대규모 시설 개선을 통해 더욱 다이내믹하고 현대적인 명문 코스로 재탄생하고 있는 수원CC</p>
         </div>
     </header>
 
     <main class="flex-grow">
-        <!-- ① 기본 정보 (백색 배경) -->
+        <!-- ① 기본 정보 -->
         <section id="info" class="section-padding bg-white relative">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 animate__animated animate__fadeIn scroll-anim">
@@ -161,7 +196,7 @@
                     <p class="text-gray-500 max-w-2xl mx-auto">기본 운영 정보입니다.</p>
                 </div>
                 <div id="content-info" class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
-                    <div class="overview-box">
+                    <article class="overview-box">
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-buildings"></i></div>
                             <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">운영 주체 및 개장일</h3><p class="text-gray-600">(주)삼흥 / 1975년 5월 15일</p></div>
@@ -174,8 +209,8 @@
                             <div class="icon-circle"><i class="ph ph-phone"></i></div>
                             <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">구장 연락처</h3><p class="text-gray-600">TEL. 031-281-6613</p></div>
                         </div>
-                    </div>
-                    <div class="overview-box">
+                    </article>
+                    <article class="overview-box">
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-money"></i></div>
                             <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">이용 요금</h3>
@@ -195,12 +230,12 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- ② 위치 안내 (연한 배경) -->
+        <!-- ② 위치 안내 -->
         <section id="location" class="section-padding bg-brand-light relative">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-12 items-center scroll-anim">
@@ -233,7 +268,7 @@
             </div>
         </section>
 
-        <!-- ③ 공사 호재 및 시설 소개 (백색 배경 / 2~7 이미지) -->
+        <!-- ③ 공사 호재 및 시설 소개 -->
         <section id="facilities" class="section-padding bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 scroll-anim">
@@ -244,47 +279,46 @@
 
                 <!-- 시설 개선 호재 박스 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 scroll-anim">
-                    <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 text-center relative overflow-hidden shadow-sm">
+                    <article class="bg-gray-50 rounded-xl p-8 border border-gray-100 text-center relative overflow-hidden shadow-sm">
                         <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">가치 상승 호재</div>
                         <div class="icon-circle mx-auto mb-4 mt-2"><i class="ph ph-trend-up"></i></div>
                         <h4 class="text-lg font-bold text-gray-800 mb-3">대규모 신코스 시설 개선 공사</h4>
                         <p class="text-sm text-gray-600 text-left leading-relaxed">
                             수원CC는 현재 신코스 전체 홀 벙커 개보수 및 투그린의 원그린 변경 공사(4, 9, 16, 17, 18번 홀 / 26.06.15~27.3.31)를 진행 중입니다. 골프장 측의 이러한 대규모 투자는 향후 <strong>회원권 가치를 한 단계 끌어올리는 강력한 기폭제</strong>가 될 것입니다.
                         </p>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 text-center shadow-sm">
+                    </article>
+                    <article class="bg-gray-50 rounded-xl p-8 border border-gray-100 text-center shadow-sm">
                         <div class="icon-circle mx-auto mb-4"><i class="ph ph-golf"></i></div>
                         <h4 class="text-lg font-bold text-gray-800 mb-3">다이내믹한 1그린 명문 코스로 재탄생</h4>
                         <p class="text-sm text-gray-600 text-left leading-relaxed">
                             과거 조성된 골프장 특유의 작은 투그린 시스템에서 벗어나 원그린으로 통합됩니다. 공사가 완료되면 <strong>그린 면적이 대폭 넓어지고 언듈레이션(굴곡)이 다채로워져</strong> 숏게임의 묘미가 극대화된 현대적이고 고급스러운 명문 코스를 즐기실 수 있습니다.
                         </p>
-                    </div>
+                    </article>
                 </div>
 
                 <div id="content-facility" class="space-y-16 scroll-anim">
-                    
                     <!-- 코스 전경 (2, 3) -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                        <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
                             <div class="rounded-xl overflow-hidden shadow mb-4">
-                                <img src="2.webp" alt="수원CC 코스 전경" loading="lazy" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="2.webp" alt="수원CC 탁 트인 페어웨이 코스 전경" width="800" height="500" loading="lazy" decoding="async" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-lg font-bold text-gray-800 mb-2">도심 속 수려한 코스 전경</h4>
                             <p class="text-sm text-gray-600">탁 트인 넓은 페어웨이와 울창한 수림이 어우러져 도심 한가운데라고 믿기 힘든 평온함을 선사합니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                        </article>
+                        <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
                             <div class="rounded-xl overflow-hidden shadow mb-4">
-                                <img src="3.webp" alt="수원CC 코스 전경" loading="lazy" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="3.webp" alt="수원CC 정교한 잔디 관리 상태" width="800" height="500" loading="lazy" decoding="async" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-lg font-bold text-gray-800 mb-2">안정적인 코스 관리</h4>
                             <p class="text-sm text-gray-600">오랜 역사와 노하우를 바탕으로 사계절 내내 최상의 잔디 상태와 플레이 환경을 제공합니다.</p>
-                        </div>
+                        </article>
                     </div>
 
                     <!-- 코스(4) & 클럽하우스(5) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div class="rounded-2xl overflow-hidden shadow-lg">
-                            <img src="4.webp" alt="수원CC 코스 뷰" loading="lazy" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="4.webp" alt="수원CC 1그린 개편 다이내믹 코스 레이아웃" width="800" height="600" loading="lazy" decoding="async" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div>
                             <span class="text-xs font-bold tracking-widest text-brand-accent uppercase mb-2 block">Dynamic Layout</span>
@@ -293,11 +327,11 @@
                                 초보자에게는 넉넉한 페어웨이로 편안함을 주며, 수준급 골퍼에게는 새로 개편되는 원그린 시스템과 전략적인 벙커 배치로 짜릿한 도전 욕구를 불러일으킵니다.
                             </p>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div class="order-1 md:order-2 rounded-2xl overflow-hidden shadow-lg">
-                            <img src="5.webp" alt="수원CC 클럽하우스" loading="lazy" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="5.webp" alt="수원CC 세련된 클럽하우스 전경" width="800" height="600" loading="lazy" decoding="async" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="order-2 md:order-1">
                             <span class="text-xs font-bold tracking-widest text-brand-accent uppercase mb-2 block">Club House</span>
@@ -306,30 +340,30 @@
                                 세련되고 웅장한 외관을 자랑하는 클럽하우스는 회원님들의 편안한 휴식과 완벽한 비즈니스 모임을 위한 최적의 공간을 제공합니다.
                             </p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- 레스토랑(6), 그늘집(7) -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
+                        <article class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4">
-                                <img src="6.webp" alt="수원CC 레스토랑" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="6.webp" alt="수원CC 프리미엄 다이닝 레스토랑" width="800" height="440" loading="lazy" decoding="async" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">프리미엄 레스토랑</h4>
                             <p class="text-xs text-gray-600">수준 높은 셰프가 제철 식재료로 정성껏 준비한 다양한 다이닝 메뉴를 쾌적한 공간에서 즐기실 수 있습니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
+                        </article>
+                        <article class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4">
-                                <img src="7.webp" alt="수원CC 그늘집" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="7.webp" alt="수원CC 아늑한 그늘집 휴게공간" width="800" height="440" loading="lazy" decoding="async" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">그늘집</h4>
                             <p class="text-xs text-gray-600">라운딩 중간 재충전을 위한 아늑한 휴게 공간으로, 동반자들과 담소를 나누며 여유를 만끽할 수 있습니다.</p>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ④ 회원권 종류 및 혜택 (연한 배경) -->
+        <!-- ④ 회원권 종류 및 혜택 -->
         <section id="membership" class="section-padding bg-brand-light">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 scroll-anim">
@@ -352,9 +386,8 @@
                 </div>
 
                 <div id="content-membership" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 scroll-anim w-full">
-                    
                     <!-- 일반 회원권 -->
-                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-[#143831]">
+                    <article class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-[#143831]">
                         <h3 class="text-xl font-bold mb-2">일반 정회원권</h3>
                         <p class="text-sm text-gray-500 mb-4">정회원 1인</p>
                         <div class="my-3 border-b border-gray-200"></div>
@@ -363,10 +396,10 @@
                             <li>• <strong>매매 규정:</strong> 개인 ↔ 법인 교차 매매 가능 / 법인 반구좌 입회 가능</li>
                             <li>• <strong>회원 그린피:</strong> 주중 77,000원 / 주말 92,000원</li>
                         </ul>
-                    </div>
+                    </article>
 
                     <!-- 주주 회원권 -->
-                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-[#C5A059]">
+                    <article class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-[#C5A059]">
                         <h3 class="text-xl font-bold mb-2">주주 회원권</h3>
                         <p class="text-sm text-gray-500 mb-4">정회원 1인</p>
                         <div class="my-3 border-b border-gray-200"></div>
@@ -377,12 +410,12 @@
                                 <strong>💡 주주 의결권:</strong> 주주로서 주주총회에 참석하여 골프장 운영 정책 및 경영에 직접적인 목소리(의결권)를 낼 수 있어 소장 가치가 높습니다.
                             </li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- ⑤ 시세 안내 (백색 배경) -->
+        <!-- ⑤ 시세 안내 -->
         <section id="price" class="section-padding bg-white">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 scroll-anim">
@@ -391,25 +424,28 @@
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
                 </div>
 
+                <div class="flex justify-end mb-3">
+                    <p class="text-sm text-gray-500 font-medium">최종 시세 기준일: 2026년 10월 16일</p>
+                </div>
                 <div class="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-100 mb-12 scroll-anim">
                     <table class="w-full text-sm text-left">
                         <thead class="text-xs text-gray-600 uppercase bg-gray-50">
                             <tr>
                                 <th scope="col" class="px-6 py-4 font-semibold">회원권 종류</th>
                                 <th scope="col" class="px-6 py-4 font-semibold">주요 구성 및 혜택</th>
-                                <th scope="col" class="px-6 py-4 font-semibold text-right text-brand-accent">대략적 매물 시세</th>
+                                <th scope="col" class="px-6 py-4 font-semibold text-right text-brand-accent">매물 시세</th>
                             </tr>
                         </thead>
                         <tbody id="content-price" class="divide-y divide-gray-100">
                             <tr>
                                 <td class="px-6 py-4 font-semibold text-brand-dark">일반 정회원권</td>
                                 <td class="px-6 py-4 text-gray-500">정회원 1인 / 입회금 반환형</td>
-                                <td class="px-6 py-4 text-right text-brand-accent text-lg"><strong>약 3억 6,800만원</strong></td>
+                                <td class="px-6 py-4 text-right text-brand-accent text-lg"><strong>약 3억 4,000만원</strong></td>
                             </tr>
                             <tr class="bg-orange-50/30">
                                 <td class="px-6 py-4 font-semibold text-brand-dark">주주 회원권</td>
                                 <td class="px-6 py-4 text-gray-500 bg-orange-50/30">정회원 1인 / 주주 의결권 행사 가능</td>
-                                <td class="px-6 py-4 text-right text-brand-accent text-lg bg-orange-50/30"><strong>약 3억 6,800만원</strong></td>
+                                <td class="px-6 py-4 text-right text-brand-accent text-lg bg-orange-50/30"><strong>약 3억 4,000만원</strong></td>
                             </tr>
                             <tr>
                                 <td colspan="3" class="px-6 py-2.5 text-[12px] text-[#6b7280] bg-gray-50 text-center font-normal">
@@ -422,7 +458,7 @@
             </div>
         </section>
 
-        <!-- ⑥ 예약 방법, 부대비용, 준비서류 (연한 배경) -->
+        <!-- ⑥ 예약 방법, 부대비용, 준비서류 -->
         <section id="extra-guides" class="section-padding bg-brand-light border-t border-gray-200/60">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
                 <div class="text-center mb-12">
@@ -433,7 +469,7 @@
 
                 <div id="content-extra-guides" class="space-y-6">
                     <!-- 예약 방법 -->
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
+                    <article class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
                         <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2"><i class="ph ph-calendar-check text-brand-accent mr-2"></i>예약 접수 일정 및 배정 안내 (주중·주말 동일)</h3>
                         <ul class="space-y-4 text-sm text-gray-700">
                             <li class="flex items-start gap-2">
@@ -461,20 +497,20 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </article>
                     
                     <!-- 부대비용 -->
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
+                    <article class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
                         <h3 class="text-lg font-bold text-gray-800 mb-3"><i class="ph ph-calculator text-brand-accent mr-2"></i>부대비용 안내</h3>
                         <ul class="space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
                             <li>• <strong>명의개서료:</strong> 880,000원</li>
                             <li>• <strong>수입인지세:</strong> 150,000원 (실 매매가 1억 이상 기준)</li>
                             <li>• <strong>취득세:</strong> 실 매매가의 2.2% 별도</li>
                         </ul>
-                    </div>
+                    </article>
 
                     <!-- 준비서류 -->
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                    <article class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                         <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-200"><i class="ph ph-folder-user text-brand-accent mr-2"></i>매매 준비서류 안내</h3>
                         
                         <!-- 매도인(양도자) 서류 -->
@@ -535,13 +571,13 @@
                                 💡 명의개서청구서, 입회신청서, 개인정보 수집·이용 동의서 등 필수 서식은 당사에서 꼼꼼하게 준비해 드립니다.
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 하단 상담 연결 박스 (자유CC / 골드 표준 스타일) -->
+    <!-- 하단 상담 연결 박스 -->
     <section id="consult" class="py-12 bg-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 scroll-anim">
             <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-[#c5a880]/30">
@@ -567,7 +603,7 @@
         </div>
     </section>
 
-    <!-- [푸터: 회사소개 및 연락처] (자유CC 스타일 암녹색 #071714 적용) -->
+    <!-- [푸터: 회사소개 및 연락처] -->
     <footer class="bg-[#071714] text-stone-200 py-16 text-sm border-t border-white/10 mt-auto w-full">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">

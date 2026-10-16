@@ -26,6 +26,11 @@
       "source": "/whistlingrock/:path*",
       "destination": "/whistlingrock-cc/",
       "statusCode": 301
+    },
+    {
+      "source": "/suwon/:path*",
+      "destination": "/suwon-cc/",
+      "statusCode": 301
     }
   ]
 }
