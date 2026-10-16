@@ -8,34 +8,64 @@
   ],
   "redirects": [
     {
+      "source": "/h1",
+      "destination": "/h1-cc",
+      "permanent": true
+    },
+    {
       "source": "/h1/:path*",
-      "destination": "/h1-cc/",
-      "statusCode": 301
+      "destination": "/h1-cc/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/d-heights",
+      "destination": "/d-heights-cc",
+      "permanent": true
     },
     {
       "source": "/d-heights/:path*",
-      "destination": "/d-heights-cc/",
-      "statusCode": 301
+      "destination": "/d-heights-cc/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/jaeil",
+      "destination": "/jaeil-cc",
+      "permanent": true
     },
     {
       "source": "/jaeil/:path*",
-      "destination": "/jaeil-cc/",
-      "statusCode": 301
+      "destination": "/jaeil-cc/:path*",
+      "permanent": true
+    },
+    {
+      "source": "whistlingrock",
+      "destination": "/whistlingrock-cc",
+      "permanent": true
     },
     {
       "source": "/whistlingrock/:path*",
-      "destination": "/whistlingrock-cc/",
-      "statusCode": 301
+      "destination": "/whistlingrock-cc/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/suwon",
+      "destination": "/suwon-cc",
+      "permanent": true
     },
     {
       "source": "/suwon/:path*",
-      "destination": "/suwon-cc/",
-      "statusCode": 301
+      "destination": "/suwon-cc/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/jayu",
+      "destination": "/jayu-cc",
+      "permanent": true
     },
     {
       "source": "/jayu/:path*",
-      "destination": "/jayu-cc/",
-      "statusCode": 301
+      "destination": "/jayu-cc/:path*",
+      "permanent": true
     }
   ]
 }
