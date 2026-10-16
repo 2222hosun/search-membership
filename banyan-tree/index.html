@@ -2,45 +2,48 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!-- 1. 모바일 뷰포트 최적화 (확대/축소 방지로 화면 깨짐 차단) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 1. 모바일 뷰포트 최적화 (접근성 보장을 위해 user-scalable 제외) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 보안 및 크롤링 지시자 -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
     
     <!-- 2. 핵심 키워드 전진 배치 Title -->
-    <title>반얀트리 클럽 앤 스파 서울 회원권(평생/연회비면제) 혜택 및 실거래 시세 안내 | 서치회원권</title>
+    <title>반얀트리 클럽 앤 스파 서울 회원권(평생/연회비면제) 혜택 및 실거래 시세 안내</title>
     
-    <!-- 3. 메타 디스크립션 클릭 유도 설계 -->
-    <meta name="description" content="반얀트리 클럽 앤 스파 서울 회원권(평생/연회비면제) 실거래가 시세 및 객실, 피트니스, 오아시스 수영장 혜택 안내. 최고급 하이엔드 멤버십 매매 문의는 서치회원권 이호선 과장에게 연락주세요." />
+    <!-- 3. 메타 디스크립션 클릭 유도 설계 (80~110자 내외 최적화) -->
+    <meta name="description" content="반얀트리 클럽 앤 스파 서울 회원권 실거래가 시세 및 피트니스, 오아시스 수영장 혜택 안내. 하이엔드 멤버십 매매 문의는 서치회원권." />
     <meta name="keywords" content="반얀트리 회원권, 반얀트리 클럽 앤 스파 서울, 반얀트리 피트니스 회원권, 반얀트리 평생회원권, 반얀트리 연회비면제 회원권, 반얀트리 시세, 서치회원권" />
 
-    <!-- 4. 캐니컬 태그 및 오픈메타(OG), 트위터 카드 -->
-    <link rel="canonical" href="https://www.searchmembership.co.kr/banyantree/">
+    <!-- 4. 캐니컬(Canonical) 및 오픈메타(OG) URL 설정 (하이픈 포함 폴더명 고정) -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/banyan-tree/">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/banyan-tree/" />
+    
     <meta property="og:type" content="website" />
     <meta property="og:title" content="반얀트리 클럽 앤 스파 서울 회원권 혜택 및 실거래 시세 안내 | 서치회원권" />
     <meta property="og:description" content="도심 속 완벽한 오아시스, 자연과 어우러진 남산의 품에서 진정한 웰니스와 프라이빗한 휴식을 경험하십시오." />
-    <meta property="og:image" content="https://www.searchmembership.co.kr/banyantree/1.webp" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/banyantree/" />
+    <meta property="og:image" content="https://www.searchmembership.co.kr/banyan-tree/1.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.searchmembership.co.kr/banyan-tree/1.webp" />
 
-    <!-- 5. 크롤링 지시자 (네이버/구글 봇 고화질 이미지 적극 수집) -->
-    <meta name="robots" content="index, follow, max-image-preview:large">
-
-    <!-- 6. 메인 이미지 사전 로드(Preload)로 초기 로딩 속도 극대화 -->
-    <link rel="preload" as="image" href="1.webp">
-
-    <!-- 7. 파비콘 및 애플 터치 아이콘 필수 포함 -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23D4B886' rx='22'/><circle cx='44' cy='44' r='18' fill='none' stroke='%231A3225' stroke-width='8'/><line x1='56' y1='56' x2='72' y2='72' stroke='%231A3225' stroke-width='8' stroke-linecap='round'/></svg>">
+    <!-- 5. 파비콘 및 애플 터치 아이콘 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
 
-    <!-- 8. 구조화된 데이터(Schema.org / JSON-LD) 삽입 -->
+    <!-- 6. 메인 이미지 사전 로드(Preload)로 초기 로딩 속도 극대화 -->
+    <link rel="preload" as="image" href="1.webp" fetchpriority="high">
+
+    <!-- 7. 구조화된 데이터(Schema.org / JSON-LD) 삽입 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "서치회원권",
-      "image": "https://www.searchmembership.co.kr/banyantree/1.webp",
-      "url": "https://www.searchmembership.co.kr/banyantree/",
+      "image": "https://www.searchmembership.co.kr/banyan-tree/1.webp",
+      "url": "https://www.searchmembership.co.kr/banyan-tree/",
       "telephone": "010-6263-9552",
       "address": {
         "@type": "PostalAddress",
@@ -49,6 +52,23 @@
         "addressRegion": "경기도",
         "addressCountry": "KR"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://www.searchmembership.co.kr/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "반얀트리 클럽 앤 스파 서울",
+        "item": "https://www.searchmembership.co.kr/banyan-tree/"
+      }]
     }
     </script>
 
@@ -67,7 +87,7 @@
                         brand: {
                             dark: '#143831',
                             light: '#f7fafc',
-                            accent: '#c5a880', /* 밝은 샴페인 골드 통일 */
+                            accent: '#c5a880',
                             accentDark: '#a38760',
                             gray: '#4a5568'
                         }
@@ -144,7 +164,6 @@
     <div class="h-20 w-full"></div>
 
     <!-- 메인 배너 -->
-    <!-- 9. H1 태그에 핵심 키워드 정확히 배치 -->
     <header class="hero-bg h-[80vh] min-h-[600px] flex items-center justify-center relative overflow-hidden text-center px-4">
         <div class="absolute inset-0 bg-black/30 z-0"></div>
         <div class="relative z-10 max-w-4xl mx-auto w-full px-2 flex flex-col items-center justify-center animate__animated animate__fadeInUp">
@@ -254,7 +273,6 @@
 
                 <div class="space-y-24">
                     <!-- 골프 -->
-                    <!-- 10. 이미지 검색 SEO(alt) & CLS 방지(width/height) 모두 반영 -->
                     <div class="flex flex-col lg:flex-row gap-10 items-center scroll-anim">
                         <div class="lg:w-1/2 space-y-4 w-full">
                             <div class="grid grid-cols-2 gap-4">
@@ -461,7 +479,7 @@
                     </p>
                 </div>
                 
-                <!-- 11. 최종 시세 기준일 명시 -->
+                <!-- 최종 시세 기준일 명시 -->
                 <div class="text-right mb-4">
                     <span class="inline-block px-3 py-1 bg-gray-100 text-brand-dark text-sm font-bold rounded-md">
                         최종 시세 기준일 : 2026년 10월 14일
@@ -579,7 +597,6 @@
     </main>
 
     <!-- 하단 상담 연결 박스 -->
-    <!-- 12. 모바일 원클릭 CTA 전화 연결 (tel:) 적용 -->
     <section class="py-12 bg-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 scroll-anim">
             <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
