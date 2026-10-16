@@ -2,30 +2,41 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <!-- 모바일 뷰포트 최적화 (접근성 및 확대/축소 보장을 위해 user-scalable 제외) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 네이버/구글 검색 상위 노출용 SEO -->
-    <title>H1CC 회원권 시세 및 혜택 안내 (이천 명문) | 서치회원권</title>
-    <meta name="description" content="H1CC 회원권 실시간 실거래가 시세, 개인·법인별 주요 혜택, 매매 절차 및 이용 안내. (사)한국골프회원권경영인협회 정회원사 서치회원권에서 정확한 상담을 받아보세요.">
-    <meta name="keywords" content="H1CC회원권, H1CC시세, H1CC회원권시세, 이천H1CC, 골프회원권거래소, 서치회원권">
-
-    <!-- 캐니컬(Canonical) 및 오픈메타(OG) URL 기본 도메인 및 변경된 폴더명 적용 -->
-    <link rel="canonical" href="https://www.searchmembership.co.kr/h1-cc">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="H1CC 회원권 시세 및 혜택 안내 (이천 명문) | 서치회원권" />
-    <meta property="og:desc" content="실시간 실거래가 시세 동향, 개인·법인 회원권 종류 및 혜택, 안심 거래 절차 안내." />
-    <meta property="og:image" content="https://www.searchmembership.co.kr/h1-cc/1.jpg" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/h1-cc" />
-
-    <!-- 파비콘 및 애플 터치 아이콘 -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23c5a880'/%3E%3Cpath stroke='%23143831' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E" type="image/svg+xml">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
     <!-- 캐시 제어 및 보안 헤더 -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- SEO 및 크롤링 지시자 -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- 네이버/구글 검색 상단 노출용 SEO -->
+    <title>H1CC 회원권 시세 및 혜택 안내 (이천 명문) | 서치회원권</title>
+    <meta name="description" content="H1CC 회원권 실시간 실거래가 시세, 개인·법인별 주요 혜택, 매매 절차 및 이용 안내. 서치회원권에서 정확한 상담을 받아보세요.">
+    <meta name="keywords" content="H1CC회원권, H1CC시세, H1CC회원권시세, 이천H1CC, 골프회원권거래소, 서치회원권">
+
+    <!-- 캐니컬(Canonical) 및 오픈메타(OG) URL 설정 -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/h1-cc/">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/h1-cc/" />
+
+    <!-- 파비콘 및 애플 터치 아이콘 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
+
+    <!-- 오픈 메타 (Open Graph) 및 트위터 카드 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="H1CC 회원권 시세 및 혜택 안내 (이천 명문) | 서치회원권" />
+    <meta property="og:description" content="실시간 실거래가 시세 동향, 개인·법인 회원권 종류 및 혜택, 안심 거래 절차 안내." />
+    <meta property="og:image" content="https://www.searchmembership.co.kr/h1-cc/1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.searchmembership.co.kr/h1-cc/1.jpg" />
 
     <!-- 구조화된 데이터(Schema.org / JSON-LD) -->
     <script type="application/ld+json">
@@ -59,6 +70,23 @@
         "opens": "00:00",
         "closes": "23:59"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://www.searchmembership.co.kr/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "H1CC 회원권 안내",
+        "item": "https://www.searchmembership.co.kr/h1-cc/"
+      }]
     }
     </script>
 
@@ -262,7 +290,7 @@
             </div>
         </section>
 
-        <!-- ③ 시설 소개 (지연로딩 및 구체적 Alt 속성 적용) -->
+        <!-- ③ 시설 소개 -->
         <section id="facilities" class="section-padding bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 scroll-anim">
@@ -487,7 +515,7 @@
             </div>
         </section>
 
-        <!-- ⑥, ⑦, ⑧ 예약 방법, 초과 이용 요금, 부대비용, 준비서류 -->
+        <!-- ⑥ 예약 방법, 부대비용, 준비서류 -->
         <section id="extra-guides" class="section-padding bg-brand-light border-t border-gray-200/60">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
                 <div class="text-center mb-12">
