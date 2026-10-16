@@ -1,15 +1,21 @@
 {
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/favicon.png"
+    }
+  ],
   "redirects": [
     {
-      "source": "/h1/",
+      "source": "/h1/:path*",
       "destination": "/h1-cc/",
-      "permanent": true
+      "statusCode": 301
     },
     {
-      "source": "/d-heights/",
+      "source": "/d-heights/:path*",
       "destination": "/d-heights-cc/",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }

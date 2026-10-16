@@ -2,40 +2,48 @@
 <html lang="ko" class="overflow-x-hidden scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- 보안 및 소유권 인증 -->
     <meta name="naver-site-verification" content="a097d5ed72df8561c4b1bd4946fa957e0d0eed50" />
     <meta name="google-site-verification" content="ZXyScKjzmC2699OFzQ6Ly_RP8Y4o2jgYtFIj2rOPQ-8" />
     
-    <!-- 1. 캐시 제어 및 보안 헤더 (재방문 로딩 속도 극대화 및 보안 강화) -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <!-- SEO 및 크롤링 지시자 -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
     
-    <!-- 2. SEO 최적화 (검색 엔진 상위 노출용) -->
+    <!-- 검색 상단 노출 및 중복 방지형 제목(Title) 설계 -->
     <title>서치회원권 - 골프·콘도·피트니스 회원권 혜택과 시세 안내</title>
-    <meta name="description" content="전국 골프, 콘도, 피트니스 회원권 실거래가 시세 및 혜택 안내. 정회원사의 1:1 맞춤 컨설팅으로 안전한 책임 거래를 약속드립니다.">
+    
+    <!-- 메타 디스크립션 (한글 공백 포함 80~110자 내외 최적화) -->
+    <meta name="description" content="전국 골프, 콘도, 피트니스 회원권 실거래가 시세 및 혜택 안내. 정회원사의 1:1 맞춤 컨설팅으로 안전한 책임 거래를 약속드립니다. 서치회원권">
     <meta name="keywords" content="골프회원권, 회원권시세, 콘도회원권, 피트니스회원권, 헬스회원권, 무기명회원권, 회원권거래소, 서치회원권">
     
-   <!-- 3. 파비콘 및 애플 터치 아이콘 (브랜드 인지도 및 스마트폰 홈 화면 최적화) -->
-   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23D4B886' rx='22'/><circle cx='44' cy='44' r='18' fill='none' stroke='%231A3225' stroke-width='8'/><line x1='56' y1='56' x2='72' y2='72' stroke='%231A3225' stroke-width='8' stroke-linecap='round'/></svg>">
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
+    <!-- 캐니컬(Canonical) 및 오픈메타(OG) URL 설정 -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/">
     
-    <!-- 4. 오픈 메타 (Open Graph) (카톡/SNS 공유 시 완벽한 미리보기 생성) -->
+    <!-- 파비콘 및 애플 터치 아이콘 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
+    
+    <!-- 오픈 메타 (Open Graph) 및 트위터 카드 -->
     <meta property="og:title" content="서치회원권 - 프리미엄 회원권 거래의 기준">
     <meta property="og:description" content="실시간 시세 안내부터 안전한 명의개서까지. 골프·콘도·피트니스 회원권 책임 거래.">
     <meta property="og:image" content="https://www.searchmembership.co.kr/main.jpg">
-    <meta property="og:url" content="https://www.searchmembership.co.kr">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.searchmembership.co.kr/main.jpg">
 
-    <!-- 5. 구조화된 데이터 (Schema.org / JSON-LD) -->
+    <!-- 구조화된 데이터 (Schema.org / JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "서치회원권",
-      "url": "https://www.searchmembership.co.kr",
+      "url": "https://www.searchmembership.co.kr/",
       "logo": "https://www.searchmembership.co.kr/main.jpg",
       "description": "안전하고 스마트한 골프, 콘도, 피트니스 회원권 거래소",
       "contactPoint": {
@@ -45,6 +53,18 @@
         "areaServed": "KR",
         "availableLanguage": "Korean"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://www.searchmembership.co.kr/"
+      }]
     }
     </script>
 
@@ -130,7 +150,7 @@
 
     <div class="h-20 w-full"></div>
 
-    <!-- 히어로 배너 (지연 로딩 제외 영역: 첫 화면이므로 바로 로딩되어야 함) -->
+    <!-- 히어로 배너 -->
     <section class="bg-deepGreen text-white relative flex flex-col justify-center items-center text-center px-4 py-24 md:py-36 min-h-[75vh] overflow-hidden w-full">
         <div class="absolute inset-0 bg-black/45 z-0"></div>
         <div class="absolute inset-0 bg-cover bg-center z-n1 opacity-45" style="background-image: url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=1920');"></div>
@@ -223,7 +243,7 @@
         </div>
     </section>
 
-    <!-- 회원권 안내 (통합 검색의 중심 영역) -->
+    <!-- 회원권 안내 -->
     <main id="search-box" class="w-full bg-white border-y border-stone-200/80 py-20 md:py-24 shadow-sm scroll-mt-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-10 flex flex-col items-center">
@@ -239,7 +259,7 @@
                 </p>
             </div>
 
-            <!-- 통합 검색창 (안내 문구 수정) -->
+            <!-- 통합 검색창 -->
             <div class="mb-8">
                 <div class="relative max-w-xl mx-auto z-20">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-stone-400">
@@ -251,7 +271,7 @@
                 </div>
             </div>
 
-            <!-- 카테고리 탭 (검색 시 숨겨짐) -->
+            <!-- 카테고리 탭 -->
             <div id="tabs-container" class="flex justify-center mb-8 transition-opacity duration-300">
                 <div class="inline-flex p-1.5 bg-stone-100 rounded-2xl gap-1.5 border border-stone-200/60">
                     <button onclick="switchTab('golf')" id="tab-golf" class="px-5 md:px-6 py-2 rounded-xl text-sm md:text-base font-bold transition bg-deepGreen text-white shadow-sm flex items-center gap-2 whitespace-nowrap">
@@ -554,7 +574,6 @@
                 }
             });
 
-            // 탭 클릭 시에는 기본 상태로 렌더링
             document.getElementById('exclusive-offering').style.display = 'block';
             document.getElementById('unnamed').style.display = 'block';
             
@@ -564,7 +583,7 @@
         // 통합 검색 마법 로직
         function filterItems() {
             const keyword = document.getElementById('search-input').value.trim();
-            isExpanded = false; // 검색 시 더보기 상태 초기화
+            isExpanded = false;
             
             const exclusiveSection = document.getElementById('exclusive-offering');
             const unnamedSection = document.getElementById('unnamed');
@@ -573,7 +592,6 @@
             const searchDesc = document.getElementById('search-desc');
 
             if (keyword !== '') {
-                // 검색어 입력 시: 하단 단락 숨김 및 제목 변경
                 exclusiveSection.style.display = 'none';
                 unnamedSection.style.display = 'none';
                 tabsContainer.style.opacity = '0';
@@ -582,13 +600,9 @@
                 searchTitle.innerText = `"${keyword}" 검색 결과`;
                 searchDesc.innerText = "전체 회원권 및 분양, 무기명 매물 통합 검색 결과입니다.";
 
-                // 모든 데이터 끌어모으기 (일반+분양+무기명)
                 const allData = [...safeDataGolf, ...safeDataCondo, ...safeDataHotel, ...safeDataExclusive, ...safeDataUnnamed];
-                
-                // 중복 데이터 방지 (title 기준)
                 const uniqueData = Array.from(new Map(allData.map(item => [item.title, item])).values());
                 
-                // 필터링 (제목, 서브설명, 태그, 그리고 몰래 숨겨둔 keyword 속성까지 검사)
                 const filtered = uniqueData.filter(item => {
                     const term = keyword.toLowerCase();
                     return (item.title && item.title.toLowerCase().includes(term)) ||
@@ -599,10 +613,9 @@
                 });
                 
                 renderGridHTML(filtered);
-                document.getElementById('load-more-btn').classList.add('hidden'); // 검색결과는 전부 한눈에 표시
+                document.getElementById('load-more-btn').classList.add('hidden');
 
             } else {
-                // 검색 취소 시: 원래 화면으로 자연스럽게 복구
                 exclusiveSection.style.display = 'block';
                 unnamedSection.style.display = 'block';
                 tabsContainer.style.display = 'flex';
@@ -615,7 +628,6 @@
             }
         }
 
-        // 평소 탭 상태 렌더링
         function renderItems() {
             updateCategoryCounts();
             const data = getActiveData();
@@ -638,7 +650,6 @@
             }
         }
 
-        // HTML 카드 그려주는 공통 함수 (통합 검색 지원형)
         function renderGridHTML(items) {
             const grid = document.getElementById('items-grid');
             
@@ -652,7 +663,6 @@
                 const isTel = targetHref.startsWith('tel:');
                 const targetAttr = (!isTel && (targetHref.startsWith('http') || targetHref.endsWith('.html') || targetHref.endsWith('/'))) ? 'target="_blank"' : '';
                 
-                // 특별 매물(특판, 무기명 등) 시각적 차별화
                 const isSpecial = item.tag && (item.tag.includes('특판') || item.tag.includes('특급') || item.tag.includes('무기명'));
                 const bgClass = isSpecial ? 'bg-amber-50/40 border-goldColor/40 hover:bg-amber-50' : 'bg-stone-50 border-stone-200/90 hover:border-goldColor hover:bg-white';
                 const tagBgClass = isSpecial ? 'bg-goldColor text-white' : 'bg-white text-deepGreen border border-stone-200 group-hover:bg-goldColor/15 group-hover:border-goldColor/30 group-hover:text-goldColor';
@@ -683,7 +693,6 @@
             renderItems();
         }
 
-        // 무기명 골프 하단 리스트 렌더링
         function renderUnnamedList() {
             const container = document.getElementById('unnamed-grid');
             if (!container) return;
@@ -694,7 +703,6 @@
             container.innerHTML = safeDataUnnamed.map(item => createCardHTML(item)).join('');
         }
 
-        // 프리미엄 분양 하단 리스트 렌더링
         function renderExclusiveList() {
             const container = document.getElementById('exclusive-grid');
             if (!container) return;
@@ -705,7 +713,6 @@
             container.innerHTML = safeDataExclusive.map(item => createCardHTML(item)).join('');
         }
 
-        // 하단 고정 단락용 카드 생성기 (통합 검색 시에도 디자인 통일감 유지)
         function createCardHTML(item) {
             const targetHref = item.link ? item.link : '#';
             const isTel = targetHref.startsWith('tel:');
@@ -730,7 +737,6 @@
             </a>`;
         }
 
-        // 상담 폼 제어
         let selectedTradeVal = '매도';
         function selectTrade(btn, val) {
             document.querySelectorAll('.trade-btn').forEach(b => {
@@ -755,18 +761,17 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            switchTab('golf'); // 초기 로딩 세팅
+            switchTab('golf');
             renderUnnamedList();
             renderExclusiveList();
 
-            // 상단 메뉴 클릭 시 검색어 초기화 및 숨김 단락 복구 후 부드럽게 이동하는 마법
             document.querySelectorAll('a[href^="#"]').forEach(link => {
                 link.addEventListener('click', function(e) {
                     const searchInput = document.getElementById('search-input');
                     
                     if (searchInput && searchInput.value.trim() !== '') {
                         searchInput.value = '';
-                        filterItems(); // 지운 값으로 다시 필터링을 호출해서 복구시킴
+                        filterItems();
                     }
                     
                     const mobileMenu = document.getElementById('mobile-menu');
