@@ -31,6 +31,11 @@
       "source": "/suwon/:path*",
       "destination": "/suwon-cc/",
       "statusCode": 301
+    },
+    {
+      "source": "/jayu/:path*",
+      "destination": "/jayu-cc/",
+      "statusCode": 301
     }
   ]
 }

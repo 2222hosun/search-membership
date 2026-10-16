@@ -1,6 +1,6 @@
 // 1. 메인 홈페이지 카드 리스트 데이터
 const dataGolf = [
-    { title: "자유CC 회원권", sub: "자연림 레이아웃과 스타벅스 입점 명문", tag: "경기 여주", link: "jayu/" },
+    { title: "자유CC 회원권", sub: "자연림 레이아웃과 스타벅스 입점 명문", tag: "경기 여주", link: "jayu-cc/" },
     { title: "수원CC 회원권", sub: "도심 30분대 접근성 및 신코스 원그린 호재", tag: "경기 용인", link: "suwon-cc/" },
     { title: "휘슬링락CC 회원권", sub: "대자연과 예술이 빚어낸 27홀 하이엔드", tag: "강원 춘천", link: "whistlingrock-cc/" },
     { title: "H1CC 회원권", sub: "수도권 남부 접근성 좋은 호반 18홀", tag: "경기 이천", link: "h1-cc/" },
