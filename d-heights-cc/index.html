@@ -2,38 +2,42 @@
 <html lang="ko" class="overflow-x-hidden scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- 보안 및 크롤링 지시자 -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
     <!-- 1. 캐시 제어 및 보안 헤더 -->
     <meta http-equiv="Cache-Control" content="max-age=31536000, public">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 
     <!-- 2. 검색 상단 노출 및 중복 방지형 SEO Title/Meta 설계 -->
-    <title>디하이츠CC 회원권 - 필리핀 클락 36홀 명문 골프 분양 및 힐튼 호텔 혜택 | 서치회원권</title>
+    <title>디하이츠CC 회원권 - 필리핀 클락 36홀 명문 골프 분양 및 힐튼 호텔 혜택</title>
     
-    <!-- 메타 디스크립션 클릭 유도 설계 -->
-    <meta name="description" content="필리핀 클락 경제특구 내 명문 36홀 디하이츠CC 신규 회원권 분양. 정회원/지정회원 그린피 전면 면제, 힐튼 호텔 연계 혜택 및 2085년까지 보장되는 자산 가치. 안전한 책임 분양은 서치회원권에서 상담하세요.">
+    <!-- 메타 디스크립션 클릭 유도 설계 (80~110자 내외 최적화) -->
+    <meta name="description" content="필리핀 클락 명문 36홀 디하이츠CC 신규 회원권 분양. 정회원/지정회원 그린피 면제 및 힐튼 호텔 연계 혜택. 안전한 책임 분양은 서치회원권.">
     <meta name="keywords" content="디하이츠CC 회원권, 디하이츠CC 분양, 필리핀 클락 골프 회원권, 디하이츠컨트리클럽, 클락 힐튼 호텔 혜택, 해외골프회원권, 서치회원권">
-    <!-- 크롤링 지시자 고화질 이미지 수집 허용 -->
-    <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <!-- 캐니컬 태그 (중복 문서 방지 및 원본 주소 고정) -->
+    <!-- 캐니컬(Canonical) 및 오픈메타(OG) URL 설정 -->
     <link rel="canonical" href="https://www.searchmembership.co.kr/d-heights-cc/">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/d-heights-cc/" />
 
-    <!-- 파비콘 및 애플 터치 아이콘 필수 포함 (요청 사항 반영) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23D4B886' rx='22'/><circle cx='44' cy='44' r='18' fill='none' stroke='%231A3225' stroke-width='8'/><line x1='56' y1='56' x2='72' y2='72' stroke='%231A3225' stroke-width='8' stroke-linecap='round'/></svg>">
+    <!-- 파비콘 및 애플 터치 아이콘 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
 
     <!-- LCP 이미지 Preload (메인 배경 이미지 초기 로딩 극대화) -->
-    <link rel="preload" href="1.webp" as="image">
+    <link rel="preload" as="image" href="1.webp" fetchpriority="high">
 
     <!-- 카카오톡/문자 공유 시 Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="디하이츠CC 회원권 신규 분양 및 혜택 안내 | 서치회원권" />
     <meta property="og:description" content="해발 370m 고원에서 만나는 36홀 다이내믹 코스와 힐튼의 완벽한 호캉스. 2085년까지 보장되는 압도적 혜택을 확인하세요." />
     <meta property="og:image" content="https://www.searchmembership.co.kr/d-heights-cc/1.jpg" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/d-heights-cc/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- 트위터 카드 태그 -->
     <meta name="twitter:card" content="summary_large_image">
@@ -67,6 +71,23 @@
       }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://www.searchmembership.co.kr/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "디하이츠CC 분양 안내",
+        "item": "https://www.searchmembership.co.kr/d-heights-cc/"
+      }]
+    }
+    </script>
 
     <!-- Tailwind CSS, 아이콘, 애니메이션 스크립트 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -96,7 +117,7 @@
     </script>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfc; color: #333; word-break: keep-all; scroll-behavior: smooth; }
+        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfc; color: #333; word-break: keep-all; overflow-wrap: break-word; scroll-behavior: smooth; }
         
         .hero-bg { background-size: cover; background-position: center; background-attachment: fixed; position: relative; }
         .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
@@ -110,7 +131,6 @@
             border-radius: 1rem;
         }
         
-        /* 기본 정보 박스 내부 비율 및 구분선 완벽 정돈 */
         .overview-box {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
@@ -195,7 +215,7 @@
             <span class="inline-block py-1.5 px-4 rounded-full bg-white/10 border border-white/25 backdrop-blur-md text-brand-accent text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-5 shadow-sm">
                 PREMIUM GLOBAL GOLF
             </span>
-            <!-- SEO 최적화: 유일한 H1 태그 유지 -->
+            <!-- H1 태그 -->
             <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">디하이츠CC 회원권</h1>
             
             <div class="space-y-3 text-gray-100 text-base md:text-lg font-light drop-shadow-md mb-6 leading-relaxed">
@@ -323,13 +343,11 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- SEO 최적화: width, height 명시, loading="lazy" 적용, 대체텍스트(alt) 키워드 보강 -->
                     <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
                         <div>
                             <div class="rounded-xl overflow-hidden shadow mb-4">
                                 <img src="2.webp" alt="디하이츠CC 회원권 클럽하우스 안내데스크 전경" width="600" height="400" loading="lazy" class="w-full h-[220px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
-                            <!-- SEO 최적화: 시맨틱 구조 H3로 변경 -->
                             <h3 class="text-lg font-bold text-gray-800 mb-2">고원 지대의 쾌적한 환경</h3>
                             <p class="text-sm text-gray-600">해발 370m 고원 지대에 위치하여 열대 지역에서도 상대적으로 선선하고 쾌적하게 라운딩을 즐길 수 있습니다.</p>
                         </div>
@@ -396,7 +414,7 @@
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
                     <p class="text-gray-500 max-w-2xl mx-auto">장기적인 골프 플랜을 위한 스페셜 및 프리미엄 신규 분양 혜택입니다.</p>
                     
-                    <!-- SEO 최적화: 시세 기준일 명시 -->
+                    <!-- 최종 시세 기준일 명시 -->
                     <p class="text-xs text-gray-400 mt-3">최종 시세 기준일: 2026년 10월 15일</p>
                 </div>
 
@@ -485,7 +503,6 @@
                         <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2"><i class="ph ph-folder-user text-brand-accent mr-2"></i>입회 준비 서류</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-700">
                             <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-                                <!-- SEO 최적화: 시맨틱 구조 H4로 변경 (디자인 동일유지) -->
                                 <h4 class="flex items-center text-gray-800 mb-3 pb-2 border-b border-gray-100 font-bold text-[15px]">
                                     <i class="ph ph-user text-brand-accent text-lg mr-1.5"></i> 개인 입회 서류
                                 </h4>
@@ -495,7 +512,6 @@
                                 </ul>
                             </div>
                             <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
-                                <!-- SEO 최적화: 시맨틱 구조 H4로 변경 (디자인 동일유지) -->
                                 <h4 class="flex items-center text-gray-800 mb-3 pb-2 border-b border-gray-100 font-bold text-[15px]">
                                     <i class="ph ph-buildings text-brand-accent text-lg mr-1.5"></i> 법인 입회 서류
                                 </h4>
@@ -601,7 +617,9 @@
                     본 웹사이트의 골프·콘도·휘트니스 회원권 시세 및 혜택 정보는 참고용이며, 실제 거래 가격과 다를 수 있습니다.<br class="hidden sm:inline">
                     제공된 정보에 대한 법적 책임을 지지 않으며, 모든 정보의 저작권은 서치회원권에 있습니다.
                 </p>
-                <p class="text-stone-400 whitespace-nowrap">Copyright ⓒ 서치회원권 All rights reserved.</p>
+                <p class="text-stone-400 whitespace-nowrap">
+                    Copyright ⓒ 서치회원권 All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
