@@ -36,6 +36,11 @@
       "source": "/jayu/:path*",
       "destination": "/jayu-cc/",
       "statusCode": 301
+    },
+    {
+      "source": "/chunryung/:path*",
+      "destination": "/chunryung-cc/",
+      "statusCode": 301
     }
   ]
 }

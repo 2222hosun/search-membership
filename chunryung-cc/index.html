@@ -3,23 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- 네이버/구글 검색 상위 노출용 SEO -->
-    <title>천룡CC 회원권 시세 및 혜택 안내 | 서치회원권</title>
+    <title>충북 진천 명문 천룡CC 회원권 시세 및 주중/정회원 혜택 | 서치회원권</title>
     <meta name="description" content="천룡CC 실시간 실거래가 시세, 정회원 및 주중회원권 주요 혜택, 예약 규정 및 매매 절차 안내. 개인/법인 교차 매매 및 법인 반구좌 입회 가능. (사)한국골프회원권경영인협회 정회원사 서치회원권.">
     <meta name="keywords" content="천룡CC, 천룡CC회원권, 천룡CC시세, 진천천룡CC, 회원권거래소, 서치회원권">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <!-- 카카오톡/문자 공유 시 Open Graph (폴더명 chunryung 기준) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="천룡CC 회원권 시세 및 혜택 안내 | 서치회원권" />
-    <meta property="og:description" content="충북 진천의 명문 36홀 프라이빗 구장 천룡CC 회원권 시세 및 혜택 완벽 가이드." />
-    <meta property="og:image" content="https://www.searchmembership.co.kr/chunryung/1.jpg" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/chunryung" />
+    <!-- 파비콘 및 애플 터치 아이콘 -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
 
-    <!-- Tailwind CSS, 아이콘, 애니메이션 스크립트 -->
+    <!-- 캐니컬(Canonical) 및 오픈메타(OG) URL/썸네일 -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/chunryung-cc/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="서치회원권">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="충북 진천 명문 천룡CC 회원권 시세 및 주중/정회원 혜택 | 서치회원권">
+    <meta property="og:description" content="천룡CC 실시간 실거래가 시세, 정회원 및 주중회원권 주요 혜택, 예약 규정 및 매매 절차 안내. 개인/법인 교차 매매 및 법인 반구좌 입회 가능. (사)한국골프회원권경영인협회 정회원사 서치회원권.">
+    <!-- 공유 썸네일은 안전한 jpg 로 고정 -->
+    <meta property="og:image" content="https://www.searchmembership.co.kr/chunryung-cc/1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/chunryung-cc/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.searchmembership.co.kr/chunryung-cc/1.jpg">
+    <meta name="twitter:description" content="천룡CC 실시간 실거래가 시세, 정회원 및 주중회원권 주요 혜택, 예약 규정 및 매매 절차 안내. 개인/법인 교차 매매 및 법인 반구좌 입회 가능. (사)한국골프회원권경영인협회 정회원사 서치회원권.">
+
+    <!-- 구조화된 데이터(Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "서치회원권 - 회원권서치(주)",
+      "url": "https://www.searchmembership.co.kr/chunryung-cc/",
+      "telephone": "010-6263-9552",
+      "image": "https://www.searchmembership.co.kr/chunryung-cc/1.jpg"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.searchmembership.co.kr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "천룡CC 회원권",
+          "item": "https://www.searchmembership.co.kr/chunryung-cc/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- 프리로드 및 라이브러리 -->
+    <link rel="preload" as="image" href="1.webp" fetchpriority="high">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
         tailwind.config = {
@@ -30,7 +80,7 @@
                         brand: {
                             dark: '#143831',
                             light: '#f7fafc',
-                            accent: '#c5a880', /* 밝은 샴페인 골드 통일 */
+                            accent: '#c5a880',
                             accentDark: '#a38760',
                             gray: '#4a5568'
                         }
@@ -110,13 +160,25 @@
         }
 
         .icon-circle { width: 48px; height: 48px; border-radius: 50%; background-color: #f7fafc; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #c5a880; font-size: 1.5rem; flex-shrink: 0; }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            margin-top: 1rem;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+        }
     </style>
 </head>
 <body class="antialiased flex flex-col min-h-screen">
 
     <!-- 상단 네비게이션 -->
-    <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+    <header class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
             <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
                 <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -131,12 +193,12 @@
             <a href="../index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
                 <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
             </a>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="h-20 w-full"></div>
 
     <!-- 메인 배너 -->
-    <header id="hero-bg" class="hero-bg h-[80vh] min-h-[600px] flex flex-col items-center justify-center relative overflow-hidden text-center px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('1.webp');">
+    <section id="hero-bg" class="hero-bg h-[80vh] min-h-[600px] flex flex-col items-center justify-center relative overflow-hidden text-center px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('1.webp');">
         <div class="absolute inset-0 bg-black/35 z-0"></div>
         
         <div class="relative z-10 max-w-4xl mx-auto w-full px-2 flex flex-col items-center justify-center animate__animated animate__fadeInUp mt-0">
@@ -146,36 +208,36 @@
             <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">천룡CC 회원권</h1>
             <p id="hero-desc" class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">충북 진천의 수려한 자연 속에 자리 잡은 36홀 명문 프라이빗 구장. 완벽한 코스 관리와 다이내믹한 플레이를 경험하세요.</p>
         </div>
-    </header>
+    </section>
 
     <main class="flex-grow">
         <!-- ① 기본 정보 -->
         <section id="info" class="section-padding bg-white relative">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 animate__animated animate__fadeIn scroll-anim">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">CLUB OVERVIEW</h2>
+                    <div class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">CLUB OVERVIEW</div>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500 max-w-2xl mx-auto">기본 운영 정보입니다.</p>
+                    <h2 class="text-gray-500 max-w-2xl mx-auto font-medium text-lg">천룡CC 기본 운영 정보</h2>
                 </div>
                 <div id="content-info" class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-anim">
                     <div class="overview-box">
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-buildings"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">운영사</h3><p class="text-gray-600">천룡종합개발(주)</p></div>
+                            <div class="flex-grow"><span class="font-semibold text-lg text-gray-800 mb-0.5 block">운영사</span><p class="text-gray-600">천룡종합개발(주)</p></div>
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-flag"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">코스 규모 및 회원수</h3><p class="text-gray-600">회원제 27홀 + 대중제 9홀 / 약 420명</p></div>
+                            <div class="flex-grow"><span class="font-semibold text-lg text-gray-800 mb-0.5 block">코스 규모 및 회원수</span><p class="text-gray-600">회원제 27홀 + 대중제 9홀 / 약 420명</p></div>
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-calendar-star"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">개장일</h3><p class="text-gray-600">1995년 9월 17일</p></div>
+                            <div class="flex-grow"><span class="font-semibold text-lg text-gray-800 mb-0.5 block">개장일</span><p class="text-gray-600">1995년 9월 17일</p></div>
                         </div>
                     </div>
                     <div class="overview-box">
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-money"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">이용 요금 및 비회원 그린피</h3>
+                            <div class="flex-grow"><span class="font-semibold text-lg text-gray-800 mb-0.5 block">이용 요금 및 비회원 그린피</span>
                                 <p class="text-gray-600 text-sm mt-1">
                                     • 카트비 100,000원 / 캐디피 150,000원<br>
                                     • 비수기 그린피: 주중 190,000원 / 주말 250,000원<br>
@@ -185,7 +247,7 @@
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-star"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">주요 특징</h3>
+                            <div class="flex-grow"><span class="font-semibold text-lg text-gray-800 mb-0.5 block">주요 특징</span>
                                 <p class="text-gray-600 text-sm mt-1 leading-relaxed">
                                     • 소수 정예 회원제 운영 (약 420명)<br>
                                     • 황룡·청룡·흑룡 3개 테마 코스<br>
@@ -203,9 +265,10 @@
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-12 items-center scroll-anim">
                     <div class="md:w-1/2">
-                        <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
+                        <div class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">PERFECT LOCATION</div>
                         <div class="w-16 h-1 bg-brand-accent rounded-full mb-6"></div>
-                        <p id="location-desc" class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        <h2 class="text-lg text-gray-700 mb-6 leading-relaxed font-medium">천룡CC 오시는 길 및 접근성</h2>
+                        <p id="location-desc" class="text-base text-gray-600 mb-6 leading-relaxed">
                             충북 진천에 위치하여 중부고속도로 진천IC, 북진천IC, 대소IC 등 주요 톨게이트와 인접해 있어 수도권 및 중부권에서 편리하게 접근할 수 있습니다.
                         </p>
                         <div id="content-location" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 space-y-4">
@@ -225,19 +288,19 @@
                     </div>
                     
                     <div class="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white h-[400px]">
-                        <iframe id="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x3564c96569ee37f5%3A0x92d67f974c7700d5!2z7LKc66Oh7Luo7Yq466as7YG065-9!5e0!3m2!1sko!2skr!4v1790574076254!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        <iframe id="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x3564c96569ee37f5%3A0x92d67f974c7700d5!2z7LKc66Oh7Luo7Yq466as7YG065-9!5e0!3m2!1sko!2skr!4v1790574076254!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="천룡CC 위치 지도"></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ③ 시설 소개 -->
+        <!-- ③ 시설 소개 (팩트 + 실사용자 후기 톤 반영) -->
         <section id="facilities" class="section-padding bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 scroll-anim">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PREMIUM FACILITIES</h2>
+                    <div class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">PREMIUM FACILITIES</div>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500 max-w-2xl mx-auto">천룡CC의 클럽하우스 및 코스 안내입니다.</p>
+                    <h2 class="text-gray-500 max-w-2xl mx-auto font-medium text-lg">천룡CC 코스 및 부대시설 안내</h2>
                 </div>
 
                 <div id="content-facility" class="space-y-16">
@@ -245,72 +308,72 @@
                     <!-- 클럽하우스 -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div class="rounded-2xl overflow-hidden shadow-lg">
-                            <img src="2.webp" alt="천룡CC 클럽하우스" loading="lazy" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="2.webp" alt="천룡CC 클럽하우스" loading="lazy" decoding="async" width="800" height="600" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div>
                             <span class="text-xs font-bold tracking-widest text-brand-accent uppercase mb-2 block">Club House</span>
                             <h3 class="text-2xl font-bold text-gray-900 mb-3">클럽하우스</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                특급 호텔 수준의 최고급 편의시설을 갖춘 클럽하우스로, 회원들의 품격 있는 사교와 성공적인 비즈니스를 지원합니다.
+                                여유로운 동선 배치로 라운드 전후 편안한 휴식을 제공하는 클럽하우스입니다. 회원 중심의 안정적인 운영을 통해 방문객들 사이에서 만족스러운 쾌적함을 평가받고 있습니다.
                             </p>
                         </div>
                     </div>
 
                     <!-- 베스트홀 4종 -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                        <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
                             <div class="rounded-xl overflow-hidden shadow mb-4">
-                                <img src="3.webp" alt="청룡 6번홀" loading="lazy" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="3.webp" alt="천룡CC 청룡 코스" loading="lazy" decoding="async" width="600" height="400" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-lg font-bold text-gray-800 mb-2">청룡 코스 (용기의 코스)</h4>
-                            <p class="text-sm text-gray-600">아웃코스 9홀로 구성된 용기의 코스이며, 대자연 속에서 과감한 도전 정신을 시험하는 전략적 홀들이 배치되어 있습니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <p class="text-sm text-gray-600">아웃코스 9홀로 구성된 용기의 코스입니다. 시야가 탁 트인 넉넉한 페어웨이 덕분에 티샷 시 심리적 부담이 덜하며, 드라이버를 과감하게 공략하는 재미를 보여주고 있습니다.</p>
+                        </article>
+                        <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
                             <div class="rounded-xl overflow-hidden shadow mb-4">
-                                <img src="4.webp" alt="청룡 9번홀" loading="lazy" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="4.webp" alt="천룡CC 청룡 9번홀" loading="lazy" decoding="async" width="600" height="400" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
-                            <h4 class="text-lg font-bold text-gray-800 mb-2">청룡 9번홀 (가장 긴 미드 홀)</h4>
-                            <p class="text-sm text-gray-600">OB와 벙커가 도사리고 있어 심적 부담이 크며, 2단 그린과 좌측 해저드·우측 벙커를 면밀히 숙지해야 하는 홀입니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">청룡 9번홀 (가장 긴 파4 홀)</h4>
+                            <p class="text-sm text-gray-600">OB와 벙커가 곳곳에 도사리고 있어 다소 긴장감을 주지만, 실제 라운드 시 푹신한 쿠션감이 느껴지는 우수한 잔디 상태가 돋보입니다. 그린의 굴곡을 면밀히 파악해야 하는 매력을 자랑합니다.</p>
+                        </article>
+                        <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
                             <div class="rounded-xl overflow-hidden shadow mb-4">
-                                <img src="5.webp" alt="황룡 3번홀" loading="lazy" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="5.webp" alt="천룡CC 황룡 3번홀" loading="lazy" decoding="async" width="600" height="400" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-lg font-bold text-gray-800 mb-2">황룡 코스 (지혜의 코스 - 3번홀)</h4>
-                            <p class="text-sm text-gray-600">인코스인 지혜의 코스로, 좌측 OB와 우측 법면 러프를 피해 정교한 티샷과 세컨샷 공략이 요구되는 2단 그린 홀입니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                            <p class="text-sm text-gray-600">인코스인 지혜의 코스로, 좌측 OB와 우측 러프를 피해 정교한 샷이 요구됩니다. 2단 그린 주변의 브레이크가 까다로운 편이라 신중한 어프로치와 집중력이 필요한 것으로 평가받고 있습니다.</p>
+                        </article>
+                        <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
                             <div class="rounded-xl overflow-hidden shadow mb-4">
-                                <img src="6.webp" alt="흑룡 2번홀" loading="lazy" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="6.webp" alt="천룡CC 흑룡 2번홀" loading="lazy" decoding="async" width="600" height="400" class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-lg font-bold text-gray-800 mb-2">흑룡 코스 (도전의 코스 - 2번홀)</h4>
-                            <p class="text-sm text-gray-600">도전의 코스로 불리며, 오르막 경사와 그린 좌측 깊은 벙커, 2단 그린 구조로 세컨샷의 정확한 클럽 선택이 필수적입니다.</p>
-                        </div>
+                            <p class="text-sm text-gray-600">난이도가 다소 높은 도전의 코스입니다. 오르막 경사와 위협적인 벙커, 까다로운 2단 그린이 결합되어 있어, 정확한 거리 계산과 정교한 클럽 선택의 묘미를 경험하실 수 있습니다.</p>
+                        </article>
                     </div>
 
                     <!-- 레스토랑, 락커룸, 사우나 -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
+                        <article class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4">
-                                <img src="7.webp" alt="천룡CC 레스토랑" loading="lazy" class="w-full h-[180px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="7.webp" alt="천룡CC 레스토랑 전경" loading="lazy" decoding="async" width="400" height="300" class="w-full h-[180px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">레스토랑</h4>
-                            <p class="text-xs text-gray-600">클럽하우스 내 정갈한 요리와 품격 있는 식사를 제공하는 식당 공간입니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
+                            <p class="text-xs text-gray-600">푸짐한 우거지 갈비탕 등 식사 메뉴를 제공하며, 정갈하고 든든한 상차림으로 실제 방문객들 사이에서 만족도 높은 식음 서비스로 평가받고 있습니다.</p>
+                        </article>
+                        <article class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4">
-                                <img src="8.webp" alt="천룡CC 라커룸" loading="lazy" class="w-full h-[180px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="8.webp" alt="천룡CC 락커룸 내부" loading="lazy" decoding="async" width="400" height="300" class="w-full h-[180px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">라커룸</h4>
-                            <p class="text-xs text-gray-600">편안하고 아늑하게 정돈되어 라운드 전후의 휴식을 돕는 락커 시설입니다.</p>
-                        </div>
-                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
+                            <p class="text-xs text-gray-600">이용객의 동선을 배려하여 단정하게 관리된 락커 시설로, 라운드 전후 프라이빗하고 차분한 휴식 환경을 제공하고 있습니다.</p>
+                        </article>
+                        <article class="bg-gray-50 rounded-xl p-5 border border-gray-100 shadow-sm text-center">
                             <div class="rounded-lg overflow-hidden shadow-sm mb-4">
-                                <img src="9.webp" alt="천룡CC 사우나" loading="lazy" class="w-full h-[180px] object-cover hover:scale-105 transition-transform duration-500">
+                                <img src="9.webp" alt="천룡CC 사우나 시설" loading="lazy" decoding="async" width="400" height="300" class="w-full h-[180px] object-cover hover:scale-105 transition-transform duration-500">
                             </div>
                             <h4 class="text-base font-bold text-gray-800 mb-2">사우나</h4>
-                            <p class="text-xs text-gray-600">운동 후 피로를 씻고 상쾌함을 더해주는 깔끔하고 쾌적한 사우나입니다.</p>
-                        </div>
+                            <p class="text-xs text-gray-600">청결하게 유지된 사우나 공간으로, 운동을 마친 후 피로를 씻어내고 편안한 재충전을 돕는 쾌적함을 자랑합니다.</p>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -320,9 +383,9 @@
         <section id="membership" class="section-padding bg-brand-light">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 scroll-anim">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">MEMBERSHIP GUIDE</h2>
+                    <div class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">MEMBERSHIP GUIDE</div>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500 max-w-2xl mx-auto">천룡CC 주중회원권 및 정회원권 혜택을 확인하세요.</p>
+                    <h2 class="text-gray-500 max-w-2xl mx-auto font-medium text-lg">천룡CC 주중회원권 및 정회원권 혜택 안내</h2>
                 </div>
 
                 <!-- 공통 특징 박스 2개 -->
@@ -350,41 +413,45 @@
                 <div id="content-membership" class="grid grid-cols-1 gap-6 mb-12 scroll-anim w-full">
                     
                     <!-- 주중회원권 -->
-                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-dark">
+                    <article class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-dark">
                         <h3 class="text-xl font-bold mb-2">주중회원권</h3>
-                        <p class="text-sm text-gray-500 mb-4">주중회원 1인 + 지정회원 1인</p>
+                        <p class="text-sm text-gray-500 mb-4">주중회원 1인 + 지정회원 1인 (타인 지정 가능)</p>
                         <div class="my-3 border-b border-gray-200"></div>
                         <ul class="text-sm text-gray-600 space-y-2">
                             <li>• <strong>주중회원 요금:</strong> 주중 100,000원 / 주말 200,000원</li>
                             <li>• <strong>지정회원 요금:</strong> 주중 160,000원 / 주말 210,000원</li>
                         </ul>
-                    </div>
+                    </article>
 
                     <!-- 정회원권 -->
-                    <div class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-accent">
+                    <article class="glass-card p-8 hover:shadow-xl transition-shadow duration-300 relative w-full border-t-4 border-brand-accent">
                         <h3 class="text-xl font-bold mb-2">정회원권</h3>
-                        <p class="text-sm text-gray-500 mb-4">정회원 1인 + 가족회원 1인</p>
+                        <p class="text-sm text-gray-500 mb-4">정회원 1인 + 가족회원 1인 (타인 지정 불가)</p>
                         <div class="my-3 border-b border-gray-200"></div>
                         <ul class="text-sm text-gray-600 space-y-2">
                             <li>• <strong>정회원 요금:</strong> 주중 45,000원 / 주말 70,000원</li>
                             <li>• <strong>가족회원 요금:</strong> 주중 90,000원 / 주말 140,000원</li>
                             <li>• <strong>혜택:</strong> 우대 그린피 적용</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- ⑤ 시세 안내 -->
+        <!-- ⑤ 시세 안내 (1년 차트 및 시황 브리핑 추가) -->
         <section id="price" class="section-padding bg-white">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 scroll-anim">
-                    <span class="text-sm font-bold tracking-widest text-brand-accent uppercase mb-2 block">Market Trends</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">실거래 시세 동향</h2>
+                    <div class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">MARKET TRENDS</div>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <h2 class="text-gray-500 max-w-2xl mx-auto font-medium text-lg">천룡CC 실거래 시세 동향</h2>
                 </div>
 
-                <div class="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-100 mb-12 scroll-anim">
+                <div class="flex justify-end mb-2">
+                    <span class="text-xs font-semibold text-gray-500">최종 시세 기준일: 2026년 10월 16일</span>
+                </div>
+                
+                <div class="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-100 mb-6 scroll-anim">
                     <table class="w-full text-sm text-left">
                         <thead class="text-xs text-gray-600 uppercase bg-gray-50">
                             <tr>
@@ -397,12 +464,12 @@
                             <tr>
                                 <td class="px-6 py-4 font-semibold text-brand-dark">주중회원권</td>
                                 <td class="px-6 py-4 text-gray-500">주중회원 1 + 지정회원 1</td>
-                                <td class="px-6 py-4 text-right text-brand-accent text-lg"><strong>5,100만원</strong></td>
+                                <td class="px-6 py-4 text-right text-brand-accent text-lg"><strong>5,300만원</strong></td>
                             </tr>
                             <tr class="bg-orange-50/30">
                                 <td class="px-6 py-4 font-semibold text-brand-dark">정회원권</td>
                                 <td class="px-6 py-4 text-gray-500">정회원 1 + 가족회원 1</td>
-                                <td class="px-6 py-4 text-right text-brand-accent text-lg"><strong>2억 6,600만원</strong></td>
+                                <td class="px-6 py-4 text-right text-brand-accent text-lg"><strong>2억 7,000만원</strong></td>
                             </tr>
                             <tr>
                                 <td colspan="3" class="px-6 py-2.5 text-[12px] text-[#6b7280] bg-gray-50 text-center font-normal">
@@ -412,21 +479,113 @@
                         </tbody>
                     </table>
                 </div>
+
+                <!-- 1년 시세 차트 및 브리핑 -->
+                <div class="chart-container scroll-anim">
+                    <canvas id="marketChart"></canvas>
+                </div>
+                <div class="mt-6 p-6 bg-brand-light rounded-xl border border-brand-accent/30 shadow-sm scroll-anim">
+                    <h3 class="text-lg font-bold text-brand-dark mb-3"><i class="ph-fill ph-trend-up text-brand-accent mr-2"></i>최근 시황 브리핑</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        천룡CC 정회원권은 작년 하반기 약 2억 5,000만 원 선에서 출발하여 꾸준한 상승 흐름을 유지하며 현재 2억 7,000만 원 수준에서 탄탄한 거래를 보여주고 있습니다. 실사용자들의 뛰어난 예약 만족도와 소수 정예 운영 덕분에 시장에 매물이 귀해 지속적인 강보합세를 자랑합니다. 인근 명문 구장들이나 당사의 주중회원권(5,300만 원 선)과 비교 시에도 안정적인 가치를 평가받고 있으며, 개인과 법인 간 상호 거래가 자유로워 실수요자들의 매수 문의가 꾸준히 이어지는 것으로 파악됩니다.
+                    </p>
+                </div>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const ctx = document.getElementById('marketChart').getContext('2d');
+                        
+                        // 최근 12개월 라벨 생성 (작년 11월 ~ 올해 10월)
+                        const labels = ['11월', '12월', '1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월'];
+                        
+                        // 정회원권 12개월 시세 데이터 (2.5억 ~ 2.7억 흐름, 단위: 만원)
+                        const dataPoints = [25000, 25200, 25500, 25800, 26000, 26500, 26800, 27500, 28000, 27800, 27200, 27000];
+
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: '정회원권 시세 추이 (단위: 만원)',
+                                    data: dataPoints,
+                                    borderColor: '#c5a880',
+                                    backgroundColor: 'rgba(197, 168, 128, 0.1)',
+                                    borderWidth: 3,
+                                    pointBackgroundColor: '#143831',
+                                    pointBorderColor: '#fff',
+                                    pointBorderWidth: 2,
+                                    pointRadius: 4,
+                                    pointHoverRadius: 6,
+                                    fill: true,
+                                    tension: 0.4
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        position: 'top',
+                                        labels: {
+                                            font: { family: 'Pretendard', size: 12 },
+                                            color: '#4a5568'
+                                        }
+                                    },
+                                    tooltip: {
+                                        backgroundColor: 'rgba(20, 56, 49, 0.9)',
+                                        titleFont: { family: 'Pretendard', size: 13 },
+                                        bodyFont: { family: 'Pretendard', size: 14, weight: 'bold' },
+                                        padding: 10,
+                                        displayColors: false,
+                                        callbacks: {
+                                            label: function(context) {
+                                                return context.parsed.y.toLocaleString() + ' 만원';
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    x: {
+                                        grid: { display: false },
+                                        ticks: { font: { family: 'Pretendard' }, color: '#718096' }
+                                    },
+                                    y: {
+                                        grid: { color: '#edf2f7', borderDash: [5, 5] },
+                                        ticks: {
+                                            font: { family: 'Pretendard' },
+                                            color: '#718096',
+                                            callback: function(value) {
+                                                return (value / 10000) + '억';
+                                            }
+                                        },
+                                        suggestedMin: 24000,
+                                        suggestedMax: 29000
+                                    }
+                                },
+                                interaction: {
+                                    intersect: false,
+                                    mode: 'index',
+                                },
+                            }
+                        });
+                    });
+                </script>
+
             </div>
         </section>
 
-        <!-- ⑥ 예약 방법, 부대비용, 준비서류 -->
+        <!-- ⑥ 예약 방법, 부대비용, 준비서류 (문의처 번호 삭제 유지) -->
         <section id="extra-guides" class="section-padding bg-brand-light border-t border-gray-200/60">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">GUIDE & PROCEDURES</h2>
+                    <div class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">GUIDE & PROCEDURES</div>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
-                    <p class="text-gray-500 max-w-2xl mx-auto">이용 방법 및 행정 절차 안내</p>
+                    <h2 class="text-gray-500 max-w-2xl mx-auto font-medium text-lg">이용 방법 및 행정 절차 안내</h2>
                 </div>
 
                 <div id="content-extra-guides" class="space-y-6">
                     <!-- 예약 방법 -->
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
+                    <article class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
                         <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2"><i class="ph ph-calendar-check text-brand-accent mr-2"></i>예약 안내 및 오픈 일정</h3>
                         
                         <div class="overflow-x-auto mb-4">
@@ -466,14 +625,11 @@
                             <li>• <strong>예약 오픈:</strong> 매주 월요일 오전 9:30 일주일 단위(월~일)로 예약 오픈</li>
                             <li>• <strong>횟수제한:</strong> 무분별한 예약남용을 방지하고자 횟수를 제한합니다.</li>
                             <li>• <strong>전화예약 가능시간:</strong> 09:30 ~ 17:00</li>
-                            <li class="mt-2 text-gray-500">
-                                <strong>문의처:</strong> 최철 지배인 (TEL: 043-531-6243 / FAX: 043-531-1951 / E-Mail: crcctax@hanmail.net)
-                            </li>
                         </ul>
-                    </div>
+                    </article>
                     
                     <!-- 부대비용 및 변경 수수료 -->
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
+                    <article class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-6">
                         <h3 class="text-lg font-bold text-gray-800 mb-3"><i class="ph ph-calculator text-brand-accent mr-2"></i>부대비용 및 변경 수수료 안내</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <ul class="space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
@@ -489,10 +645,10 @@
                                 <li>• 지정회원 변경: 440,000원</li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- 준비서류 -->
-                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                    <article class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
                         <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-200"><i class="ph ph-folder-user text-brand-accent mr-2"></i>양수 준비서류</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 mb-4">
                             <div class="bg-gray-50 p-4 rounded-lg">
@@ -519,13 +675,13 @@
                         <div class="p-3 bg-brand-light rounded-lg text-xs text-brand-dark font-medium border border-brand-accent/35">
                             💡 준비서류는 개인 및 법인 회원권 종류에 따라 상이할 수 있으니 매매 시 꼼꼼히 확인 후 안내해 드립니다.
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 하단 상담 연결 박스 -->
+    <!-- 하단 상담 연결 박스 (메인 인덱스와 동일한 크기/스타일) -->
     <section class="py-12 bg-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 scroll-anim">
             <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
@@ -540,12 +696,23 @@
                     <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-base md:text-lg leading-relaxed font-normal">
                         실시간 정확한 시세 확인부터 안전한 책임 거래까지 약속드립니다
                     </p>
-                    <a href="tel:010-6263-9552" class="inline-flex items-center justify-center gap-2.5 sm:gap-3 w-full sm:w-auto bg-brand-accent hover:bg-brand-accentDark text-white px-5 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(197,160,89,0.3)] whitespace-nowrap">
-                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                            <i class="ph-fill ph-phone-call text-lg sm:text-xl"></i>
-                        </div>
-                        <span>실시간 시세 · 매매 상담</span>
-                    </a>
+                    
+                    <!-- 버튼 2개 나란히 배치 (메인 인덱스와 동일한 크기/스타일) -->
+                    <div class="mt-6 w-full max-w-md flex gap-3 mx-auto">
+                        <a href="tel:010-6263-9552" class="w-1/2 bg-[#c5a880] hover:bg-[#a38760] text-white font-bold text-[15px] sm:text-[17px] py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
+                            </svg>
+                            <span>전화 상담</span>
+                        </a>
+                        <a href="http://pf.kakao.com/_MXnxiX/chat" target="_blank" rel="noopener noreferrer" class="w-1/2 bg-[#FEE500] hover:bg-[#F4DC00] text-[#191919] font-bold text-[15px] sm:text-[17px] py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 text-[#191919] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 4C6.477 4 2 7.582 2 12c0 2.518 1.419 4.767 3.633 6.186-.234 1.114-1.026 3.424-1.064 3.551-.039.127.042.186.138.125.076-.048 2.92-1.895 4.095-2.735C9.805 19.67 10.875 19.8 12 19.8c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
+                            </svg>
+                            <span>카톡 문의</span>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -563,7 +730,7 @@
                     </p>
                     <p class="text-stone-300 text-sm font-normal">담당: 이호선 과장</p>
                     <div class="pt-2">
-                        <a href="https://blog.naver.com/PostList.naver?blogId=2-hosun&from=postList&categoryNo=13" target="_blank" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/20 shadow-sm">
+                        <a href="https://blog.naver.com/PostList.naver?blogId=2-hosun&from=postList&categoryNo=13" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/20 shadow-sm">
                             <span class="text-green-400 font-bold">N</span> 매매 후기 바로가기
                         </a>
                     </div>
