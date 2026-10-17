@@ -3,44 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     
-    <!-- 네이버/구글 검색 상위 노출용 SEO -->
+    <!-- 네이버/구글 검색 상위 노출용 SEO 및 크롤링 지시자 -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <title>뉴서울CC 회원권 시세 및 혜택 안내 | 서치회원권</title>
-    <meta name="description" content="문화체육관광부 한국문화진흥(주) 운영 36홀 정통 명문 뉴서울CC. 회원권 실거래가 시세, 개인/법인 혜택, 위임 규정 및 국내외 특별 제휴 혜택 안내.">
+    <meta name="description" content="뉴서울CC 정회원권 및 법인 반구좌 회원권 실거래가 시세, 36홀 문화·예술 코스 이용 혜택, 위임 규정 및 특별 제휴 안내.">
     <meta name="keywords" content="뉴서울CC, 뉴서울CC회원권, 뉴서울CC시세, 뉴서울컨트리클럽, 광주명문골프장, 법인회원권, 회원권거래소, 서치회원권">
 
-    <!-- 캐시 제어 및 보안 헤더 (Cache-Control & Security) -->
+    <!-- 캐시 제어 및 보안 헤더 -->
     <meta http-equiv="Cache-Control" content="max-age=31536000, public">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
-    <!-- 파비콘 및 애플 터치 아이콘 (브랜드 아이콘 최적화) -->
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <!-- 파비콘 및 애플 터치 아이콘 (표준 3줄 고정) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-new.png">
     
-    <!-- 카카오톡/문자 공유 시 Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="뉴서울CC 회원권 시세 및 혜택 안내 | 서치회원권" />
-    <meta property="og:description" content="뛰어난 접근성과 36홀 명품 코스, 폭넓은 위임 혜택과 특별 제휴까지. 뉴서울CC 회원권 시세 및 입회 안내." />
-    <meta property="og:image" content="./1.jpg" />
-    <meta property="og:url" content="https://www.searchmembership.co.kr/newseoul-cc" />
+    <!-- 캐니컬 및 오픈메타(OG) URL/썸네일 설정 -->
+    <link rel="canonical" href="https://www.searchmembership.co.kr/newseoul-cc/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="서치회원권">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="뉴서울CC 회원권 시세 및 혜택 안내 | 서치회원권">
+    <meta property="og:description" content="뉴서울CC 정회원권 및 법인 반구좌 회원권 실거래가 시세, 36홀 문화·예술 코스 이용 혜택, 위임 규정 및 특별 제휴 안내.">
+    <meta property="og:url" content="https://www.searchmembership.co.kr/newseoul-cc/">
+    <meta property="og:image" content="https://www.searchmembership.co.kr/newseoul-cc/1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="뉴서울CC 회원권 시세 및 혜택 안내 | 서치회원권">
+    <meta name="twitter:description" content="뉴서울CC 정회원권 및 법인 반구좌 회원권 실거래가 시세, 36홀 문화·예술 코스 이용 혜택, 위임 규정 및 특별 제휴 안내.">
+    <meta name="twitter:image" content="https://www.searchmembership.co.kr/newseoul-cc/1.jpg">
+
+    <!-- 최상단 메인 배경 이미지 프리로드 -->
+    <link rel="preload" as="image" href="1.webp" fetchpriority="high">
 
     <!-- 구조화된 데이터 (Schema.org / JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "GolfCourse",
-      "name": "뉴서울컨트리클럽 (뉴서울CC)",
-      "image": "./1.jpg",
+      "@type": "RealEstateAgent",
+      "name": "서치회원권",
+      "image": "https://www.searchmembership.co.kr/newseoul-cc/1.jpg",
+      "telephone": "010-6263-9552",
+      "url": "https://www.searchmembership.co.kr/newseoul-cc/",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "삼지곡길 95",
-        "addressLocality": "광주시",
+        "streetAddress": "성남대로 926, 603호",
+        "addressLocality": "성남시 분당구",
         "addressRegion": "경기도",
+        "postalCode": "13558",
         "addressCountry": "KR"
-      },
-      "telephone": "031-762-5672",
-      "url": "https://www.searchmembership.co.kr/newseoul-cc",
-      "description": "문화체육관광부 산하 한국문화진흥(주)이 운영하는 경기도 광주 소재의 36홀 명문 회원제 골프장입니다."
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.searchmembership.co.kr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "뉴서울CC 회원권",
+          "item": "https://www.searchmembership.co.kr/newseoul-cc/"
+        }
+      ]
     }
     </script>
 
@@ -137,7 +172,6 @@
     </nav>
     <div class="h-20 w-full"></div>
 
-    <!-- 메인 배너 (1.webp 적용) -->
     <header id="hero-bg" class="hero-bg h-[80vh] min-h-[600px] flex flex-col items-center justify-center relative overflow-hidden text-center px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('1.webp');">
         <div class="absolute inset-0 bg-black/35 z-0"></div>
         
@@ -145,8 +179,8 @@
             <span class="inline-block py-1.5 px-4 rounded-full bg-white/10 border border-white/25 backdrop-blur-md text-brand-accent text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-5 shadow-sm">
                 PREMIUM GOLF & NATURE
             </span>
-            <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">뉴서울CC 회원권</h1>
-            <p id="hero-desc" class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-md">뉴서울CC 회원권</h1>
+            <p class="text-base md:text-lg text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">
                 문화체육관광부가 운영하는 정통 36홀 명문 구장. 쾌적한 접근성과 뛰어난 위임 혜택으로 최고의 만족을 선사합니다.
             </p>
         </div>
@@ -158,7 +192,7 @@
             <div class="max-w-5xl mx-auto px-4 text-center">
                 <p class="text-xs md:text-sm tracking-wide text-brand-accent font-semibold flex items-center justify-center gap-2">
                     <i class="ph-fill ph-check-circle text-lg"></i>
-                    [주목] 가족회원 단독 라운딩 및 우수한 위임 혜택! 국내외 명품 리조트 제휴까지 누리세요.
+                    가족회원 단독 라운딩 및 우수한 위임 혜택! 국내외 명품 리조트 제휴까지 누리세요.
                 </p>
             </div>
         </section>
@@ -176,19 +210,22 @@
                     <div class="overview-box">
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-buildings"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">운영 주체</h3>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">운영 주체</h3>
                                 <p class="text-gray-600 text-sm">문화체육관광부 / 한국문화진흥(주)</p>
                             </div>
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-flag"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">코스 규모 및 회원수</h3>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">코스 규모 및 회원수</h3>
                                 <p class="text-gray-600 text-sm">회원제 36홀 / 약 1,900명</p>
                             </div>
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-calendar-star"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">개장일</h3>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">개장일</h3>
                                 <p class="text-gray-600 text-sm">1987년 10월 24일</p>
                             </div>
                         </div>
@@ -197,7 +234,8 @@
                     <div class="overview-box">
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-money"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">이용 요금 안내</h3>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">이용 요금 안내</h3>
                                 <p class="text-gray-600 text-sm mt-1">
                                     • 전동카트: 120,000원<br>
                                     • 캐디피: 150,000원<br>
@@ -207,7 +245,8 @@
                         </div>
                         <div class="overview-item">
                             <div class="icon-circle"><i class="ph ph-star"></i></div>
-                            <div class="flex-grow"><h3 class="font-semibold text-lg text-gray-800 mb-0.5">특이사항</h3>
+                            <div class="flex-grow">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-0.5">특이사항</h3>
                                 <p class="text-gray-600 text-sm mt-1">
                                     • 개인 ↔ 법인 자유 교차 매매 가능<br>
                                     • 법인 반구좌 입회 가능
@@ -219,31 +258,68 @@
             </div>
         </section>
 
-        <!-- ② 위치 안내 -->
+        <!-- ② 위치 안내 (요청하신 완벽한 반응형 및 좌우 균형 정렬 적용) -->
         <section id="location" class="section-padding bg-brand-light relative">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row gap-12 items-center scroll-anim">
-                    <div class="lg:w-1/2 w-full space-y-4">
-                        <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
-                        <div class="w-16 h-1 bg-brand-accent rounded-full mb-6"></div>
-                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                            서울 강남 및 분당권에서 빠르게 접근할 수 있는 최적의 입지 조건을 자랑합니다. 도심에서 가까운 울창한 숲 속에서 쾌적한 힐링을 누려보세요.
-                        </p>
-                        
-                        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 space-y-4">
-                            <div class="flex justify-between items-center pb-3.5 border-b border-gray-100">
-                                <span class="flex items-center gap-2 font-medium text-gray-800 text-sm md:text-base"><i class="ph ph-car text-brand-accent text-lg"></i> 최적의 접근성</span>
-                                <span class="text-brand-accent font-bold text-xs md:text-sm text-right">강남권 약 40분 내외 소요</span>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- 상단 타이틀 및 설명글 -->
+                <div class="text-center mb-12 scroll-anim">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+                        서울 강남 및 분당권에서 빠르게 접근할 수 있는 최적의 입지 조건을 자랑합니다.<br class="hidden sm:inline">도심에서 가까운 울창한 숲 속에서 쾌적한 힐링을 누려보세요.
+                    </p>
+                </div>
+
+                <!-- 하단 2단 구조 (좌측 3개 박스 / 우측 구글 지도) -->
+                <div class="flex flex-col lg:flex-row gap-8 items-stretch scroll-anim">
+                    <!-- 좌측: 3개의 위치 정보 카드 (텍스트가 쏠리지 않도록 균형 배치) -->
+                    <div class="lg:w-1/2 w-full flex flex-col gap-4 justify-between">
+                        <!-- Card 1 -->
+                        <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-transform hover:-translate-y-1 duration-300">
+                            <div class="flex items-center gap-4 flex-shrink-0">
+                                <div class="w-12 h-12 rounded-xl bg-[#f8f5f0] flex items-center justify-center text-brand-accent text-2xl flex-shrink-0">
+                                    <i class="ph ph-car"></i>
+                                </div>
+                                <span class="font-bold text-gray-800 text-[16px]">주요 도로 인접</span>
                             </div>
-                            <div class="flex justify-between items-center pt-0.5">
-                                <span class="flex items-center gap-2 font-medium text-gray-800 text-sm md:text-base"><i class="ph ph-buildings text-brand-accent text-lg"></i> 주소</span>
-                                <span class="text-gray-600 text-xs md:text-sm text-right font-medium">경기도 광주시 삼지곡길 95(삼동)</span>
+                            <div class="text-gray-600 text-[15px] font-medium sm:text-right leading-[1.6]">
+                                중부고속도로 광주IC 인접<br>
+                                성남대로 · 분당수서간고속화도로 인접
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-transform hover:-translate-y-1 duration-300">
+                            <div class="flex items-center gap-4 flex-shrink-0">
+                                <div class="w-12 h-12 rounded-xl bg-[#f8f5f0] flex items-center justify-center text-brand-accent text-2xl flex-shrink-0">
+                                    <i class="ph ph-map-pin"></i>
+                                </div>
+                                <span class="font-bold text-gray-800 text-[16px]">수도권 접근성</span>
+                            </div>
+                            <div class="text-gray-600 text-[15px] font-medium sm:text-right leading-[1.6]">
+                                강남권 기준 약 40분 내외<br>
+                                판교·분당 기준 약 20 ~ 25분
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-transform hover:-translate-y-1 duration-300">
+                            <div class="flex items-center gap-4 flex-shrink-0">
+                                <div class="w-12 h-12 rounded-xl bg-[#f8f5f0] flex items-center justify-center text-brand-accent text-2xl flex-shrink-0">
+                                    <i class="ph ph-buildings"></i>
+                                </div>
+                                <span class="font-bold text-gray-800 text-[16px]">주소</span>
+                            </div>
+                            <div class="text-gray-600 text-[15px] font-medium sm:text-right leading-[1.6]">
+                                경기도 광주시 삼지곡길 95<br>
+                                (삼동, 뉴서울컨트리클럽)
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white h-[350px]">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca95f42cd6f47%3A0x360efef5be8510ca!2z64m07ISc7Jq47Luo7Yq466as7YG065-9!5e0!3m2!1sko!2skr!4v1790937273340!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                    <!-- 우측: 구글 지도 (좌측 카드 세트와 높이 및 비율 완벽 동기화) -->
+                    <div class="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white min-h-[350px] lg:min-h-full flex">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca95f42cd6f47%3A0x360efef5be8510ca!2z64m07ISc7Jq47Luo7Yq466as7YG065-9!5e0!3m2!1sko!2skr!4v1790937273340!5m2!1sko!2skr" width="100%" height="100%" style="border:0; flex-grow:1;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                 </div>
             </div>
@@ -264,15 +340,15 @@
                         <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-brand-accent pl-3">클럽하우스 & 주요 시설</h3>
                         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                             <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm">
-                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="2.webp" alt="뉴서울CC 클럽하우스" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
+                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="2.webp" alt="뉴서울컨트리클럽 클럽하우스 외관 전경" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
                                 <h4 class="text-sm md:text-base font-bold text-gray-800 mb-1 text-center">클럽하우스</h4>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm">
-                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="3.webp" alt="뉴서울CC 레스토랑" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
+                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="3.webp" alt="뉴서울CC 레스토랑 식사 공간" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
                                 <h4 class="text-sm md:text-base font-bold text-gray-800 mb-1 text-center">레스토랑</h4>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm">
-                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="4.webp" alt="뉴서울CC 라커룸" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
+                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="4.webp" alt="뉴서울CC 락커룸 내부" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
                                 <h4 class="text-sm md:text-base font-bold text-gray-800 mb-1 text-center">라커룸</h4>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm">
@@ -280,7 +356,7 @@
                                 <h4 class="text-sm md:text-base font-bold text-gray-800 mb-1 text-center">파우더룸</h4>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm hidden md:block lg:block">
-                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="6.webp" alt="뉴서울CC 사우나" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
+                                <div class="rounded-xl overflow-hidden shadow mb-3"><img src="6.webp" alt="뉴서울CC 사우나 시설" loading="lazy" class="w-full h-[140px] md:h-[160px] object-cover hover:scale-105 transition-transform duration-500"></div>
                                 <h4 class="text-sm md:text-base font-bold text-gray-800 mb-1 text-center">사우나</h4>
                             </div>
                         </div>
@@ -292,28 +368,28 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
                                 <div class="rounded-xl overflow-hidden shadow mb-4">
-                                    <img src="7.webp" alt="뉴서울CC 문화코스 1" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                    <img src="7.webp" alt="뉴서울컨트리클럽 문화코스 페어웨이 전경" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                                 </div>
                                 <h4 class="text-[17px] font-bold text-gray-800 mb-2">문화 코스 (Culture)</h4>
                                 <p class="text-sm text-gray-600">페어웨이가 비교적 넓고 길어 장타자에게 유리하며 호쾌한 샷을 요구합니다.</p>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
                                 <div class="rounded-xl overflow-hidden shadow mb-4">
-                                    <img src="8.webp" alt="뉴서울CC 문화코스 2" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                    <img src="8.webp" alt="뉴서울CC 도전적인 코스 레이아웃" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                                 </div>
                                 <h4 class="text-[17px] font-bold text-gray-800 mb-2">도전적인 레이아웃</h4>
                                 <p class="text-sm text-gray-600">크고 작은 언듈레이션과 벙커가 조화롭게 배치되어 집중력 있는 플레이가 필요합니다.</p>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
                                 <div class="rounded-xl overflow-hidden shadow mb-4">
-                                    <img src="9.webp" alt="뉴서울CC 예술코스 1" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                    <img src="9.webp" alt="뉴서울CC 예술코스 정교한 그린" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                                 </div>
                                 <h4 class="text-[17px] font-bold text-gray-800 mb-2">예술 코스 (Art)</h4>
                                 <p class="text-sm text-gray-600">아기자기하고 섬세한 코스 설계로 정교하고 정확한 샷 메이킹이 필수적입니다.</p>
                             </div>
                             <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
                                 <div class="rounded-xl overflow-hidden shadow mb-4">
-                                    <img src="10.webp" alt="뉴서울CC 예술코스 2" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
+                                    <img src="10.webp" alt="뉴서울CC 사계절 수려한 조경" loading="lazy" class="w-full h-[200px] object-cover hover:scale-105 transition-transform duration-500">
                                 </div>
                                 <h4 class="text-[17px] font-bold text-gray-800 mb-2">아름다운 조경</h4>
                                 <p class="text-sm text-gray-600">사계절의 수려한 변화를 감상하며 편안하면서도 긴장감 있는 라운드를 즐길 수 있습니다.</p>
@@ -365,7 +441,7 @@
             </div>
         </section>
 
-        <!-- ⑤ 특별 제휴 혜택 (신규 섹션) -->
+        <!-- ⑤ 특별 제휴 혜택 -->
         <section id="partnership" class="section-padding bg-white border-y border-gray-200">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-10 scroll-anim">
@@ -415,16 +491,17 @@
             </div>
         </section>
 
-        <!-- ⑥ 시세 안내 -->
+        <!-- ⑥ 실거래 시세 동향 (최근 시황 브리핑 박스 포함) -->
         <section id="price" class="section-padding bg-white">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 scroll-anim">
                     <span class="text-sm font-bold tracking-widest text-brand-accent uppercase mb-2 block">Market Trends</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">실거래 시세 동향</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
+                    <p class="text-sm text-gray-500 mt-1">최종 시세 기준일: 2026년 10월 17일</p>
                 </div>
 
-                <div class="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-100 mb-12 scroll-anim">
+                <div class="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-100 mb-6 scroll-anim">
                     <table class="w-full text-sm text-left">
                         <thead class="text-xs text-gray-600 uppercase bg-gray-50">
                             <tr>
@@ -438,13 +515,24 @@
                                 <td class="px-6 py-4 text-right text-brand-accent text-xl"><strong>4억 2,300만원</strong></td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="px-6 py-3 text-[12px] text-gray-500 bg-gray-50 text-center font-normal">
+                                <td colspan="2" class="px-6 py-3 text-[13px] text-gray-500 bg-gray-50 text-center font-normal">
                                     ※ 뉴서울CC는 개인과 법인 시세가 동일하게 형성되어 있습니다.<br>
                                     ※ 시세는 수급 및 시장 상황에 따라 실시간 변동될 수 있습니다.
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <!-- [최근 시황 브리핑] 박스 -->
+                <div class="glass-card p-6 md:p-8 scroll-anim">
+                    <div class="flex items-center gap-2 mb-4 border-b border-gray-100 pb-3">
+                        <i class="ph-fill ph-chart-line-up text-brand-accent text-2xl"></i>
+                        <h3 class="text-lg font-bold text-gray-900">최근 시황 브리핑</h3>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed font-light space-y-2">
+                        뉴서울CC 회원권은 수도권 최고 수준의 탄탄한 접근성과 문체부 산하의 안정적인 운영 신뢰도를 바탕으로 연초 대비 완만한 강보합세를 유지하며 매물이 소화되고 있습니다. 특히 개인과 법인 간의 자유로운 교차 매매가 가능하고 반구좌 입회가 허용되어 법인 비즈니스 접대용 수요의 유입이 꾸준합니다. 인근의 남서울CC나 한양CC 등 전통 명문 구장들과 비교했을 때 상대적으로 우수한 위임 혜택과 다산베아채 등 파격적인 제휴 리조트 시너지 덕분에 실수요 중심의 매수 대기층이 탄탄하게 형성되어 있는 국면입니다.
+                    </p>
                 </div>
             </div>
         </section>
@@ -556,20 +644,29 @@
                 <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-brand-accent opacity-10 blur-3xl"></div>
                 <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-white opacity-5 blur-2xl"></div>
 
-                <div class="relative z-10">
-                    <p class="text-brand-accent font-medium tracking-widest text-sm md:text-[15px] mb-3">자연이 허락한 도심 속 완벽한 힐링</p>
+                <div class="relative z-10 flex flex-col items-center">
+                    <p class="text-brand-accent font-medium tracking-widest text-sm md:text-[15px] mb-3">숲속의 여유와 품격 있는 라운드의 시작</p>
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                        짙푸른 숲의 숨결이 머무는 곳,<br class="hidden sm:inline"/> 뉴서울CC에서 당신만의 여유를 완성하세요
+                        자연이 허락한 도심 속 완벽한 쉼,<br class="hidden sm:inline"/> 뉴서울CC에서 품격 있는 여유를 누려보세요
                     </h2>
                     <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-base md:text-lg leading-relaxed font-normal">
                         우수한 위임 혜택과 국내외 제휴의 가치가 더해진 완벽한 회원권.<br>실시간 정확한 시세 안내와 안전한 책임 거래를 약속드립니다.
                     </p>
-                    <a href="tel:010-6263-9552" class="inline-flex items-center justify-center gap-2.5 sm:gap-3 w-full sm:w-auto bg-brand-accent hover:bg-brand-accentDark text-white px-5 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(197,160,89,0.3)] whitespace-nowrap">
-                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                            <i class="ph-fill ph-phone-call text-lg sm:text-xl"></i>
-                        </div>
-                        <span>실시간 시세 · 매매 상담</span>
-                    </a>
+                    <div class="mt-6 w-full max-w-md flex flex-col sm:flex-row gap-3 mx-auto">
+                        <a href="tel:010-6263-9552" class="w-full bg-[#c5a880] hover:bg-[#a38760] text-white font-bold text-[15px] sm:text-[17px] py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(197,160,89,0.3)]">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
+                            </svg>
+                            <span>전화 상담</span>
+                        </a>
+                        
+                        <a href="http://pf.kakao.com/_MXnxiX/chat" target="_blank" rel="noopener noreferrer" class="w-full bg-[#FEE500] text-[#191919] font-bold text-[15px] sm:text-[17px] py-4 rounded-xl shadow-lg hover:bg-[#F4DC00] transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            <svg class="w-5 h-5 text-[#191919] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 4C6.477 4 2 7.582 2 12c0 2.518 1.419 4.767 3.633 6.186-.234 1.114-1.026 3.424-1.064 3.551-.039.127.042.186.138.125.076-.048 2.92-1.895 4.095-2.735C9.805 19.67 10.875 19.8 12 19.8c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
+                            </svg>
+                            <span>카톡 문의</span>
+                        </a>
+                    </div>                       
                 </div>
             </div>
         </div>
@@ -612,7 +709,7 @@
                     <div class="flex flex-col gap-y-1 pt-1">
                         <a href="tel:010-6263-9552" class="text-white text-base md:text-lg font-bold flex items-center gap-2 hover:text-brand-accent transition w-fit">
                             <svg class="w-4 h-4 text-brand-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1 1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498,4.493a1,1 0 01-.502,1.21l-2.257,1.13a11.042,11.042 0 005.516,5.516l1.13-2.257a1.13-1.13 0 011.21-.502l4.493,1.498a1,1 0 01.684.949V19a2 2 0 01-2,2h-1C9.716,21 3,14.284 3,6V5z"></path>
                             </svg>
                             <span>010-6263-9552</span>
                         </a>
