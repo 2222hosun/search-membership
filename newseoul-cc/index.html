@@ -258,22 +258,22 @@
             </div>
         </section>
 
-        <!-- ② 위치 안내 (요청하신 완벽한 반응형 및 좌우 균형 정렬 적용) -->
+             <!-- ② 위치 안내 -->
         <section id="location" class="section-padding bg-brand-light relative">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- 상단 타이틀 및 설명글 -->
                 <div class="text-center mb-12 scroll-anim">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">PERFECT LOCATION</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4 uppercase">PERFECT LOCATION</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-6"></div>
                     <p class="text-gray-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                         서울 강남 및 분당권에서 빠르게 접근할 수 있는 최적의 입지 조건을 자랑합니다.<br class="hidden sm:inline">도심에서 가까운 울창한 숲 속에서 쾌적한 힐링을 누려보세요.
                     </p>
                 </div>
 
-                <!-- 하단 2단 구조 (좌측 3개 박스 / 우측 구글 지도) -->
-                <div class="flex flex-col lg:flex-row gap-8 items-stretch scroll-anim">
-                    <!-- 좌측: 3개의 위치 정보 카드 (텍스트가 쏠리지 않도록 균형 배치) -->
-                    <div class="lg:w-1/2 w-full flex flex-col gap-4 justify-between">
+                <!-- 하단 2단 구조 (좌측 3개 카드 / 우측 구글 지도) -->
+                <div class="flex flex-col md:flex-row gap-12 items-center scroll-anim">
+                    <!-- 좌측: 3개의 위치 정보 카드 영역 -->
+                    <div class="md:w-1/2 w-full flex flex-col gap-4 justify-between">
                         <!-- Card 1 -->
                         <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-transform hover:-translate-y-1 duration-300">
                             <div class="flex items-center gap-4 flex-shrink-0">
@@ -312,18 +312,19 @@
                             </div>
                             <div class="text-gray-600 text-[15px] font-medium sm:text-right leading-[1.6]">
                                 경기도 광주시 삼지곡길 95<br>
-                                (삼동, 뉴서울컨트리클럽 )
+                                (삼동, 뉴서울컨트리클럽)
                             </div>
                         </div>
                     </div>
 
-                    <!-- 우측: 구글 지도 (좌측 카드 세트와 높이 및 비율 완벽 동기화) -->
-                    <div class="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white min-h-[350px] lg:min-h-full flex">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca95f42cd6f47%3A0x360efef5be8510ca!2z64m07ISc7Jq47Luo7Yq466as7YG065-9!5e0!3m2!1sko!2skr!4v1790937273340!5m2!1sko!2skr" width="100%" height="100%" style="border:0; flex-grow:1;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <!-- 우측: 구글 지도 영역 (천룡CC와 똑같은 h-[400px] 및 md:w-1/2 적용) -->
+                    <div class="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white h-[400px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca95f42cd6f47%3A0x360efef5be8510ca!2z64m07ISc7Jq47Luo7Yq466as7YG065-9!5e0!3m2!1sko!2skr!4v1792224354279!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="뉴서울CC 위치 지도"></iframe>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- ③ 시설 및 코스 소개 -->
         <section id="facilities" class="section-padding bg-white">
