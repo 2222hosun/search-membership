@@ -59,7 +59,7 @@ const dataHotel = [
 ];
 
 const dataUnnamed = [
-    { title: "프리미엄 ", sub: "비즈니스 성공을 위한 무기명 컬렉션", tag: "무기명 특별관", link: "unnamed-golf/" },
+    { title: "프리미엄 무기명", sub: "비즈니스 성공을 위한 무기명 컬렉션", tag: "무기명 특별관", link: "unnamed-golf/" },
     { title: "태광CC 무기명", sub: "법인 선호도 높은 용인권 27홀 명문 코스", tag: "경기 용인", link: "taekwang-cc-unnamed/" },
     { title: "아름다운CC 무기명", sub: "충남 아산 27홀 명문 코스와 리조트 혜택", tag: "충남 아산", link: "arumdaun-cc/" },
     { title: "솔모로CC 무기명", sub: "무기명 4인 · 주중 4회 / 주말 4회", tag: "경기 여주", link: "solmoro-cc/#unnamed" },
