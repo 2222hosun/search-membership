@@ -16,7 +16,7 @@ const dataGolf = [
     { title: "뉴서울CC 회원권", sub: "문화체육관광부 운영 36홀 명문과 폭넓은 위임 혜택", tag: "경기 광주", link: "newseoul-cc/" },
     { title: "뉴코리아CC 회원권", sub: "강북 최상의 접근성과 50년 전통 숲속 코스", tag: "경기 고양", link: "newkorea-cc/" },
     { title: "뉴스프링빌CC 회원권", sub: "남이천 IC 2분 초접근성과 54홀 매머드급 코스", tag: "경기 이천", link: "newspring-cc/" },
-    { title: "인천국제CC 회원권", sub: "50년 전통의 카트 없는 클래식 워킹 라운드 명문", tag: "인천", link: "incheon-cc/" },
+    { title: "인천국제CC 회원권", sub: "50년 전통의 카트 없는 클래식 워킹 라운드 명문", tag: "경기 인천", link: "incheon-cc/" },
     { title: "골드CC 회원권", sub: "GA KOREA 운영 36홀 수도권 남부 명문 코스", tag: "경기 용인", link: "gold-cc/" },
     { title: "레이크사이드CC 회원권", sub: "삼성물산 운영 54홀 수도권 최고 명문 클럽", tag: "경기 용인", link: "lakeside-cc/" },
     { title: "렉스필드CC 회원권", sub: "27홀 27색 아트코스의 자부심과 완벽한 위임 혜택", tag: "경기 여주", link: "rexfield-cc/" },
