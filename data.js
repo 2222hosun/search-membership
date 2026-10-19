@@ -31,6 +31,7 @@ const dataGolf = [
     { title: "송추CC 회원권", sub: "TS대한제당 운영 소수정예 18홀, 제주 핀크스 제휴", tag: "경기 양주", link: "songchoo-cc/" },
     { title: "라데나CC 회원권", sub: "두산그룹 운영 KLPGA 매치플레이 개최지, 27홀 명문", tag: "강원 춘천", link: "ladena-cc/" },
     { title: "은화삼CC 회원권", sub: "울창한 소나무 숲과 아놀드 파머 설계의 18홀 코스", tag: "경기 용인", link: "eunhwasam-cc/" },
+    { title: "발리오스CC 회원권", sub: "서울·수도권 인접 27홀, 정회원·VIP·VVIP 무기명", tag: "경기 화성", link: "balios-cc/" },
 ];
 
 const dataCondo = [
@@ -65,7 +66,7 @@ const dataUnnamed = [
     { title: "아름다운CC 무기명", sub: "충남 아산 27홀 명문 코스와 리조트 혜택", tag: "충남 아산", link: "arumdaun-cc/" },
     { title: "솔모로CC 무기명", sub: "무기명 4인 · 주중 4회 / 주말 4회", tag: "경기 여주", link: "solmoro-cc/#unnamed" },
     { title: "더시에나서울CC 무기명", sub: "정회원 2인 + 무기명 4인 · 통합 혜택", tag: "경기 광주", link: "thesiena-seoul/#unnamed" },
-
+    { title: "발리오스CC 무기명", sub: "정회원 1~2인 / 무기명 2~4인 혜택", tag: "경기 화성", link: "balios-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
