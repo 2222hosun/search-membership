@@ -30,6 +30,7 @@ const dataGolf = [
     { title: "신원CC 회원권", sub: "주주회원제, 2인 플레이가 가능한 27홀 명문 코스", tag: "경기 용인", link: "shinwon-cc/" },
     { title: "송추CC 회원권", sub: "TS대한제당 운영 소수정예 18홀, 제주 핀크스 제휴", tag: "경기 양주", link: "songchoo-cc/" },
     { title: "라데나CC 회원권", sub: "두산그룹 운영 KLPGA 매치플레이 개최지, 27홀 명문", tag: "강원 춘천", link: "ladena-cc/" },
+    { title: "은화삼CC 회원권", sub: "울창한 소나무 숲과 아놀드 파머 설계의 18홀 코스", tag: "경기 용인", link: "eunhwasam-cc/" },
 ];
 
 const dataCondo = [
