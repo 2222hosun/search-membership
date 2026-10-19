@@ -24,14 +24,15 @@ const dataGolf = [
     { title: "그랜드CC 회원권", sub: "국내 최초 정통 스코틀랜드 링크스 스타일의 27홀 클럽", tag: "충북 청주", link: "grand-cc/" },
     { title: "아시아나CC 회원권", sub: "수도권 접근성이 뛰어난 36홀 명문 코스", tag: "경기 용인", link: "asiana-cc/" },
     { title: "블루헤런CC 회원권", sub: "KLPGA 메이저 개최지, 18홀 명문 코스", tag: "경기 여주", link: "blueheron-cc/" },
-    { title: "한원CC 회원권", sub: "전통 한옥의 멋과 50년 역사의 27홀, 정·우대·무기명", tag: "경기 용인", link: "hanwon-cc/" },
+    { title: "한원CC 회원권", sub: "전통 한옥의 멋과 50년 역사의 27홀", tag: "경기 용인", link: "hanwon-cc/" },
     { title: "블루원용인CC 회원권", sub: "뛰어난 수도권 접근성의 27홀", tag: "경기 용인", link: "blueone-yongin-cc/" },
-    { title: "솔모로CC 회원권", sub: "수도권 1억 미만 최고 가성비 36홀 및 무기명 4인", tag: "경기 여주", link: "solmoro-cc/" },
+    { title: "솔모로CC 회원권", sub: "수도권 1억 미만 최고 가성비의 36홀", tag: "경기 여주", link: "solmoro-cc/" },
     { title: "신원CC 회원권", sub: "주주회원제, 2인 플레이가 가능한 27홀 명문 코스", tag: "경기 용인", link: "shinwon-cc/" },
     { title: "송추CC 회원권", sub: "TS대한제당 운영 소수정예 18홀, 제주 핀크스 제휴", tag: "경기 양주", link: "songchoo-cc/" },
     { title: "라데나CC 회원권", sub: "두산그룹 운영 KLPGA 매치플레이 개최지, 27홀 명문", tag: "강원 춘천", link: "ladena-cc/" },
     { title: "은화삼CC 회원권", sub: "울창한 소나무 숲과 아놀드 파머 설계의 18홀 코스", tag: "경기 용인", link: "eunhwasam-cc/" },
     { title: "발리오스CC 회원권", sub: "서울·수도권 인접 27홀, 정회원·VIP·VVIP 무기명", tag: "경기 화성", link: "balios-cc/" },
+    { title: "아름다운CC 회원권", sub: "채석장 지형의 이색적인 락 코스의 27홀", tag: "충남 아산", link: "arumdaun-cc/" },
 ];
 
 const dataCondo = [
@@ -63,10 +64,10 @@ const dataHotel = [
 const dataUnnamed = [
     { title: "프리미엄 무기명", sub: "비즈니스 성공을 위한 무기명 컬렉션", tag: "무기명 특별관", link: "unnamed-golf/" },
     { title: "태광CC 무기명", sub: "법인 선호도 높은 용인권 27홀 명문 코스", tag: "경기 용인", link: "taekwang-cc-unnamed/" },
-    { title: "아름다운CC 무기명", sub: "충남 아산 27홀 명문 코스와 리조트 혜택", tag: "충남 아산", link: "arumdaun-cc/" },
     { title: "솔모로CC 무기명", sub: "무기명 4인 · 주중 4회 / 주말 4회", tag: "경기 여주", link: "solmoro-cc/#unnamed" },
     { title: "더시에나서울CC 무기명", sub: "정회원 2인 + 무기명 4인 · 통합 혜택", tag: "경기 광주", link: "thesiena-seoul/#unnamed" },
     { title: "발리오스CC 무기명", sub: "정회원 1~2인 / 무기명 2~4인 혜택", tag: "경기 화성", link: "balios-cc/#unnamed" },
+    { title: "아름다운CC 무기명", sub: "무기명 4인 · 분양가별 혜택", tag: "충남 아산", link: "arumdaun-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
