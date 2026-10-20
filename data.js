@@ -33,6 +33,7 @@ const dataGolf = [
     { title: "은화삼CC 회원권", sub: "울창한 소나무 숲과 아놀드 파머 설계의 18홀 코스", tag: "경기 용인", link: "eunhwasam-cc/" },
     { title: "발리오스CC 회원권", sub: "서울·수도권 인접 27홀, 정회원·VIP·VVIP 무기명", tag: "경기 화성", link: "balios-cc/" },
     { title: "아름다운CC 회원권", sub: "채석장 지형의 이색적인 락 코스의 27홀", tag: "충남 아산", link: "arumdaun-cc/" },
+    { title: "포천아도니스CC 회원권", sub: "대자연 속에서 펼쳐지는 36홀 매머드급 코스", tag: "경기 포천", link: "adonis-cc/" },
 ];
 
 const dataCondo = [
@@ -69,6 +70,7 @@ const dataUnnamed = [
     { title: "발리오스CC 무기명", sub: "정회원 1~2인 / 무기명 2~4인 혜택", tag: "경기 화성", link: "balios-cc/#unnamed" },
     { title: "아름다운CC 무기명", sub: "무기명 4인 · 분양가별 혜택", tag: "충남 아산", link: "arumdaun-cc/#unnamed" },
     { title: "한원CC 무기명", sub: "1·2구좌 특별회원권 · 동반 3인 / 무기명 4인", tag: "경기 용인", link: "hanwon-cc/#unnamed" },
+    { title: "포천아도니스CC 무기명", sub: "무기명 1~4인 · 주중·주말 혜택", tag: "경기 포천", link: "adonis-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
