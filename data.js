@@ -35,7 +35,7 @@ const dataGolf = [
     { title: "아름다운CC 회원권", sub: "채석장 지형의 이색적인 락 코스의 27홀", tag: "충남 아산", link: "arumdaun-cc/" },
     { title: "포천아도니스CC 회원권", sub: "대자연 속에서 펼쳐지는 36홀 매머드급 코스", tag: "경기 포천", link: "adonis-cc/" },
     { title: "엘리시안강촌CC 회원권", sub: "GS그룹 운영 27홀 코스와 사계절 종합 리조트", tag: "강원 춘천", link: "elysian-gangchon-cc/" },
-    { title: "이스트밸리CC 회원권", 소수 정예 VVIP를 위한 경기 남부권 최상위 27홀 프라이빗 코스", tag: "경기 광주", link: "eastvalley-cc/" },
+    { title: "이스트밸리CC 회원권", sub: "소수 정예 VVIP를 위한 경기 남부권 최상위 27홀 프라이빗 코스", tag: "경기 광주", link: "eastvalley-cc/" },
 ];
 
 const dataCondo = [
