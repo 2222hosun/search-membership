@@ -74,6 +74,7 @@ const dataUnnamed = [
     { title: "한원CC 무기명", sub: "1·2구좌 특별회원권 · 동반 3인 / 무기명 4인", tag: "경기 용인", link: "hanwon-cc/#unnamed" },
     { title: "포천아도니스CC 무기명", sub: "무기명 1~4인 · 주중·주말 혜택", tag: "경기 포천", link: "adonis-cc/#unnamed" },
     { title: "엘리시안강촌CC 무기명", sub: "VIP 무기명 4인 · 분양가별 혜택", tag: "강원 춘천", link: "elysian-gangchon-cc/#unnamed" },
+    { title: "금강CC 무기명", sub: "정회원 1인 + 무기명 1인 · 주말 월 3회", tag: "경기 여주", link: "kumgang-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
