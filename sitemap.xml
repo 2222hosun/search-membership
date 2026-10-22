@@ -75,11 +75,11 @@
   <!-- 5. 무기명 회원권 특별관 상세 페이지 -->
   <url><loc>https://www.searchmembership.co.kr/unnamed-golf/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/taekwang-cc-unnamed/</loc></url>
-  <url><loc>https://www.searchmembership.co.kr/arumdaun-cc/</loc></url>
-
+  
   <!-- 6. 분양 안내 상세 페이지 -->
   <url><loc>https://www.searchmembership.co.kr/d-heights-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/montvert-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/evendale-cc/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/thestarhue-cc/</loc></url>
 
 </urlset>
