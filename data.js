@@ -36,6 +36,7 @@ const dataGolf = [
     { title: "포천아도니스CC 회원권", sub: "대자연 속에서 펼쳐지는 36홀 매머드급 코스", tag: "경기 포천", link: "adonis-cc/" },
     { title: "엘리시안강촌CC 회원권", sub: "GS그룹 운영 27홀 코스와 사계절 종합 리조트", tag: "강원 춘천", link: "elysian-gangchon-cc/" },
     { title: "이스트밸리CC 회원권", sub: "소수 정예 VVIP를 위한 경기 남부권 최상위 27홀 프라이빗 코스", tag: "경기 광주", link: "eastvalley-cc/" },
+    { title: "코리아CC 회원권", sub: "기흥IC 인접, 용인 27홀 명문 골프장", tag: "경기 용인", link: "korea-cc/" },
 ];
 
 const dataCondo = [
@@ -76,6 +77,7 @@ const dataUnnamed = [
     { title: "엘리시안강촌CC 무기명", sub: "VIP 무기명 4인 · 분양가별 혜택", tag: "강원 춘천", link: "elysian-gangchon-cc/#unnamed" },
     { title: "금강CC 무기명", sub: "정회원 1인 + 무기명 1인 · 주말 월 3회", tag: "경기 여주", link: "kumgang-cc/#unnamed" },
     { title: "리베라CC 무기명", sub: "신안그룹 연계 혜택 · 레드 M-VIP 회원권", tag: "경기 화성", link: "Rivera-golf/#unnamed" },
+    { title: "코리아CC 무기명", sub: "정회원 1인 · 동반 3인 주중 혜택", tag: "경기 용인", link: "korea-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
