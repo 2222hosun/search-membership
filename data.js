@@ -75,6 +75,7 @@ const dataUnnamed = [
     { title: "포천아도니스CC 무기명", sub: "무기명 1~4인 · 주중·주말 혜택", tag: "경기 포천", link: "adonis-cc/#unnamed" },
     { title: "엘리시안강촌CC 무기명", sub: "VIP 무기명 4인 · 분양가별 혜택", tag: "강원 춘천", link: "elysian-gangchon-cc/#unnamed" },
     { title: "금강CC 무기명", sub: "정회원 1인 + 무기명 1인 · 주말 월 3회", tag: "경기 여주", link: "kumgang-cc/#unnamed" },
+    { title: "리베라CC 무기명", sub: "신안그룹 연계 혜택 · 레드 M-VIP 회원권", tag: "경기 화성", link: "Rivera-golf/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
