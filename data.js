@@ -37,6 +37,7 @@ const dataGolf = [
     { title: "엘리시안강촌CC 회원권", sub: "GS그룹 운영 27홀 코스와 사계절 종합 리조트", tag: "강원 춘천", link: "elysian-gangchon-cc/" },
     { title: "이스트밸리CC 회원권", sub: "소수 정예 VVIP를 위한 경기 남부권 최상위 27홀 프라이빗 코스", tag: "경기 광주", link: "eastvalley-cc/" },
     { title: "코리아CC 회원권", sub: "기흥IC 인접, 용인 27홀 명문 골프장", tag: "경기 용인", link: "korea-cc/" },
+    { title: "한성CC 회원권", sub: "도심 속 자연림을 품은 용인 기흥 27홀 정통 구장", tag: "경기 용인", link: "hansung-cc/" },
 ];
 
 const dataCondo = [
