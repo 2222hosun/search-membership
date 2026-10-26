@@ -174,7 +174,7 @@
         <!-- 좌우 여백을 모바일에서 살짝 줄여 공간 확보 -->
         <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
             
-            <!-- 1. 로고 영역 -->
+            <!-- 1. 로고 영역: 펼쳤을 때는 기존 그대로, 접었을 때만 로고 크기 축소 -->
             <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
                 <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
                     <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -187,7 +187,7 @@
                 </div>
             </div>
             
-            <!-- 2. 버튼 영역: 펼쳤을때(sm 이상)는 기존 오리지널 좌우 폭(px-3.5)으로 완벽 복구 -->
+            <!-- 2. 버튼 영역: hidden을 제거하여 접었을 때도 노출되도록 하고, 펼쳤을 때는 기존과 동일한 여백 유지 -->
             <div class="flex items-center gap-1 sm:gap-2">
                 <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
                     <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 안내
