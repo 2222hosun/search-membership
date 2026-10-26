@@ -38,6 +38,7 @@ const dataGolf = [
     { title: "이스트밸리CC 회원권", sub: "소수 정예 VVIP를 위한 경기 남부권 최상위 27홀 프라이빗 코스", tag: "경기 광주", link: "eastvalley-cc/" },
     { title: "코리아CC 회원권", sub: "기흥IC 인접, 용인 27홀 명문 골프장", tag: "경기 용인", link: "korea-cc/" },
     { title: "한성CC 회원권", sub: "도심 속 자연림을 품은 용인 기흥 27홀 정통 구장", tag: "경기 용인", link: "hansung-cc/" },
+    { title: "지산CC 회원권", sub: "콘도·스키 혜택이 결합된 27홀 프라이빗 코스", tag: "경기 용인", link: "jisan-cc/" },
 ];
 
 const dataCondo = [
@@ -79,6 +80,7 @@ const dataUnnamed = [
     { title: "금강CC 무기명", sub: "정회원 1인 + 무기명 1인 · 주말 월 3회", tag: "경기 여주", link: "kumgang-cc/#unnamed" },
     { title: "리베라CC 무기명", sub: "신안그룹 연계 혜택 · 레드 M-VIP 회원권", tag: "경기 화성", link: "Rivera-golf/#unnamed" },
     { title: "코리아CC 무기명", sub: "정회원 1인 · 동반 3인 주중 혜택", tag: "경기 용인", link: "korea-cc/#unnamed" },
+    { title: "지산CC 무기명(동반)", sub: "하나로·노블 동반회원권 · 정회원 1인 + 동반 1인", tag: "경기 용인", link: "jisan-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
