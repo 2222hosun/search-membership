@@ -89,4 +89,5 @@ const dataExclusive = [
     { title: "몽베르CC 회원권", sub: "36홀 명성산 절경과 파격적인 위임 혜택", tag: "경기 포천", link: "montvert-cc/" },
     { title: "이븐데일CC 회원권", sub: "다이디자인 18홀 코스와 비용 절감의 무기명 혜택", tag: "충북 청주", link: "evendale-cc/" },
     { title: "더스타휴CC 회원권", sub: "프라이빗 18홀 명문 코스와 리조트가 선사하는 럭셔리 힐링", tag: "경기 양평", link: "thestarhue-cc/" },
+    { title: "라헨느CC 회원권", sub: "제주도 18홀 자연과 온전한 쉼을 선사하는 37평형 골프텔", tag: "제주 제주시", link: "lareine-cc/" },
 ];
