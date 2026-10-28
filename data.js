@@ -40,6 +40,7 @@ const dataGolf = [
     { title: "한성CC 회원권", sub: "도심 속 자연림을 품은 용인 기흥 27홀 정통 구장", tag: "경기 용인", link: "hansung-cc/" },
     { title: "지산CC 회원권", sub: "콘도·스키 혜택이 결합된 27홀 프라이빗 코스", tag: "경기 용인", link: "jisan-cc/" },
     { title: "아난티코드CC 회원권", sub: "전국 아난티 혜택이 결합된 가평 27홀 프라이빗 코스", tag: "경기 가평", link: "ananti-chord-cc/" },
+    { title: "벨라45CC 회원권", sub: "동반자 전원 우대 및 위임 혜택을 갖춘 횡성 45홀", tag: "강원 횡성", link: "bella45-cc/" },
 ];
 
 const dataCondo = [
@@ -83,6 +84,7 @@ const dataUnnamed = [
     { title: "코리아CC 무기명", sub: "정회원 1인 · 동반 3인 주중 혜택", tag: "경기 용인", link: "korea-cc/#unnamed" },
     { title: "지산CC 무기명(동반)", sub: "하나로·노블 동반회원권 · 정회원 1인 + 동반 1인", tag: "경기 용인", link: "jisan-cc/#unnamed" },
     { title: "아난티코드CC 무기명", sub: "정회원 2인 + 무기명 4인 · 아난티 30박 연계", tag: "경기 가평", link: "ananti-chord-cc/#unnamed" },
+    { title: "벨라45CC 무기명", sub: "무기명 4인 · 주중 3회 / 주말 4회", tag: "강원 횡성", link: "bella45-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
