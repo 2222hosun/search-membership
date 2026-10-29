@@ -89,6 +89,7 @@ const dataUnnamed = [
     { title: "벨라45CC 무기명", sub: "무기명 4인 · 주중 3회 / 주말 4회", tag: "강원 횡성", link: "bella45-cc/#unnamed" },
     { title: "뉴스프링빌CC 무기명", sub: "무기명 3~4인 · 주중 프리 / 주말 4~6회", tag: "경기 이천", link: "newspring-cc/#unnamed" },
     { title: "골든베이CC 무기명", sub: "기명 1인 + 무기명 4인 · 투스칸빌리지 연계", tag: "충남 태안", link: "goldenbay-cc/#unnamed" },
+    { title: "마론뉴데이CC 무기명", sub: "정회원 1인 + 무기명 4인 / 1일 2팀 예약 가능", tag: "충남 천안", link: "maronnewday-cc/" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
