@@ -55,6 +55,7 @@ const dataCondo = [
     { title: "포레스트 리솜 S30 회원권", sub: "자연이 품은 28평형 빌라와 전국 프리미엄 체인 혜택", tag: "전국 체인", link: "resom-s30/" },
     { title: "포레스트 리솜 G50 회원권", sub: "가족을 위한 54평형 프라이빗 숲속 별장", tag: "전국 체인", link: "resom-g50/" },
     { title: "리솜리조트 G70 회원권", sub: "두 가족 여행에 최적화된 73평형 럭셔리 프라이빗 스위트", tag: "전국 체인", link: "resom-g70/" },
+    { title: "안토리조트 회원권", sub: "서울 북한산 40분 거리, 멤버스동 67~156평 프라이빗 힐링", tag: "서울 북한산", link: "anto-resort/" },
 ];
 
 const dataHotel = [
