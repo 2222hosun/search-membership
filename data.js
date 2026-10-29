@@ -87,6 +87,7 @@ const dataUnnamed = [
     { title: "아난티코드CC 무기명", sub: "정회원 2인 + 무기명 4인 · 아난티 30박 연계", tag: "경기 가평", link: "ananti-chord-cc/#unnamed" },
     { title: "벨라45CC 무기명", sub: "무기명 4인 · 주중 3회 / 주말 4회", tag: "강원 횡성", link: "bella45-cc/#unnamed" },
     { title: "뉴스프링빌CC 무기명", sub: "무기명 3~4인 · 주중 프리 / 주말 4~6회", tag: "경기 이천", link: "newspring-cc/#unnamed" },
+    { title: "골든베이CC 무기명", sub: "기명 1인 + 무기명 4인 · 투스칸빌리지 연계", tag: "충남 태안", link: "goldenbay-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
@@ -96,4 +97,5 @@ const dataExclusive = [
     { title: "이븐데일CC 회원권", sub: "다이디자인 18홀 코스와 비용 절감의 무기명 혜택", tag: "충북 청주", link: "evendale-cc/" },
     { title: "더스타휴CC 회원권", sub: "프라이빗 18홀 명문 코스와 리조트가 선사하는 럭셔리 힐링", tag: "경기 양평", link: "thestarhue-cc/" },
     { title: "라헨느CC 회원권", sub: "제주도 18홀 자연과 온전한 쉼을 선사하는 37평형 골프텔", tag: "제주 제주시", link: "lareine-cc/" },
+    { title: "골든베이CC 회원권", sub: "태안의 바다를 품은 27홀 코스와 무기명 4인 혜택", tag: "충남 태안", link: "goldenbay-cc/" },
 ];
