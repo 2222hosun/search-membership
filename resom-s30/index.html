@@ -210,7 +210,7 @@
             </h1>
             <p class="text-[16px] md:text-lg text-stone-100 font-normal max-w-2xl mx-auto drop-shadow-md leading-relaxed">
                 자연이 품은 아늑한 28평형 휴식 공간<br class="hidden md:block">
-                전국 프리미엄 체인과 힐링 스파를 언제든 자유롭게 누려보세요.
+                전국 프리미 체인과 힐링 스파를 언제든 자유롭게 누려보세요.
             </p>
         </div>
     </header>
@@ -331,7 +331,8 @@
                                 <p class="text-[13px] text-slate-500 leading-relaxed">안면도 꽃지해수욕장의 환상적인 오션뷰와 썬셋</p>
                             </div>
                         </div>
-                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group flex flex-col">
+                        <!-- 반응형 적용: 태블릿 등 2열일 때 혼자 2칸 차지하여 꽉 차게 보이도록 설정 -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group flex flex-col sm:col-span-2 lg:col-span-1">
                             <div class="h-40 overflow-hidden relative bg-slate-100">
                                 <img src="6.webp" loading="lazy" decoding="async" alt="퍼시픽 리솜 제주 해양 레저" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
@@ -494,7 +495,8 @@
                                     <span class="text-white font-bold text-[15px]">밸리스파존</span>
                                 </div>
                             </div>
-                            <div class="relative group rounded-xl overflow-hidden shadow-sm bg-slate-100">
+                            <!-- 반응형 적용: 태블릿 등 2열일 때 혼자 2칸 차지하여 꽉 차게 보이도록 설정 -->
+                            <div class="relative group rounded-xl overflow-hidden shadow-sm bg-slate-100 sm:col-span-2 lg:col-span-1">
                                 <img src="17.webp" loading="lazy" decoding="async" alt="포레스트 리솜 찜질방" class="w-full h-48 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
                                 <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
                                     <span class="text-white font-bold text-[15px]">찜질방</span>
@@ -589,7 +591,7 @@
                 </div>
             </section>
 
-                        <!-- ⑤ 실거래 시세 동향 및 7종 매물표 -->
+            <!-- ⑤ 실거래 시세 동향 및 7종 매물표 -->
             <section id="price" class="section-padding bg-brand-light border-t border-gray-200/60">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 fade-up">
@@ -677,9 +679,7 @@
                 </div>
             </section>
     
-    
-
-            <!-- ⑥ 명의개서 및 예약 안내 섹션 (배경색 교차 및 영문 타이틀 명확화) -->
+            <!-- ⑥ 명의개서 및 예약 안내 섹션 -->
             <section class="section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-6xl mx-auto space-y-16">
 
@@ -794,13 +794,206 @@
                         </div>
                     </div>
 
-                    <!-- 2. 예약 및 객실 이용 안내 (Reservation Guide 영문 타이틀 추가) -->
+                    <!-- 2. 예약 및 객실 이용 안내 (요금표가 최상단으로 이동됨) -->
                     <div>
-                        <div class="text-center mb-14 fade-up">
+                        <div class="text-center mb-10 fade-up">
                             <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Reservation Guide</span>
                             <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">예약 및 객실 이용 안내</h2>
                             <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full mb-4"></div>
                             <p class="text-slate-600 text-[16px]">회원님들의 편안하고 품격 있는 투숙을 위한 가이드</p>
+                        </div>
+
+                        <!-- ★ 이동된 S30 객실 요금표 섹션 ★ -->
+                        <div class="max-w-6xl mx-auto mb-14 fade-up">
+                            <h3 class="text-xl md:text-2xl font-bold mb-6 text-slate-900 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center text-xl font-bold shadow-sm">
+                                    <i class="ph-fill ph-wallet"></i>
+                                </div>
+                                S30 객실 회원 요금표
+                            </h3>
+
+                            <!-- 1. 포레스트 리솜 요금표 -->
+                            <div class="mb-10">
+                                <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark mb-3 flex items-center gap-2 border-l-4 border-brand-accent pl-3">
+                                    포레스트 리솜 (빌라동) S30 요금
+                                </h4>
+                                <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200">
+                                    <table class="w-full text-[13.5px] md:text-[14px] text-center min-w-[950px] whitespace-nowrap">
+                                        <!-- 글자 투명화 버그 수정: th 태그들에 명시적으로 bg와 text 컬러를 지정하여 덮어씌움 -->
+                                        <thead class="border-b border-slate-200">
+                                            <tr>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-slate-300 align-middle bg-brand-dark text-white">구분</th>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-slate-300 align-middle bg-brand-dark text-white">주중</th>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-slate-300 align-middle bg-brand-dark text-white">준주말</th>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-brand-dark align-middle bg-brand-dark text-brand-accent">주말</th>
+                                                <th colspan="3" class="px-3 py-2 font-bold border-b border-r border-slate-300 text-slate-800 bg-blue-50">여름</th>
+                                                <th colspan="3" class="px-3 py-2 font-bold border-b border-slate-200 text-slate-800 bg-slate-100">겨울</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-blue-50 text-slate-700">준성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-blue-50 text-slate-700">성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-blue-50 text-slate-700">극성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-slate-100 text-slate-700">준성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-slate-100 text-slate-700">성수기</th>
+                                                <th class="px-2 py-2 font-semibold bg-slate-100 text-slate-700">극성수기</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-slate-100 text-slate-600 tracking-tight">
+                                            <tr class="hover:bg-slate-50 transition-colors">
+                                                <td class="px-3 py-3.5 font-bold text-slate-900 border-r border-slate-200">기명</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">167,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">185,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-accentDark">222,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">233,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">276,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-dark">280,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">207,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">258,000</td>
+                                                <td class="px-3 py-3.5 font-semibold text-brand-dark">261,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors bg-brand-light/30">
+                                                <td class="px-3 py-3.5 font-bold text-slate-900 border-r border-slate-200">무기명</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">177,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">201,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-accentDark">239,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">249,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">293,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-dark">297,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">223,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">274,000</td>
+                                                <td class="px-3 py-3.5 font-semibold text-brand-dark">277,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors">
+                                                <td class="px-3 py-3.5 font-medium text-slate-800 border-r border-slate-200">업그레이드/박수초과</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">212,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">241,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">286,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">298,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">351,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">356,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">267,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">328,000</td>
+                                                <td class="px-3 py-3.5">332,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors bg-brand-light/30">
+                                                <td class="px-3 py-3.5 font-medium text-slate-800 border-r border-slate-200">회원초청</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">243,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">277,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">328,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">342,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">403,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">409,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">307,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">377,000</td>
+                                                <td class="px-3 py-3.5">381,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors">
+                                                <td class="px-3 py-3.5 font-medium text-slate-800 border-r border-slate-200">스파클럽</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">203,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">231,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">274,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">286,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">336,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">341,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">256,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">315,000</td>
+                                                <td class="px-3 py-3.5">318,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- 2. 레스트리 리솜 요금표 -->
+                            <div>
+                                <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark mb-3 flex items-center gap-2 border-l-4 border-brand-accent pl-3">
+                                    레스트리 리솜 (호텔동) S30 요금
+                                </h4>
+                                <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200">
+                                    <table class="w-full text-[13.5px] md:text-[14px] text-center min-w-[950px] whitespace-nowrap">
+                                        <thead class="border-b border-slate-200">
+                                            <tr>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-slate-300 align-middle bg-brand-dark text-white">구분</th>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-slate-300 align-middle bg-brand-dark text-white">주중</th>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-slate-300 align-middle bg-brand-dark text-white">준주말</th>
+                                                <th rowspan="2" class="px-3 py-3 font-bold border-r border-brand-dark align-middle bg-brand-dark text-brand-accent">주말</th>
+                                                <th colspan="3" class="px-3 py-2 font-bold border-b border-r border-slate-300 text-slate-800 bg-blue-50">여름</th>
+                                                <th colspan="3" class="px-3 py-2 font-bold border-b border-slate-200 text-slate-800 bg-slate-100">겨울</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-blue-50 text-slate-700">준성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-blue-50 text-slate-700">성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-blue-50 text-slate-700">극성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-slate-100 text-slate-700">준성수기</th>
+                                                <th class="px-2 py-2 font-semibold border-r border-slate-300 bg-slate-100 text-slate-700">성수기</th>
+                                                <th class="px-2 py-2 font-semibold bg-slate-100 text-slate-700">극성수기</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-slate-100 text-slate-600 tracking-tight">
+                                            <tr class="hover:bg-slate-50 transition-colors">
+                                                <td class="px-3 py-3.5 font-bold text-slate-900 border-r border-slate-200">기명</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">161,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">180,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-accentDark">209,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">217,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">258,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-dark">262,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">197,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">238,000</td>
+                                                <td class="px-3 py-3.5 font-semibold text-brand-dark">242,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors bg-brand-light/30">
+                                                <td class="px-3 py-3.5 font-bold text-slate-900 border-r border-slate-200">무기명</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">172,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">197,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-accentDark">226,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">235,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">276,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200 font-semibold text-brand-dark">280,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">214,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">255,000</td>
+                                                <td class="px-3 py-3.5 font-semibold text-brand-dark">259,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors">
+                                                <td class="px-3 py-3.5 font-medium text-slate-800 border-r border-slate-200">업그레이드/박수초과</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">206,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">236,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">271,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">282,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">331,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">336,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">256,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">306,000</td>
+                                                <td class="px-3 py-3.5">310,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors bg-brand-light/30">
+                                                <td class="px-3 py-3.5 font-medium text-slate-800 border-r border-slate-200">회원초청</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">236,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">271,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">311,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">324,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">380,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">386,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">294,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">351,000</td>
+                                                <td class="px-3 py-3.5">356,000</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 transition-colors">
+                                                <td class="px-3 py-3.5 font-medium text-slate-800 border-r border-slate-200">스파클럽</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">197,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">226,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">259,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">270,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">317,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">322,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">246,000</td>
+                                                <td class="px-3 py-3.5 border-r border-slate-200">293,000</td>
+                                                <td class="px-3 py-3.5">297,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- 1열: 객실 예약 시스템 & 체크인/체크아웃 -->
