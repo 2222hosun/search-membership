@@ -332,7 +332,6 @@
                                 <p class="text-[13px] text-slate-500 leading-relaxed">안면도 꽃지해수욕장의 환상적인 오션뷰와 썬셋</p>
                             </div>
                         </div>
-                        <!-- 반응형 적용: 태블릿 등 2열일 때 혼자 2칸 차지하여 꽉 차게 보이도록 설정 -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group flex flex-col sm:col-span-2 lg:col-span-1">
                             <div class="h-40 overflow-hidden relative bg-slate-100">
                                 <img src="6.webp" loading="lazy" decoding="async" alt="퍼시픽 리솜 제주 해양 레저" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
@@ -458,69 +457,70 @@
                         </div>
 
                         <!-- ★ 부대시설 우대 혜택 ★ -->
-                    <div class="bg-brand-light rounded-3xl p-5 sm:p-8 md:p-10 border border-slate-200/80 fade-up mb-6">
-                        <div class="text-center mb-8">
-                            <span class="text-xs font-bold tracking-widest text-brand-accentDark uppercase mb-1.5 block">Special Benefits</span>
-                            <h4 class="text-2xl md:text-3xl font-bold text-brand-dark mb-2">스파 및 부대시설 우대 혜택</h4>
-                            <p class="text-slate-600 text-[15px] sm:text-[15.5px] max-w-2xl mx-auto">전국 체인의 워터파크와 스파, 식음 업장을 파격적인 회원가로 이용하실 수 있습니다.</p>
-                        </div>
-
-                        <!-- 테이블 영역 (모바일 가로 스크롤 최적화) -->
-                        <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-200 mb-6 overflow-hidden">
-                            <div class="overflow-x-auto w-full">
-                                <table class="w-full text-[14px] sm:text-[15px] text-left whitespace-nowrap">
-                                    <thead class="text-[13px] sm:text-[14px] text-white uppercase bg-slate-800 border-y border-slate-700">
-                                        <tr>
-                                            <th scope="col" class="px-4 sm:px-6 py-3.5 font-bold text-center">지점명</th>
-                                            <th scope="col" class="px-4 sm:px-6 py-3.5 font-bold text-center">회원 본인 (카드 지참)</th>
-                                            <th scope="col" class="px-4 sm:px-6 py-3.5 font-bold text-center">동반 4인 우대</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-slate-100 text-center">
-                                        <tr class="hover:bg-slate-50/60 transition-colors">
-                                            <td class="px-4 sm:px-6 py-4 font-bold text-slate-900">제천 포레스트 리솜</td>
-                                            <td class="px-4 sm:px-6 py-4 text-brand-dark font-bold text-[13.5px] sm:text-[15px]">스파 60% / 사우나 50%<br><span class="text-[11.5px] sm:text-[12.5px] text-slate-500 font-normal mt-0.5 block">(안면도, 덕산 회원: 스파 50% / 사우나 50%)</span></td>
-                                            <td class="px-4 sm:px-6 py-4 text-slate-600 font-medium text-[13.5px] sm:text-[15px]">스파 40% / 사우나 40%</td>
-                                        </tr>
-                                        <tr class="hover:bg-slate-50/60 transition-colors">
-                                            <td class="px-4 sm:px-6 py-4 font-bold text-slate-900">덕산 스플라스 리솜</td>
-                                            <td class="px-4 sm:px-6 py-4 text-brand-dark font-bold text-[13.5px] sm:text-[15px]">워터파크 60% / 사우나 50%</td>
-                                            <td class="px-4 sm:px-6 py-4 text-slate-600 font-medium text-[13.5px] sm:text-[15px]">워터파크 50% / 사우나 30%</td>
-                                        </tr>
-                                        <tr class="hover:bg-slate-50/60 transition-colors">
-                                            <td class="px-4 sm:px-6 py-4 font-bold text-slate-900">태안 아일랜드 리솜</td>
-                                            <td class="px-4 sm:px-6 py-4 text-brand-dark font-bold text-[13.5px] sm:text-[15px]">스파 40% / 사우나 50%</td>
-                                            <td class="px-4 sm:px-6 py-4 text-slate-600 font-medium text-[13.5px] sm:text-[15px]">스파 30% / 사우나 20%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="bg-brand-light rounded-3xl p-5 sm:p-8 md:p-10 border border-slate-200/80 fade-up mb-0">
+                            <div class="text-center mb-8">
+                                <span class="text-xs font-bold tracking-widest text-brand-accentDark uppercase mb-1.5 block">Special Benefits</span>
+                                <h4 class="text-2xl md:text-3xl font-bold text-brand-dark mb-2">스파 및 부대시설 우대 혜택</h4>
+                                <p class="text-slate-600 text-[15px] sm:text-[15.5px] max-w-2xl mx-auto">전국 체인의 워터파크와 스파, 식음 업장을 파격적인 회원가로 이용하실 수 있습니다.</p>
                             </div>
-                        </div>
 
-                        <!-- 하단 할인 카드 2개 영역 -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-                            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 flex items-center gap-3.5 shadow-sm">
-                                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-accent text-xl sm:text-2xl">
-                                    <i class="ph-fill ph-fork-knife"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-slate-900 text-[15px] sm:text-[16px] mb-0.5">직영 식음 업장 할인</h5>
-                                    <p class="text-[14px] sm:text-[15px] text-slate-600">전국 직영 식음료 이용 시 <strong>10% 할인</strong></p>
+                            <div class="bg-white rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-200 mb-6 overflow-hidden">
+                                <div class="overflow-x-auto w-full">
+                                    <table class="w-full text-[14px] sm:text-[15px] text-left whitespace-nowrap">
+                                        <thead class="text-[13px] sm:text-[14px] text-white uppercase bg-slate-800 border-y border-slate-700">
+                                            <tr>
+                                                <th scope="col" class="px-4 sm:px-6 py-3.5 font-bold text-center">지점명</th>
+                                                <th scope="col" class="px-4 sm:px-6 py-3.5 font-bold text-center">회원 본인 (카드 지참)</th>
+                                                <th scope="col" class="px-4 sm:px-6 py-3.5 font-bold text-center">동반 4인 우대</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-slate-100 text-center">
+                                            <tr class="hover:bg-slate-50/60 transition-colors">
+                                                <td class="px-4 sm:px-6 py-4 font-bold text-slate-900">제천 포레스트 리솜</td>
+                                                <td class="px-4 sm:px-6 py-4 text-brand-dark font-bold text-[13.5px] sm:text-[15px]">스파 60% / 사우나 50%<br><span class="text-[11.5px] sm:text-[12.5px] text-slate-500 font-normal mt-0.5 block">(안면도, 덕산 회원: 스파 50% / 사우나 50%)</span></td>
+                                                <td class="px-4 sm:px-6 py-4 text-slate-600 font-medium text-[13.5px] sm:text-[15px]">스파 40% / 사우나 40%</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50/60 transition-colors">
+                                                <td class="px-4 sm:px-6 py-4 font-bold text-slate-900">덕산 스플라스 리솜</td>
+                                                <td class="px-4 sm:px-6 py-4 text-brand-dark font-bold text-[13.5px] sm:text-[15px]">워터파크 60% / 사우나 50%</td>
+                                                <td class="px-4 sm:px-6 py-4 text-slate-600 font-medium text-[13.5px] sm:text-[15px]">워터파크 50% / 사우나 30%</td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50/60 transition-colors">
+                                                <td class="px-4 sm:px-6 py-4 font-bold text-slate-900">태안 아일랜드 리솜</td>
+                                                <td class="px-4 sm:px-6 py-4 text-brand-dark font-bold text-[13.5px] sm:text-[15px]">스파 40% / 사우나 50%</td>
+                                                <td class="px-4 sm:px-6 py-4 text-slate-600 font-medium text-[13.5px] sm:text-[15px]">스파 30% / 사우나 20%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 flex items-center gap-3.5 shadow-sm">
-                                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-accent text-xl sm:text-2xl">
-                                    <i class="ph-fill ph-boat"></i>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                                <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 flex items-center gap-3.5 shadow-sm">
+                                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-accent text-xl sm:text-2xl">
+                                        <i class="ph-fill ph-fork-knife"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-slate-900 text-[15px] sm:text-[16px] mb-0.5">직영 식음 업장 할인</h5>
+                                        <p class="text-[14px] sm:text-[15px] text-slate-600">전국 직영 식음료 이용 시 <strong>10% 할인</strong></p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h5 class="font-bold text-slate-900 text-[15px] sm:text-[16px] mb-0.5">퍼시픽 리솜 (제주)</h5>
-                                    <p class="text-[14px] sm:text-[15px] text-slate-600">요트 등 해양 레저시설 <strong>최대 40% 할인</strong></p>
+                                <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 flex items-center gap-3.5 shadow-sm">
+                                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-accent text-xl sm:text-2xl">
+                                        <i class="ph-fill ph-boat"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-slate-900 text-[15px] sm:text-[16px] mb-0.5">퍼시픽 리솜 (제주)</h5>
+                                        <p class="text-[14px] sm:text-[15px] text-slate-600">요트 등 해양 레저시설 <strong>최대 40% 할인</strong></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-            <!-- ⑤ 소유 형태 및 가입 방식 안내 -->
+            <!-- ④ 소유 형태 및 가입 방식 안내 -->
             <section id="membership-types" class="section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 fade-up">
@@ -604,7 +604,7 @@
                 </div>
             </section>
 
-            <!-- ⑥ 실거래 시세 동향 및 가입 타입 -->
+            <!-- ⑤ 실거래 시세 동향 및 가입 타입 -->
             <section id="price" class="section-padding bg-brand-light border-t border-gray-200/60">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 fade-up">
@@ -694,7 +694,7 @@
                 </div>
             </section>
     
-            <!-- ⑦ 예약 안내 및 요금표 -->
+            <!-- ⑥ 예약 안내 및 요금표 -->
             <section class="section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-6xl mx-auto space-y-16">
                     
@@ -716,7 +716,6 @@
                                 G40 객실 회원 요금표
                             </h3>
 
-                            <!-- 1. 포레스트 리솜 요금표 -->
                             <div class="mb-10">
                                 <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark mb-3 flex items-center gap-2 border-l-4 border-brand-accent pl-3">
                                     포레스트 리솜 (빌라동) G40 요금
@@ -795,7 +794,6 @@
                                 </div>
                             </div>
 
-                            <!-- 2. 레스트리 리솜 요금표 -->
                             <div>
                                 <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark mb-3 flex items-center gap-2 border-l-4 border-brand-accent pl-3">
                                     레스트리 리솜 (호텔동) G40 요금
@@ -896,7 +894,7 @@
                                         </li>
                                         <li class="flex items-start">
                                             <svg class="w-4 h-4 text-brand-accent mr-2.5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                                            <span><strong class="text-slate-900">비수기 팁:</strong> 이용일 30일 이내 잔여 객실 상황에 따라 유연하게 평형 하향 지원 변경 가능</span>
+                                            <span><strong class="text-slate-900">비수기 팁:</strong> 이용일 30일 이내 잔여 객실 상황에 따라 유연한 평형 변경 가능</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -974,7 +972,7 @@
                                     <ul class="space-y-3 text-[15px] text-slate-600 leading-relaxed">
                                         <li class="flex items-start">
                                             <span class="mr-1.5">-</span>
-                                            <span>유상 정비(3박 미만 투숙 시) : 1회당 40,000원 (G40 이하 기준)<br><strong class="text-[13.5px] text-brand-dark">* 14시 이전 사전 신청 필수</strong></span>
+                                            <span>유상 정비(3박 미만 투숙 시) : 1회당 40,000원<br><strong class="text-[13.5px] text-brand-dark">* 14시 이전 사전 신청 필수</strong></span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="mr-1.5">-</span>
@@ -1003,7 +1001,6 @@
                             <p class="text-slate-600 text-[16px]">안전하고 신속한 명의개서 대행을 약속드립니다.</p>
                         </div>
 
-                        <!-- 준비서류 2단 가로 배치 -->
                         <div class="bg-brand-light border border-slate-200 rounded-3xl p-8 shadow-sm fade-up mb-8">
                             <h3 class="text-xl font-bold mb-6 text-slate-900 flex items-center gap-3 border-b border-slate-200 pb-4">
                                 <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center text-xl font-bold">
@@ -1012,7 +1009,6 @@
                                 명의개서 준비 서류
                             </h3>
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                <!-- 양도인 -->
                                 <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
                                     <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
                                         <i class="ph-fill ph-upload-simple text-brand-accent text-lg"></i>
@@ -1029,7 +1025,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 양수인 -->
                                 <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
                                     <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
                                         <i class="ph-fill ph-download-simple text-brand-accent text-lg"></i>
@@ -1053,7 +1048,6 @@
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-up">
-                            <!-- 거래 절차 -->
                             <div class="bg-brand-light border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-col">
                                 <h3 class="text-xl font-bold mb-6 text-slate-900 flex items-center gap-3">
                                     <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center text-xl font-bold">
@@ -1073,7 +1067,6 @@
                                 </div>
                             </div>
 
-                            <!-- 부대비용 안내 -->
                             <div class="bg-brand-light border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-col">
                                 <h3 class="text-xl font-bold mb-6 text-slate-900 flex items-center gap-3">
                                     <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center text-xl font-bold">
