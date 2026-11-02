@@ -42,6 +42,7 @@ const dataGolf = [
     { title: "아난티코드CC 회원권", sub: "전국 아난티 혜택이 결합된 가평 27홀 프라이빗 코스", tag: "경기 가평", link: "ananti-chord-cc/" },
     { title: "벨라45CC 회원권", sub: "동반자 전원 우대 및 위임 혜택을 갖춘 횡성 45홀", tag: "강원 횡성", link: "bella45-cc/" },
     { title: "양주CC 회원권", sub: "북한강의 수려한 절경과 강북 최고의 접근성을 자랑하는 18홀", tag: "경기 남양주", link: "yangju-cc/" },
+    { title: "우정힐스CC 회원권", sub: "코오롱 한국오픈 개최지 천안 명문 18홀", tag: "충남 천안", link: "woojeonghills-cc/" },
 ];
 
 const dataCondo = [
