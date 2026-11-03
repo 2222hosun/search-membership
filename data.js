@@ -43,6 +43,7 @@ const dataGolf = [
     { title: "벨라45CC 회원권", sub: "동반자 전원 우대 및 위임 혜택을 갖춘 횡성 45홀", tag: "강원 횡성", link: "bella45-cc/" },
     { title: "양주CC 회원권", sub: "북한강의 수려한 절경과 강북 최고의 접근성을 자랑하는 18홀", tag: "경기 남양주", link: "yangju-cc/" },
     { title: "우정힐스CC 회원권", sub: "코오롱 한국오픈 개최지 천안 명문 18홀", tag: "충남 천안", link: "woojeonghills-cc/" },
+    { title: "여주CC 회원권", sub: "반세기 전통의 자연림을 품은 여주권 27홀 실속형 구장", tag: "경기 여주", link: "yeoju-cc/" },
 ];
 
 const dataCondo = [
