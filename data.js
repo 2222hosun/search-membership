@@ -59,6 +59,7 @@ const dataCondo = [
     { title: "포레스트 리솜 G50 회원권", sub: "가족을 위한 54평형 프라이빗 숲속 별장", tag: "전국 체인", link: "resom-g50/" },
     { title: "리솜리조트 G70 회원권", sub: "두 가족 여행에 최적화된 73평형 럭셔리 프라이빗 스위트", tag: "전국 체인", link: "resom-g70/" },
     { title: "안토리조트 회원권", sub: "서울 북한산 40분 거리, 멤버스동 67~156평 프라이빗 힐링", tag: "서울 북한산", link: "anto-resort/" },
+    { title: "아난티 리조트 회원권", sub: "가평·부산·남해·제주 5대 플랫폼 프라이빗 펜트하우스 및 레지던스", tag: "전국 체인", link: "ananti-resort/" },
 ];
 
 const dataHotel = [
