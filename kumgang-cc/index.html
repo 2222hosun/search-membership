@@ -182,21 +182,26 @@
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
-            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='/'">
-                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center leading-none">
-                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
-                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                    <span class="font-bold text-[16px] sm:text-[19px] md:text-[22px] tracking-tight text-white whitespace-nowrap transition-all">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1 hidden sm:block">SEARCH MEMBERSHIP</span>
                 </div>
             </div>
-            <a href="/index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
-                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
-            </a>
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
+                </a>
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+                </a>
+            </div>
         </div>
     </nav>
     <div class="h-20 w-full"></div>
@@ -492,7 +497,7 @@
                                     <h3 class="text-2xl font-bold text-gray-800 mb-2">특별 회원권</h3>
                                     <span class="text-[14px] font-semibold text-green-700 bg-green-50 px-3 py-1 rounded inline-block w-max">정회원 1인 + 무기명 1인</span>
                                 </div>
-                                  <span class="text-[14px] font-bold bg-brand-accent text-white px-3.5 py-1.5 rounded whitespace-nowrap">무기명</span>                                   
+                                 <span class="text-[14px] font-bold bg-brand-accent text-white px-3.5 py-1.5 rounded whitespace-nowrap">무기명</span>                                 
                             </div>
                             <div class="border-b border-gray-200 my-3"></div>
                             
@@ -539,11 +544,11 @@
                         <tbody class="divide-y divide-gray-100">
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-white">정회원권 (개인 및 법인 동일)</td>
-                                <td class="px-5 sm:px-6 py-5 text-right text-brand-accent font-bold text-xl bg-white whitespace-nowrap">1억 8,000만원</td>
+                                <td class="px-5 sm:px-6 py-5 text-right text-brand-accent font-bold text-xl bg-white whitespace-nowrap">1억 7,900만원</td>
                             </tr>
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-gray-50/50">특별회원권 (개인 및 법인 동일)</td>
-                                <td class="px-5 sm:px-6 py-5 text-right text-brand-dark font-bold text-xl bg-gray-50/50 whitespace-nowrap">매매 문의</td>
+                                <td class="px-5 sm:px-6 py-5 text-right text-brand-dark font-bold text-xl bg-gray-50/50 whitespace-nowrap">8억 5,000만원</td>
                             </tr>
                             <tr>                                
                                 <td colspan="2" class="px-5 sm:px-6 py-4 text-[14px] text-gray-500 bg-white text-center font-normal leading-[1.7]">
@@ -557,7 +562,7 @@
 
                 <!-- 최종 시세 기준일 표기 -->
                 <div class="text-right text-[13px] font-semibold text-gray-500 fade-up">
-                    최종 시세 기준일: 2026년 11월 21일
+                    최종 시세 기준일: 2026년 11월 5일
                 </div>
 
                 <!-- 최근 시황 브리핑 박스 -->
@@ -567,7 +572,7 @@
                         <h3 class="font-bold text-lg text-brand-dark">최근 시황 브리핑</h3>
                     </div>
                     <p class="text-gray-700 text-[15px] md:text-base leading-relaxed text-left md:text-justify">
-                        최근 금강CC 정회원권은 1억 8000만원 선에서 시세가 단단하게 자리를 잡으며 안정적인 거래 흐름을 보여주고 있습니다. 모기업 KCC그룹의 든든한 재정 지원과 철저한 소수 정예 운영 덕분에 회원님들의 만족도가 높아 시장에 물건이 나오는 경우가 드문 편입니다. 매수 대기 수요가 매도 물량보다 꾸준히 많은 상황임에도 단기적인 시세 급등락 없이 현재 가격대에서 견고한 보합세를 유지하는 것이 큰 특징입니다. 무기명 혜택이 포함된 특별회원권 역시 희소성이 워낙 높아 마지막 매물이 7억원대에서 거래된 이후 현재 시장에서 완전히 자취를 감춘 상태입니다. 특별회원권의 경우 미리 대기를 걸어두셨다가 물건이 나왔을 때 발 빠르게 선점하시는 편이 가장 유리합니다.
+                        금강CC 정회원권은 1억 7900만원 선에서 단단한 시세를 형성하며 꾸준한 매수 대기 수요를 보여주고 있습니다. KCC그룹의 탄탄한 재무 안정성을 바탕으로 철저한 소수 정예 운영을 고수하고 있어 회원들의 만족도가 매우 높습니다. 특별회원권의 경우 8억 5000만원 선에서 호가가 형성되어 있으며 높은 희소성으로 인해 매물이 귀한 편입니다. 개인과 법인 간 자유로운 교차 매매가 가능하여 법인 반구좌 입회 문의도 활발하게 이어지고 있습니다. 전반적인 시장 분위기 속에서도 명문 구장다운 탄탄한 보합세를 유지하고 있어 실수요자 중심의 문의가 계속되는 중입니다.
                     </p>
                 </div>
             </div>
@@ -718,10 +723,10 @@
                 <div class="relative z-10">
                     <p class="text-brand-accent font-medium tracking-widest text-sm md:text-[15px] mb-3">KCC그룹 명문 구장의 가치</p>
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-[1.4]">
-                        금강CC 회원권으로 품격 있는 비즈니스와<br class="hidden sm:inline"/> 여유로운 골프 라이프를 완성하세요
+                        초록의 여유가 머무는 완벽한 라운딩<br class="hidden sm:inline"/> 일상이 특별해지는 품격 있는 휴식입니다
                     </h2>
                     <p class="text-gray-300 mb-8 max-w-2xl mx-auto text-[16px] md:text-lg leading-[1.7] font-normal">
-                        소수 구좌로 운영되어 부킹 만족도가 높은 명문 구장입니다.<br>실시간 정확한 시세 확인과 안전한 책임 거래를 약속드립니다.
+                        실시간 정확한 시세 확인과 안전한 책임 거래를 약속드립니다.
                     </p>
 
                     <!-- 모바일 원클릭 전화 / 카톡 연결 CTA 박스 -->
