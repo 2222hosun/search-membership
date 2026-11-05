@@ -115,10 +115,11 @@
     </script>
     <style>
         /* 기본 줄간격 170% (1.7) 및 글자크기 16px 설정 */
-        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfc; color: #1e293b; font-size: 16px; word-break: keep-all; overflow-wrap: break-word; line-height: 1.7; }
+        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfc; color: #1e293b; font-size: 16px; word-break: keep-all; overflow-wrap: break-word; line-height: 1.7; overflow-x: hidden; }
         
-        .section-padding { padding: 3.5rem 1rem; }
-        @media (min-width: 768px) { .section-padding { padding: 5rem 2rem; } }
+        /* 섹션 상하 여백 설정 (좌우 여백은 내부 컨테이너에서 담당하여 배경색이 100% 차도록 설정) */
+        .section-padding { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+        @media (min-width: 768px) { .section-padding { padding-top: 5rem; padding-bottom: 5rem; } }
         
         /* Overview Box Styles */
         .overview-box {
@@ -157,11 +158,11 @@
         .rate-table thead th { background-color: #f8fafc; font-weight: bold; color: #1e293b; }
     </style>
 </head>
-<body class="antialiased flex flex-col min-h-screen">
+<body class="antialiased flex flex-col min-h-screen w-full">
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex justify-between items-center">
             
             <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
                 <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
@@ -176,10 +177,10 @@
             </div>
             
             <div class="flex items-center gap-1 sm:gap-2">
-                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-2 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
                     <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
                 </a>
-                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-2 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
                     <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
                 </a>
             </div>
@@ -188,7 +189,7 @@
     <div class="h-20 w-full"></div>
 
     <!-- 첫 화면 메인 이미지 (썸네일/헤더 영역) -->
-    <header class="relative h-[75vh] min-h-[520px] flex items-center justify-center overflow-hidden">
+    <header class="relative w-full h-[75vh] min-h-[520px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="1.webp" alt="소노호텔앤리조트 노블리안 로얄 배경" class="w-full h-full object-cover object-center" loading="eager" fetchpriority="high">
             <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/60 to-black/75"></div>
@@ -211,7 +212,7 @@
     </header>
 
     <!-- 메인 하단 띠 배너 -->
-    <section class="bg-brand-dark py-4 text-white shadow-inner border-b border-[#2c524a]">
+    <section class="w-full bg-brand-dark py-4 text-white shadow-inner border-b border-[#2c524a]">
         <div class="max-w-5xl mx-auto px-4 text-center">
             <p class="text-[14.5px] md:text-[16px] tracking-wide text-brand-accent font-semibold flex flex-col md:flex-row items-center justify-center gap-2">
                 <i class="ph-fill ph-check-circle text-lg hidden md:inline"></i>
@@ -220,10 +221,10 @@
         </div>
     </section>
 
-    <main class="flex-grow">
-        <article>
+    <main class="flex-grow w-full">
+        <article class="w-full">
             <!-- 1. 리조트 기본 정보 섹션 (White) -->
-            <section id="info" class="section-padding bg-white relative">
+            <section id="info" class="w-full section-padding bg-white relative">
                 <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Resort Overview</span>
@@ -280,10 +281,10 @@
                 </div>
             </section>
 
-            <!-- 2. 전국 18개 체인 박스 (Light) -->
-            <section class="section-padding bg-brand-light border-t border-gray-200/60">
+            <!-- 2. 전국 18개 체인 박스 (Light - 화면 전체 100% 배경색 적용) -->
+            <section class="w-full section-padding bg-brand-light border-t border-gray-200/60">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-gray-200/80 shadow-sm fade-up mb-0">
+                    <div class="bg-white rounded-3xl p-5 sm:p-8 md:p-10 border border-gray-200/80 shadow-sm fade-up mb-0">
                         <div class="text-center mb-8">
                             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-full text-brand-accentDark text-[13px] md:text-[14px] font-bold border border-[#c5a880]/40 mb-3 shadow-sm">
                                 <i class="ph-fill ph-map-pin"></i> NATIONWIDE NETWORK
@@ -351,8 +352,8 @@
                 </div>
             </section>
 
-            <!-- 3. 객실 및 펜트하우스 섹션 (White) - 이미지 매칭 정밀 수정 (4.webp, 5.webp, 2.webp, 3.webp) -->
-            <section id="resort" class="section-padding bg-white border-t border-gray-200/60">
+            <!-- 3. 객실 및 펜트하우스 섹션 (White) -->
+            <section id="resort" class="w-full section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 sm:mb-16 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Royal Suite & Penthouse</span>
@@ -375,7 +376,6 @@
                         </div>
                     </div>
 
-                    <!-- 하단 카드 3종 이미지 정밀 매칭 (5.webp, 2.webp, 3.webp) -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-0 fade-up">
                         <div class="relative group rounded-2xl sm:rounded-3xl overflow-hidden shadow-md h-52 sm:h-64 bg-slate-100">
                             <img src="5.webp" alt="소노펠리체 빌리지 비발디파크 테라스 파크뷰 로얄 스위트" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
@@ -399,8 +399,8 @@
                 </div>
             </section>
 
-            <!-- 4. 골프장 혜택 갤러리 섹션 (Light) - 이미지 정밀 매칭 (6.webp, 7.webp, 8.webp, 9.webp) -->
-            <section id="golf" class="section-padding bg-brand-light border-t border-gray-200/60">
+            <!-- 4. 골프장 혜택 갤러리 섹션 (Light - 화면 전체 100% 배경색 적용) -->
+            <section id="golf" class="w-full section-padding bg-brand-light border-t border-gray-200/60">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 sm:mb-16 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Prestigious Golf Clubs</span>
@@ -457,8 +457,8 @@
                 </div>
             </section>
 
-            <!-- 5. 인피니티풀 & 스키/워터파크 부대시설 갤러리 섹션 (White) - 이미지 매칭 정밀 수정 (13, 14, 16, 12, 11, 15.webp) -->
-            <section class="section-padding bg-white border-t border-gray-200/60">
+            <!-- 5. 인피니티풀 & 부대시설 갤러리 및 혜택 표 섹션 (White - 중복 태그 제거 및 폴드 화면 최적화) -->
+            <section class="w-full section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 sm:mb-16 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Premium Leisure & Wellness</span>
@@ -489,97 +489,99 @@
                         <div class="relative group rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm h-44 sm:h-64 bg-slate-100">
                             <img src="12.webp" alt="소노펠리체 승마클럽" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-3.5 sm:p-6">
-                                <h4 class="text-white text-[14px] sm:text-[17px] font-bold leading-snug">소노펠리체 승마클럽 <span class="text-brand-accent text-[12px] sm:text-[14px] ml-2">20% 할인</span></h4>
+                                <h4 class="text-white text-[14px] sm:text-[17px] font-bold leading-snug">소노펠리체 승마클럽 <span class="text-brand-accent text-[12px] sm:text-[14px] block sm:inline sm:ml-1">20% 할인</span></h4>
                             </div>
                         </div>
                         <div class="relative group rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm h-44 sm:h-64 bg-slate-100">
                             <img src="11.webp" alt="비발디파크 스키월드" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-3.5 sm:p-6">
-                                <h4 class="text-white text-[14px] sm:text-[17px] font-bold leading-snug">비발디파크 스키월드 <span class="text-brand-accent text-[12px] sm:text-[14px] ml-2">최대 50% 할인</span></h4>
+                                <h4 class="text-white text-[14px] sm:text-[17px] font-bold leading-snug">비발디파크 스키월드 <span class="text-brand-accent text-[12px] sm:text-[14px] block sm:inline sm:ml-1">최대 50% 할인</span></h4>
                             </div>
                         </div>
                         <div class="relative group rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm h-44 sm:h-64 bg-slate-100">
                             <img src="15.webp" alt="오션월드 및 오션플레이" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-3.5 sm:p-6">
-                                <h4 class="text-white text-[14px] sm:text-[17px] font-bold leading-snug">오션월드 & 오션플레이 <span class="text-brand-accent text-[12px] sm:text-[14px] ml-2">최대 50% 할인</span></h4>
+                                <h4 class="text-white text-[14px] sm:text-[17px] font-bold leading-snug">오션월드 &amp; 오션플레이 <span class="text-brand-accent text-[12px] sm:text-[14px] block sm:inline sm:ml-1">최대 50% 할인</span></h4>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 노블리안 로얄 부대시설 혜택 표 -->
-<section class="section-padding bg-white border-t border-gray-200/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-brand-light rounded-3xl p-5 sm:p-8 md:p-10 shadow-sm border border-slate-200 fade-up mb-0">
-            <div class="flex items-center gap-3 mb-5 border-b border-slate-200 pb-4">
-                <div class="w-10 h-10 rounded-xl bg-white text-brand-accent flex items-center justify-center text-xl font-bold shadow-sm border border-slate-100">
-                    <i class="ph-fill ph-crown"></i>
-                </div>
-                <div>
-                    <span class="text-[12px] sm:text-[13px] font-bold tracking-widest text-brand-accentDark uppercase block">Gold Exclusive</span>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900">노블리안 로얄 전용 레저 혜택</h3>
-                </div>
-            </div>
+                    <!-- 노블리안 로얄 부대시설 혜택 표 (폴드 7 접힌 화면에서도 잘리지 않고 한눈에 들어오도록 모바일 반응형 최적화) -->
+                    <div class="bg-brand-light rounded-2xl sm:rounded-3xl p-3.5 sm:p-8 md:p-10 shadow-sm border border-slate-200 fade-up mb-0">
+                        <div class="flex items-center gap-2.5 sm:gap-3 mb-4 sm:mb-5 border-b border-slate-200 pb-3.5 sm:pb-4">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white text-brand-accent flex items-center justify-center text-lg sm:text-xl font-bold shadow-sm border border-slate-100 flex-shrink-0">
+                                <i class="ph-fill ph-crown"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] sm:text-[13px] font-bold tracking-widest text-brand-accentDark uppercase block leading-none mb-1">Royal Exclusive</span>
+                                <h3 class="text-[17px] sm:text-2xl font-bold text-slate-900 leading-tight">노블리안 로얄 전용 레저 혜택</h3>
+                            </div>
+                        </div>
 
-            <!-- 모바일 좁은 화면(폴드 캡션 및 좁은 디스플레이) 대응 가로 스크롤 최적화 래퍼 -->
-            <div class="overflow-x-auto bg-white rounded-2xl border border-slate-200 shadow-sm rate-table">
-                <table class="w-full text-[13px] sm:text-[14.5px] text-center border-collapse min-w-[540px] whitespace-nowrap">
-                    <thead class="text-[12.5px] sm:text-[14px] text-slate-800 bg-slate-100 border-b border-slate-200">
-                        <tr>
-                            <th class="py-3.5 px-3 sm:px-6 font-bold text-left border-r">구분 / 시설명</th>
-                            <th class="py-3.5 px-2.5 sm:px-4 font-bold text-brand-dark border-r">정회원</th>
-                            <th class="py-3.5 px-2.5 sm:px-4 font-bold text-slate-700 border-r">가족회원</th>
-                            <th class="py-3.5 px-2.5 sm:px-4 font-bold text-slate-700 border-r">지정회원</th>
-                            <th class="py-3.5 px-2.5 sm:px-4 font-bold text-slate-700">무기명</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-200/80 text-slate-700">
-                        <tr class="hover:bg-slate-50/60 transition-colors">
-                            <td class="py-3.5 px-3 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30">
-                                비발디 EAST / WEST / 델피노 18홀
-                            </td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r">40%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">30%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r leading-tight">EAST 20%<br><span class="text-[11.5px] text-slate-500 font-normal">그외 30%</span></td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-medium text-slate-700 leading-tight">EAST 20%<br><span class="text-[11.5px] text-slate-500 font-normal">그외 30%</span></td>
-                        </tr>
-                        <tr class="hover:bg-slate-50/60 transition-colors">
-                            <td class="py-3.5 px-3 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30">골프연습장</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r">50%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">30%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">30%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-medium text-slate-700">30%</td>
-                        </tr>
-                        <tr class="hover:bg-slate-50/60 transition-colors">
-                            <td class="py-3.5 px-3 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30">스키 (리프트/스노위랜드)</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r">50%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">50%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">40%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-medium text-slate-700">40%</td>
-                        </tr>
-                        <tr class="hover:bg-slate-50/60 transition-colors">
-                            <td class="py-3.5 px-3 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30">오션월드 / 오션플레이</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r">50%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">50%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">40%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-medium text-slate-700">40%</td>
-                        </tr>
-                        <tr class="hover:bg-slate-50/60 transition-colors">
-                            <td class="py-3.5 px-3 sm:px-6 font-bold text-brand-accentDark text-left border-r border-l-4 border-l-brand-accent bg-slate-50/30">클럽하우스 라운지 (무료)</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-extrabold text-brand-dark border-r">무료</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-extrabold text-brand-dark border-r">무료</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-semibold border-r">30%</td>
-                            <td class="py-3.5 px-2.5 sm:px-4 font-medium text-slate-700">50%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="text-[12px] text-slate-400 mt-2 text-right md:hidden">👉 표를 좌우로 밀어서 전체 내용을 확인하실 수 있습니다.</p>
-        </div>
-    </div>
-</section>
+                        <div class="overflow-x-auto bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm rate-table">
+                            <table class="w-full text-[12px] min-[380px]:text-[13px] sm:text-[15px] text-center border-collapse">
+                                <thead class="text-[11.5px] min-[380px]:text-[12.5px] sm:text-[14.5px] text-slate-800 bg-slate-100 border-b border-slate-200">
+                                    <tr>
+                                        <th class="py-2.5 sm:py-3.5 px-2 sm:px-6 font-bold text-left border-r">구분 / 시설명</th>
+                                        <th class="py-2.5 sm:py-3.5 px-1.5 sm:px-4 font-bold text-brand-dark border-r whitespace-nowrap">정회원</th>
+                                        <th class="py-2.5 sm:py-3.5 px-1.5 sm:px-4 font-bold text-slate-700 border-r whitespace-nowrap">가족</th>
+                                        <th class="py-2.5 sm:py-3.5 px-1.5 sm:px-4 font-bold text-slate-700 border-r whitespace-nowrap">지정</th>
+                                        <th class="py-2.5 sm:py-3.5 px-1.5 sm:px-4 font-bold text-slate-700 whitespace-nowrap">무기명</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200/80 text-slate-700">
+                                    <tr class="hover:bg-slate-50/60 transition-colors">
+                                        <td class="py-3 sm:py-4 px-2 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30 leading-snug">
+                                            비발디 EAST·WEST<br class="sm:hidden"><span class="hidden sm:inline"> / </span>델피노 18홀
+                                        </td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r whitespace-nowrap">40%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">30%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r leading-tight whitespace-nowrap">EAST 20%<br><span class="text-[10.5px] sm:text-[13px] text-slate-500 font-normal">그외 30%</span></td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-medium text-slate-700 leading-tight whitespace-nowrap">EAST 20%<br><span class="text-[10.5px] sm:text-[13px] text-slate-500 font-normal">그외 30%</span></td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50/60 transition-colors">
+                                        <td class="py-3 sm:py-4 px-2 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30">골프연습장</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r whitespace-nowrap">50%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">30%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">30%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-medium text-slate-700 whitespace-nowrap">30%</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50/60 transition-colors">
+                                        <td class="py-3 sm:py-4 px-2 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30 leading-snug">
+                                            스키 <span class="text-[11px] sm:text-[14px] font-normal text-slate-600 block sm:inline">(리프트/스노위랜드)</span>
+                                        </td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r whitespace-nowrap">50%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">50%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">40%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-medium text-slate-700 whitespace-nowrap">40%</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50/60 transition-colors">
+                                        <td class="py-3 sm:py-4 px-2 sm:px-6 font-bold text-slate-900 text-left border-r bg-slate-50/30 leading-snug">
+                                            오션월드<br class="sm:hidden"><span class="hidden sm:inline"> / </span>오션플레이
+                                        </td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-extrabold text-brand-accentDark bg-amber-50/30 border-r whitespace-nowrap">50%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">50%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">40%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-medium text-slate-700 whitespace-nowrap">40%</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50/60 transition-colors">
+                                        <td class="py-3 sm:py-4 px-2 sm:px-6 font-bold text-brand-accentDark text-left border-r border-l-4 border-l-brand-accent bg-slate-50/30 leading-snug">
+                                            클럽하우스 라운지<br class="sm:hidden"><span class="text-[11px] sm:text-[13.5px] font-semibold text-brand-dark sm:ml-1">(소노펠리체)</span>
+                                        </td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-extrabold text-brand-dark border-r whitespace-nowrap">무료</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-extrabold text-brand-dark border-r whitespace-nowrap">무료</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-semibold border-r whitespace-nowrap">30%</td>
+                                        <td class="py-3 sm:py-4 px-1.5 sm:px-4 font-medium text-slate-700 whitespace-nowrap">50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!-- 6. 회원 혜택 요약 섹션 (Light) -->
-            <section id="benefits" class="section-padding bg-brand-light border-t border-gray-200/60">
+            <!-- 6. 회원 혜택 요약 섹션 (Light - 화면 전체 100% 배경색 적용) -->
+            <section id="benefits" class="w-full section-padding bg-brand-light border-t border-gray-200/60">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 sm:mb-16 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Membership Privilege</span>
@@ -588,7 +590,7 @@
                         <p class="text-[16px] text-slate-600">소유 가치와 라이프스타일을 높여주는 최상위 멤버십 대우</p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8 mb-10">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8 mb-0">
                         <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm fade-up">
                             <div class="w-12 h-12 rounded-2xl bg-brand-accent/15 text-brand-accent flex items-center justify-center text-2xl mb-5">
                                 <i class="ph-fill ph-house-line"></i>
@@ -635,8 +637,8 @@
                 </div>
             </section>
 
-            <!-- 7. 시세 및 시황 브리핑 섹션 (White) - 펜트하우스 스페셜 포토 박스 포함 (17, 18, 19.webp 매칭) -->
-            <section id="search-box" class="section-padding bg-white border-t border-gray-200/60">
+            <!-- 7. 시세 및 시황 브리핑 섹션 (White) -->
+            <section id="search-box" class="w-full section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Market Price Guide</span>
@@ -646,70 +648,70 @@
                     </div>
 
                     <div id="unnamed" class="bg-white rounded-2xl shadow-md border border-slate-200 mb-2 fade-up scroll-mt-24 overflow-hidden">
-                        <table class="w-full text-[14.5px] md:text-[15.5px] text-left">
-                            <thead class="text-white bg-brand-dark text-[13.5px] sm:text-[15px]">
+                        <table class="w-full text-[14px] sm:text-[15.5px] text-left">
+                            <thead class="text-white bg-brand-dark text-[13px] sm:text-[15px]">
                                 <tr>
-                                    <th scope="col" class="px-4 sm:px-6 py-4 font-semibold">
-                                        회원권 종류 <span class="text-stone-300 font-normal text-[12.5px] sm:text-[14px]">(연 60박 · 분양가/만기)</span>
+                                    <th scope="col" class="px-3.5 sm:px-6 py-4 font-semibold">
+                                        회원권 종류 <span class="text-stone-300 font-normal text-[12px] sm:text-[14px] block sm:inline">(연 60박 · 분양가/만기)</span>
                                     </th>
-                                    <th scope="col" class="px-4 sm:px-6 py-4 font-semibold text-right text-brand-accent whitespace-nowrap">현재 매물 호가</th>
+                                    <th scope="col" class="px-3.5 sm:px-6 py-4 font-semibold text-right text-brand-accent whitespace-nowrap">현재 매물 호가</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-200">
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-white">
-                                    <td class="px-4 sm:px-6 py-4">
-                                        <div class="font-bold text-slate-900 text-[15px] sm:text-[16px]">등기제 기명카드</div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-500 mt-0.5">지분 평생 소유 · 연 60박</div>
+                                    <td class="px-3.5 sm:px-6 py-4">
+                                        <div class="font-bold text-slate-900 text-[14.5px] sm:text-[16px]">등기제 기명카드</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-500 mt-0.5">지분 평생 소유 · 연 60박</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap">9,000만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap">9,000만원</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-slate-50/50">
-                                    <td class="px-4 sm:px-6 py-4">
-                                        <div class="font-bold text-slate-900 text-[15px] sm:text-[16px]">등기제 무기명카드</div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-500 mt-0.5">지분 평생 소유 · 연 60박</div>
+                                    <td class="px-3.5 sm:px-6 py-4">
+                                        <div class="font-bold text-slate-900 text-[14.5px] sm:text-[16px]">등기제 무기명카드</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-500 mt-0.5">지분 평생 소유 · 연 60박</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap">1억 500만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap">1억 500만원</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-amber-50/50">
-                                    <td class="px-4 sm:px-6 py-4 border-b-2 border-slate-300">
-                                        <div class="font-bold text-brand-dark text-[15px] sm:text-[16px] flex flex-wrap items-center gap-1.5">
+                                    <td class="px-3.5 sm:px-6 py-4 border-b-2 border-slate-300">
+                                        <div class="font-bold text-brand-dark text-[14.5px] sm:text-[16px] flex flex-wrap items-center gap-1.5">
                                             <span>등기제 무기명카드</span>
-                                            <span class="text-[11.5px] bg-brand-accent text-white px-2 py-0.5 rounded-full font-bold shadow-sm">펜트하우스 전용</span>
+                                            <span class="text-[11px] bg-brand-accent text-white px-2 py-0.5 rounded-full font-bold shadow-sm">펜트하우스 전용</span>
                                         </div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-600 mt-0.5">지분 평생 소유 (펜트하우스 예약 가능)</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-600 mt-0.5">지분 평생 소유 (펜트하우스 예약 가능)</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap border-b-2 border-slate-300">2억 3,200만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap border-b-2 border-slate-300">2억 3,200만원</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-white">
-                                    <td class="px-4 sm:px-6 py-4">
-                                        <div class="font-bold text-slate-900 text-[15px] sm:text-[16px]">회원제 기명카드</div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-500 mt-0.5">분양가 1억 4,420만원 · 만기 2028년</div>
+                                    <td class="px-3.5 sm:px-6 py-4">
+                                        <div class="font-bold text-slate-900 text-[14.5px] sm:text-[16px]">회원제 기명카드</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-500 mt-0.5">분양가 1억 4,420만원 · 만기 2028년</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap">1억 3,400만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap">1억 3,400만원</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-slate-50/50">
-                                    <td class="px-4 sm:px-6 py-4">
-                                        <div class="font-bold text-slate-900 text-[15px] sm:text-[16px]">회원제 기명카드</div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-500 mt-0.5">분양가 1억 8,140만원 · 만기 2034년</div>
+                                    <td class="px-3.5 sm:px-6 py-4">
+                                        <div class="font-bold text-slate-900 text-[14.5px] sm:text-[16px]">회원제 기명카드</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-500 mt-0.5">분양가 1억 8,140만원 · 만기 2034년</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap">1억 5,300만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap">1억 5,300만원</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-white">
-                                    <td class="px-4 sm:px-6 py-4">
-                                        <div class="font-bold text-slate-900 text-[15px] sm:text-[16px]">회원제 무기명카드</div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-500 mt-0.5">분양가 1억 4,500만원 · 만기 2030년</div>
+                                    <td class="px-3.5 sm:px-6 py-4">
+                                        <div class="font-bold text-slate-900 text-[14.5px] sm:text-[16px]">회원제 무기명카드</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-500 mt-0.5">분양가 1억 4,500만원 · 만기 2030년</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap">1억 4,500만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap">1억 4,500만원</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/80 transition-colors bg-slate-50/50">
-                                    <td class="px-4 sm:px-6 py-4">
-                                        <div class="font-bold text-slate-900 text-[15px] sm:text-[16px]">회원제 무기명카드</div>
-                                        <div class="text-[13px] sm:text-[14px] text-slate-500 mt-0.5">분양가 2억 4,650만원 · 만기 2037년</div>
+                                    <td class="px-3.5 sm:px-6 py-4">
+                                        <div class="font-bold text-slate-900 text-[14.5px] sm:text-[16px]">회원제 무기명카드</div>
+                                        <div class="text-[12.5px] sm:text-[14px] text-slate-500 mt-0.5">분양가 2억 4,650만원 · 만기 2037년</div>
                                     </td>
-                                    <td class="px-4 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[16px] sm:text-lg whitespace-nowrap">2억 500만원</td>
+                                    <td class="px-3.5 sm:px-6 py-4 text-right text-brand-accentDark font-extrabold text-[15.5px] sm:text-lg whitespace-nowrap">2억 500만원</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="px-4 py-4 text-[13.5px] text-slate-600 bg-slate-50 text-center font-normal leading-relaxed break-keep">
+                                    <td colspan="2" class="px-4 py-4 text-[13px] sm:text-[13.5px] text-slate-600 bg-slate-50 text-center font-normal leading-relaxed break-keep">
                                         ※ 시세는 수요와 공급, 시즌 등 시장 상황에 따라 유동적으로 변동될 수 있습니다. 정확한 시세는 매매 시점 확인이 필수적입니다.
                                    </td>
                                 </tr>
@@ -719,12 +721,12 @@
 
                     <p class="text-[13px] text-slate-600 font-semibold text-center md:text-right mt-3 fade-up">최종 시세 기준일: 2026년 11월 5일</p>
 
-                    <!-- 펜트하우스 스페셜 포토 박스 (17.webp, 18.webp, 19.webp 정확히 매칭) -->
-                    <div class="bg-[#1a1f1d] rounded-3xl p-6 sm:p-10 my-10 border border-[#c5a880]/30 shadow-xl fade-up">
-                        <div class="text-center mb-8">
+                    <!-- 펜트하우스 스페셜 포토 박스 -->
+                    <div class="bg-[#1a1f1d] rounded-3xl p-5 sm:p-10 my-10 border border-[#c5a880]/30 shadow-xl fade-up">
+                        <div class="text-center mb-6 sm:mb-8">
                             <span class="inline-block py-1 px-3 rounded bg-brand-accent/20 text-brand-accent border border-brand-accent/40 text-[12px] font-bold tracking-widest mb-3 uppercase">Top Class Exclusive</span>
-                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">소노펠리체 비발디파크 펜트하우스</h3>
-                            <p class="text-brand-accent font-medium text-[15px] sm:text-[16px]">단 4실, 오직 펜트하우스 회원권 소지자만 예약 및 이용 가능</p>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-3">소노펠리체 비발디파크 펜트하우스</h3>
+                            <p class="text-brand-accent font-medium text-[14.5px] sm:text-[16px]">단 4실, 오직 펜트하우스 회원권 소지자만 예약 및 이용 가능</p>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                             <div class="rounded-2xl overflow-hidden shadow-lg h-48 sm:h-56 group bg-black">
@@ -761,8 +763,8 @@
                 </div>
             </section>
 
-            <!-- 8. 예약 안내 및 요금표 섹션 (Light) -->
-            <section class="section-padding bg-brand-light border-t border-gray-200/60">
+            <!-- 8. 예약 안내 및 요금표 섹션 (Light - 화면 전체 100% 배경색 적용) -->
+            <section class="w-full section-padding bg-brand-light border-t border-gray-200/60">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
                     <div>
@@ -778,158 +780,160 @@
                             
                             <!-- 1. 로얄 [디럭스단층] 요금표 -->
                             <div>
-                                <div class="flex items-end justify-between mb-3 gap-2">
-                                    <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark flex items-center gap-2 border-l-4 border-brand-accent pl-3">
+                                <div class="flex flex-wrap items-end justify-between mb-3 gap-2">
+                                    <h4 class="text-[15.5px] md:text-[17px] font-bold text-brand-dark flex items-center gap-2 border-l-4 border-brand-accent pl-3">
                                         로얄 [디럭스단층] (파크뷰) 요금표
                                     </h4>
-                                    <span class="text-[13px] text-slate-500 font-medium whitespace-nowrap">단위: 원(VAT포함)</span>
+                                    <span class="text-[12.5px] sm:text-[13px] text-slate-500 font-medium whitespace-nowrap">단위: 원(VAT포함)</span>
                                 </div>
                                 <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200 rate-table">
-                                    <table class="w-full text-[13px] md:text-[14px] text-center min-w-[640px] whitespace-nowrap">
+                                    <table class="w-full text-[12.5px] sm:text-[14px] text-center min-w-[540px] whitespace-nowrap">
                                         <thead>
                                             <tr>
-                                                <th rowspan="2" class="px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">회원구분</th>
-                                                <th rowspan="2" class="px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">주중</th>
-                                                <th rowspan="2" class="px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">금요일</th>
-                                                <th rowspan="2" class="px-4 py-3 bg-amber-50/70 border-r text-[#a38760] align-middle">토요일</th>
-                                                <th colspan="3" class="px-3 py-2 bg-sky-50/80 text-sky-900 border-b">성수기</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">회원구분</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">주중</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">금요일</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-amber-50/70 border-r text-[#a38760] align-middle">토요일</th>
+                                                <th colspan="3" class="px-2 sm:px-3 py-2 bg-sky-50/80 text-sky-900 border-b">성수기</th>
                                             </tr>
                                             <tr>
-                                                <th class="px-3 py-2 bg-sky-50/50 text-slate-700 border-r">하이</th>
-                                                <th class="px-3 py-2 bg-sky-50/50 text-slate-700 border-r">골드</th>
-                                                <th class="px-3 py-2 bg-sky-50/50 text-slate-700">스페셜</th>
+                                                <th class="px-2 sm:px-3 py-2 bg-sky-50/50 text-slate-700 border-r">하이</th>
+                                                <th class="px-2 sm:px-3 py-2 bg-sky-50/50 text-slate-700 border-r">골드</th>
+                                                <th class="px-2 sm:px-3 py-2 bg-sky-50/50 text-slate-700">스페셜</th>
                                             </tr>
                                         </thead>
                                         <tbody class="divide-y divide-slate-100 text-slate-700 tracking-tight">
                                             <tr class="hover:bg-slate-50 transition-colors bg-white">
-                                                <td class="px-4 py-3.5 font-bold text-slate-900 border-r">회원(기명)</td>
-                                                <td class="px-4 py-3.5 border-r">283,000</td>
-                                                <td class="px-4 py-3.5 border-r">298,000</td>
-                                                <td class="px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">393,000</td>
-                                                <td class="px-4 py-3.5 border-r">396,000</td>
-                                                <td class="px-4 py-3.5 border-r">454,000</td>
-                                                <td class="px-4 py-3.5 font-semibold text-brand-dark">490,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-bold text-slate-900 border-r">회원(기명)</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">283,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">298,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">393,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">396,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">454,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-semibold text-brand-dark">490,000</td>
                                             </tr>
                                             <tr class="hover:bg-slate-50 transition-colors bg-[#f8faf9]">
-                                                <td class="px-4 py-3.5 font-bold text-slate-900 border-r">회원(무기명)</td>
-                                                <td class="px-4 py-3.5 border-r">292,000</td>
-                                                <td class="px-4 py-3.5 border-r">312,000</td>
-                                                <td class="px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">409,000</td>
-                                                <td class="px-4 py-3.5 border-r">412,000</td>
-                                                <td class="px-4 py-3.5 border-r">472,000</td>
-                                                <td class="px-4 py-3.5 font-semibold text-brand-dark">514,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-bold text-slate-900 border-r">회원(무기명)</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">292,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">312,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">409,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">412,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">472,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-semibold text-brand-dark">514,000</td>
                                             </tr>
                                             <tr class="hover:bg-slate-50 transition-colors bg-white">
-                                                <td class="px-4 py-3.5 font-medium text-slate-800 border-r">회원초청</td>
-                                                <td class="px-4 py-3.5 border-r">429,000</td>
-                                                <td class="px-4 py-3.5 border-r">458,000</td>
-                                                <td class="px-4 py-3.5 border-r bg-amber-50/20">568,000</td>
-                                                <td class="px-4 py-3.5 border-r">580,000</td>
-                                                <td class="px-4 py-3.5 border-r">648,000</td>
-                                                <td class="px-4 py-3.5">712,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-medium text-slate-800 border-r">회원초청</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">429,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">458,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r bg-amber-50/20">568,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">580,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">648,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5">712,000</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <p class="text-[11.5px] text-slate-400 mt-1.5 text-right sm:hidden">👉 표를 좌우로 밀어서 확인하세요.</p>
                             </div>
 
                             <!-- 2. 로얄 [펜트하우스] 요금표 -->
                             <div>
-                                <div class="flex items-end justify-between mb-3 gap-2">
-                                    <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark flex items-center gap-2 border-l-4 border-brand-accent pl-3">
-                                        로얄 [펜트하우스] (파크뷰) 요금표 <span class="text-xs bg-brand-accent text-white px-2 py-0.5 rounded-full">단 4실 한정</span>
+                                <div class="flex flex-wrap items-end justify-between mb-3 gap-2">
+                                    <h4 class="text-[15.5px] md:text-[17px] font-bold text-brand-dark flex items-center gap-2 border-l-4 border-brand-accent pl-3">
+                                        <span>로얄 [펜트하우스] 요금표</span> <span class="text-[11px] bg-brand-accent text-white px-2 py-0.5 rounded-full whitespace-nowrap">단 4실 한정</span>
                                     </h4>
-                                    <span class="text-[13px] text-slate-500 font-medium whitespace-nowrap">단위: 원(VAT포함)</span>
+                                    <span class="text-[12.5px] sm:text-[13px] text-slate-500 font-medium whitespace-nowrap">단위: 원(VAT포함)</span>
                                 </div>
                                 <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200 rate-table">
-                                    <table class="w-full text-[13px] md:text-[14px] text-center min-w-[640px] whitespace-nowrap">
+                                    <table class="w-full text-[12.5px] sm:text-[14px] text-center min-w-[540px] whitespace-nowrap">
                                         <thead>
                                             <tr>
-                                                <th rowspan="2" class="px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">회원구분</th>
-                                                <th rowspan="2" class="px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">주중</th>
-                                                <th rowspan="2" class="px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">금요일</th>
-                                                <th rowspan="2" class="px-4 py-3 bg-amber-50/70 border-r text-[#a38760] align-middle">토요일</th>
-                                                <th colspan="3" class="px-3 py-2 bg-sky-50/80 text-sky-900 border-b">성수기</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">회원구분</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">주중</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-slate-100 border-r text-slate-800 align-middle">금요일</th>
+                                                <th rowspan="2" class="px-2.5 sm:px-4 py-3 bg-amber-50/70 border-r text-[#a38760] align-middle">토요일</th>
+                                                <th colspan="3" class="px-2 sm:px-3 py-2 bg-sky-50/80 text-sky-900 border-b">성수기</th>
                                             </tr>
                                             <tr>
-                                                <th class="px-3 py-2 bg-sky-50/50 text-slate-700 border-r">하이</th>
-                                                <th class="px-3 py-2 bg-sky-50/50 text-slate-700 border-r">골드</th>
-                                                <th class="px-3 py-2 bg-sky-50/50 text-slate-700">스페셜</th>
+                                                <th class="px-2 sm:px-3 py-2 bg-sky-50/50 text-slate-700 border-r">하이</th>
+                                                <th class="px-2 sm:px-3 py-2 bg-sky-50/50 text-slate-700 border-r">골드</th>
+                                                <th class="px-2 sm:px-3 py-2 bg-sky-50/50 text-slate-700">스페셜</th>
                                             </tr>
                                         </thead>
                                         <tbody class="divide-y divide-slate-100 text-slate-700 tracking-tight">
                                             <tr class="hover:bg-slate-50 transition-colors bg-white">
-                                                <td class="px-4 py-3.5 font-bold text-slate-900 border-r">회원(기명)</td>
-                                                <td class="px-4 py-3.5 border-r">301,000</td>
-                                                <td class="px-4 py-3.5 border-r">320,000</td>
-                                                <td class="px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">415,000</td>
-                                                <td class="px-4 py-3.5 border-r">426,000</td>
-                                                <td class="px-4 py-3.5 border-r">487,000</td>
-                                                <td class="px-4 py-3.5 font-semibold text-brand-dark">535,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-bold text-slate-900 border-r">회원(기명)</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">301,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">320,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">415,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">426,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">487,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-semibold text-brand-dark">535,000</td>
                                             </tr>
                                             <tr class="hover:bg-slate-50 transition-colors bg-[#f8faf9]">
-                                                <td class="px-4 py-3.5 font-bold text-slate-900 border-r">회원(무기명)</td>
-                                                <td class="px-4 py-3.5 border-r">324,000</td>
-                                                <td class="px-4 py-3.5 border-r">349,000</td>
-                                                <td class="px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">442,000</td>
-                                                <td class="px-4 py-3.5 border-r">457,000</td>
-                                                <td class="px-4 py-3.5 border-r">517,000</td>
-                                                <td class="px-4 py-3.5 font-semibold text-brand-dark">570,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-bold text-slate-900 border-r">회원(무기명)</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">324,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">349,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r font-semibold text-[#a38760] bg-amber-50/20">442,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">457,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">517,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-semibold text-brand-dark">570,000</td>
                                             </tr>
                                             <tr class="hover:bg-slate-50 transition-colors bg-white">
-                                                <td class="px-4 py-3.5 font-medium text-slate-800 border-r">회원초청</td>
-                                                <td class="px-4 py-3.5 border-r">537,000</td>
-                                                <td class="px-4 py-3.5 border-r">562,000</td>
-                                                <td class="px-4 py-3.5 border-r bg-amber-50/20">682,000</td>
-                                                <td class="px-4 py-3.5 border-r">702,000</td>
-                                                <td class="px-4 py-3.5 border-r">791,000</td>
-                                                <td class="px-4 py-3.5">843,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 font-medium text-slate-800 border-r">회원초청</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">537,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">562,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r bg-amber-50/20">682,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">702,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5 border-r">791,000</td>
+                                                <td class="px-2.5 sm:px-4 py-3.5">843,000</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <p class="text-[11.5px] text-slate-400 mt-1.5 text-right sm:hidden">👉 표를 좌우로 밀어서 확인하세요.</p>
                             </div>
 
                             <!-- 3. 대상 기간 구분표 -->
                             <div>
-                                <div class="flex items-end justify-between mb-3 gap-2">
-                                    <h4 class="text-[16px] md:text-[17px] font-bold text-brand-dark flex items-center gap-2 border-l-4 border-brand-accent pl-3">
+                                <div class="flex flex-wrap items-end justify-between mb-3 gap-2">
+                                    <h4 class="text-[15.5px] md:text-[17px] font-bold text-brand-dark flex items-center gap-2 border-l-4 border-brand-accent pl-3">
                                         요금 구분 및 대상 기간 안내
                                     </h4>
-                                    <span class="text-[13px] text-slate-500 font-medium whitespace-nowrap">기준: 객실 요금 적용 시기</span>
+                                    <span class="text-[12.5px] sm:text-[13px] text-slate-500 font-medium whitespace-nowrap">기준: 객실 요금 적용 시기</span>
                                 </div>
                                 <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200 rate-table">
-                                    <table class="w-full text-[13.5px] text-left">
+                                    <table class="w-full text-[13px] sm:text-[13.5px] text-left">
                                         <thead>
                                             <tr>
-                                                <th class="px-4 py-3 bg-slate-100 border-r text-center w-32 font-bold text-slate-800">요금 구분</th>
-                                                <th class="px-4 py-3 bg-slate-100 font-bold text-slate-800">대상 기간 안내</th>
+                                                <th class="px-3 sm:px-4 py-3 bg-slate-100 border-r text-center w-24 sm:w-32 font-bold text-slate-800 whitespace-nowrap">요금 구분</th>
+                                                <th class="px-3.5 sm:px-4 py-3 bg-slate-100 font-bold text-slate-800">대상 기간 안내</th>
                                             </tr>
                                         </thead>
                                         <tbody class="divide-y divide-slate-100 text-slate-700">
                                             <tr class="bg-white hover:bg-slate-50">
-                                                <td class="px-4 py-3 text-center font-bold border-r">주중</td>
-                                                <td class="px-4 py-3 leading-relaxed">[비수기] 주중 (단, 비발디파크 2월 주중은 금요일 요금 적용)</td>
+                                                <td class="px-3 sm:px-4 py-3 text-center font-bold border-r whitespace-nowrap">주중</td>
+                                                <td class="px-3.5 sm:px-4 py-3 leading-relaxed">[비수기] 주중 (단, 비발디파크 2월 주중은 금요일 요금 적용)</td>
                                             </tr>
                                             <tr class="bg-[#f8faf9] hover:bg-slate-50">
-                                                <td class="px-4 py-3 text-center font-bold border-r">금요일</td>
-                                                <td class="px-4 py-3 leading-relaxed">[비수기] 금요일</td>
+                                                <td class="px-3 sm:px-4 py-3 text-center font-bold border-r whitespace-nowrap">금요일</td>
+                                                <td class="px-3.5 sm:px-4 py-3 leading-relaxed">[비수기] 금요일</td>
                                             </tr>
                                             <tr class="bg-amber-50/10 hover:bg-amber-50/30">
-                                                <td class="px-4 py-3 text-center font-bold text-[#a38760] border-r">토요일</td>
-                                                <td class="px-4 py-3 leading-relaxed">[비수기] 토요일 및 공휴일 전일</td>
+                                                <td class="px-3 sm:px-4 py-3 text-center font-bold text-[#a38760] border-r whitespace-nowrap">토요일</td>
+                                                <td class="px-3.5 sm:px-4 py-3 leading-relaxed">[비수기] 토요일 및 공휴일 전일</td>
                                             </tr>
                                             <tr class="bg-sky-50/20 hover:bg-sky-50/40">
-                                                <td class="px-4 py-3 text-center font-semibold text-sky-800 border-r">하이</td>
-                                                <td class="px-4 py-3 leading-relaxed">[여름성수기] 주중 / [겨울성수기] 비발디파크 주중</td>
+                                                <td class="px-3 sm:px-4 py-3 text-center font-semibold text-sky-800 border-r whitespace-nowrap">하이</td>
+                                                <td class="px-3.5 sm:px-4 py-3 leading-relaxed">[여름성수기] 주중 / [겨울성수기] 비발디파크 주중</td>
                                             </tr>
                                             <tr class="bg-sky-50/30 hover:bg-sky-50/50">
-                                                <td class="px-4 py-3 text-center font-semibold text-sky-800 border-r">골드</td>
-                                                <td class="px-4 py-3 leading-relaxed">[여름/겨울성수기] 주말(금/토), 연휴, 공휴일 전일<br>[비수기] 연휴(휴일전일포함)</td>
+                                                <td class="px-3 sm:px-4 py-3 text-center font-semibold text-sky-800 border-r whitespace-nowrap">골드</td>
+                                                <td class="px-3.5 sm:px-4 py-3 leading-relaxed">[여름/겨울성수기] 주말(금/토), 연휴, 공휴일 전일<br>[비수기] 연휴(휴일전일포함)</td>
                                             </tr>
                                             <tr class="bg-sky-50/40 hover:bg-sky-50/60">
-                                                <td class="px-4 py-3 text-center font-bold text-sky-900 border-r">스페셜</td>
-                                                <td class="px-4 py-3 leading-relaxed">[여름성수기] 7/24 ~ 8/1<br>[겨울성수기] 12/24~26, 12/31~1/2</td>
+                                                <td class="px-3 sm:px-4 py-3 text-center font-bold text-sky-900 border-r whitespace-nowrap">스페셜</td>
+                                                <td class="px-3.5 sm:px-4 py-3 leading-relaxed">[여름성수기] 7/24 ~ 8/1<br>[겨울성수기] 12/24~26, 12/31~1/2</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1070,7 +1074,7 @@
             </section>
 
             <!-- 9. 명의개서 및 부대비용 섹션 (White) -->
-            <section class="section-padding bg-white border-t border-gray-200/60">
+            <section class="w-full section-padding bg-white border-t border-gray-200/60">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12 fade-up">
                         <span class="text-sm font-bold tracking-widest text-brand-accentDark uppercase mb-2 block">Transfer & Documentation</span>
@@ -1138,7 +1142,7 @@
     </main>
 
     <!-- 하단 상담 연결 박스 -->
-    <section id="consult" class="pt-4 pb-12 md:pt-8 md:pb-16 bg-white relative">
+    <section id="consult" class="w-full pt-4 pb-12 md:pt-8 md:pb-16 bg-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-up">
             <div class="bg-gradient-to-br from-[#143831] to-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-brand-accent/30">
                 <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-brand-accent opacity-10 blur-3xl"></div>
