@@ -45,6 +45,7 @@ const dataGolf = [
     { title: "우정힐스CC 회원권", sub: "코오롱 한국오픈 개최지 천안 명문 18홀", tag: "충남 천안", link: "woojeonghills-cc/" },
     { title: "여주CC 회원권", sub: "반세기 전통의 자연림을 품은 여주권 27홀 실속형 구장", tag: "경기 여주", link: "yeoju-cc/" },
     { title: "마이다스밸리청평CC 회원권", sub: "뛰어난 강북권 접근성의 가평 18홀 명문 구장", tag: "경기 가평", link: "midas-cheongpyeong/" },
+    { title: "안성베네스트CC 회원권", sub: "삼성물산의 철저한 코스 관리가 돋보이는 안성 36홀", tag: "경기 안성", link: "anseong-benest-cc/" },
 ];
 
 const dataCondo = [
