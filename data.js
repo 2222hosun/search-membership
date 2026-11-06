@@ -46,6 +46,7 @@ const dataGolf = [
     { title: "여주CC 회원권", sub: "반세기 전통의 자연림을 품은 여주권 27홀 실속형 구장", tag: "경기 여주", link: "yeoju-cc/" },
     { title: "마이다스밸리청평CC 회원권", sub: "뛰어난 강북권 접근성의 가평 18홀 명문 구장", tag: "경기 가평", link: "midas-cheongpyeong/" },
     { title: "안성베네스트CC 회원권", sub: "삼성물산의 철저한 코스 관리가 돋보이는 안성 36홀", tag: "경기 안성", link: "anseong-benest-cc/" },
+    { title: "블랙스톤이천CC 회원권", sub: "제주 혜택이 연계되는 이천 27홀 프라이빗 구장", tag: "경기 이천", link: "blackstone-icheon/" },
 ];
 
 const dataCondo = [
@@ -95,6 +96,7 @@ const dataUnnamed = [
     { title: "뉴스프링빌CC 무기명", sub: "무기명 3~4인 · 주중 프리 / 주말 4~6회", tag: "경기 이천", link: "newspring-cc/#unnamed" },
     { title: "골든베이CC 무기명", sub: "기명 1인 + 무기명 4인 · 투스칸빌리지 연계", tag: "충남 태안", link: "goldenbay-cc/#unnamed" },
     { title: "마론뉴데이CC 무기명", sub: "정회원 1인 + 무기명 4인 / 1일 2팀 예약 가능", tag: "충남 천안", link: "maronnewday-cc/" },
+    { title: "블랙스톤이천CC 무기명", sub: "정회원 1인 + 지정 1인 + 무기명 4인", tag: "경기 이천", link: "blackstone-icheon/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
