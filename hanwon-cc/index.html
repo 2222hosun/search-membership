@@ -163,21 +163,31 @@
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
-            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='/'">
-                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <!-- 좌우 여백을 모바일에서 살짝 줄여 공간 확보 -->
+        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            
+            <!-- 1. 로고 영역: 펼쳤을 때는 기존 그대로, 접었을 때만 로고 크기 축소 -->
+            <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center leading-none">
-                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
-                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                    <span class="font-bold text-[16px] sm:text-[19px] md:text-[22px] tracking-tight text-white whitespace-nowrap transition-all">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1 hidden sm:block">SEARCH MEMBERSHIP</span>
                 </div>
             </div>
-            <a href="/index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
-                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
-            </a>
+            
+            <!-- 2. 버튼 영역: hidden을 제거하여 접었을 때도 노출되도록 하고, 펼쳤을 때는 기존과 동일한 여백 유지 -->
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
+                </a>
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+                </a>
+            </div>
         </div>
     </nav>
     <div class="h-20 w-full"></div>
@@ -569,19 +579,19 @@
                         <tbody class="divide-y divide-gray-100">
                             <tr>
                                 <td class="px-6 py-5 font-semibold text-brand-dark bg-white text-center">정회원권</td>
-                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-white border-l border-gray-100">4,900만원</td>
+                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-white border-l border-gray-100">4,600만원</td>
                             </tr>
                             <tr>
                                 <td class="px-6 py-5 font-semibold text-brand-dark bg-gray-50/50 text-center">우대회원권</td>
-                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-gray-50/50 border-l border-gray-100">1억 5,000만원</td>
+                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-gray-50/50 border-l border-gray-100">1억 4,400만원</td>
                             </tr>
                             <tr>
                                 <td class="px-6 py-5 font-semibold text-brand-dark bg-white text-center">1구좌 특별회원권</td>
-                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-white border-l border-gray-100">3억 9,500만원</td>
+                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-white border-l border-gray-100">3억 7,500만원</td>
                             </tr>
                             <tr>
                                 <td class="px-6 py-5 font-semibold text-brand-dark bg-gray-50/50 text-center">2구좌 특별회원권</td>
-                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-gray-50/50 border-l border-gray-100 text-gray-500">매매 문의</td>
+                                <td class="px-6 py-5 text-center text-brand-dark font-bold text-xl bg-gray-50/50 border-l border-gray-100">11억 3,000만원</td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="px-6 py-4 text-[14px] text-gray-500 bg-gray-50 text-center font-normal leading-[1.7]">
@@ -594,7 +604,7 @@
 
                 <!-- 최종 시세 기준일 표기 -->
                 <div class="text-right text-[13px] font-semibold text-gray-500 fade-up">
-                    최종 시세 기준일: 2026년 10월 19일
+                    최종 시세 기준일: 2026년 11월 6일
                 </div>
 
                 <!-- 최근 시황 브리핑 박스 (기준일 바로 아래, mt-8 mb-0 고정 적용) -->
@@ -604,7 +614,7 @@
                         <h3 class="font-bold text-lg text-brand-dark">최근 시황 브리핑</h3>
                     </div>
                     <p class="text-gray-700 text-[15px] md:text-base leading-relaxed text-left md:text-justify">
-                        경기도 용인에 자리한 한원CC는 1970년에 개장해 50년이 넘는 깊은 역사를 간직한 수도권 남부의 대표적인 명문 골프장입니다. 고구려, 백제, 신라로 나뉜 27홀 코스는 오랜 세월 가꿔진 울창한 나무들과 어우러져 매번 편안하면서도 새로운 플레이의 재미를 안겨줍니다. 최근 1년간 꾸준한 매수 문의 속에 일반 정회원권은 4900만원 선에서 거래되며 합리적인 접근성을 보여주고 있고 혜택이 넉넉한 우대회원권은 1억 5000만원, 활용도가 높은 무기명 특별회원권은 3억 9,500만원 안팎의 탄탄한 시세를 유지하고 있습니다. 경부고속도로 오산IC와 가까워 서울 강남이나 분당 지역에서 40~50분이면 편하게 닿을 수 있어 실수요자들의 발길이 이어집니다. 여기에 개인과 법인 간의 자유로운 교차 매매와 법인 반구좌 입회 제도가 더해져 시장에서 매물 회전이 원활하게 이루어지는 편입니다. 역사 깊은 구장 특유의 안정적인 운영과 훌륭한 입지 조건을 찾는 대기 수요가 탄탄히 받쳐주고 있어 당분간 큰 가격 변동 없이 차분한 거래 흐름을 이어갈 것으로 전망됩니다.
+                        경부고속도로 오산IC와 가까워 서울 강남이나 분당에서 편하게 닿을 수 있는 한원CC는 반세기가 넘는 오랜 역사를 바탕으로 울창한 수림 속에서 다이내믹한 27홀 라운드를 즐길 수 있어 실수요자들의 발길이 꾸준히 이어지는 곳입니다. 현재 매물 호가를 살펴보면 일반 정회원권은 4600만원 선에서 합리적으로 거래되고 있으며 혜택이 넉넉한 우대회원권은 1억 4400만원, 주말 부킹이 유리한 무기명 특별회원권은 3억 7500만원 선에 호가를 형성하고 있습니다. 드물게 나오는 특별 무기명 회원권도 11억 3000만원 선에 현재 시중에 매물 체크됩니다.
                     </p>
                 </div>
             </div>
