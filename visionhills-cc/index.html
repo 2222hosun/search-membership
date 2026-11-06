@@ -169,21 +169,31 @@
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
-            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='/'">
-                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <!-- 좌우 여백을 모바일에서 살짝 줄여 공간 확보 -->
+        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            
+            <!-- 1. 로고 영역: 펼쳤을 때는 기존 그대로, 접었을 때만 로고 크기 축소 -->
+            <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center leading-none">
-                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
-                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                    <span class="font-bold text-[16px] sm:text-[19px] md:text-[22px] tracking-tight text-white whitespace-nowrap transition-all">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1 hidden sm:block">SEARCH MEMBERSHIP</span>
                 </div>
             </div>
-            <a href="/index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
-                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
-            </a>
+            
+            <!-- 2. 버튼 영역: hidden을 제거하여 접었을 때도 노출되도록 하고, 펼쳤을 때는 기존과 동일한 여백 유지 -->
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
+                </a>
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+                </a>
+            </div>
         </div>
     </nav>
     <div class="h-20 w-full"></div>
@@ -459,7 +469,7 @@
                         <thead class="text-[14px] text-gray-600 uppercase bg-gray-50">
                             <tr>
                                 <th scope="col" class="px-5 sm:px-6 py-4 font-semibold">회원권 종류</th>
-                                <th scope="col" class="px-5 sm:px-6 py-4 font-semibold text-right text-brand-accent whitespace-nowrap">매물 시세</th>
+                                <th scope="col" class="px-5 sm:px-6 py-4 font-semibold text-right text-brand-accent whitespace-nowrap">23억원</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100">
@@ -479,7 +489,7 @@
 
                 <!-- 최종 시세 기준일 표기 -->
                 <div class="text-right text-[13px] font-semibold text-gray-500 fade-up">
-                    최종 시세 기준일: 2026년 10월 22일
+                    최종 시세 기준일: 2026년 11월 6일
                 </div>
 
                 <!-- 최근 시황 브리핑 박스 -->
@@ -489,7 +499,7 @@
                         <h3 class="font-bold text-lg text-brand-dark">최근 시황 브리핑</h3>
                     </div>
                     <p class="text-gray-700 text-[15px] md:text-base leading-relaxed text-left md:text-justify">
-                        비전힐스컨트리클럽은 강남 및 강동권에서 30분대 이동이 가능한 뛰어난 접근성과 약 199여 명의 소수 정예 회원 중심으로 운영되어 여유로운 부킹 환경을 제공하는 남양주권 명문 구장입니다. 정회원 외에 가족회원과 지정회원이 함께 등록되어 그린피 우대와 주중 단독 라운딩 혜택을 폭넓게 누릴 수 있으며, 개인과 법인 간 교차 매매가 자유롭지만 클럽 자체의 엄격한 입회 자격 심사를 거쳐야 합니다. 회원 수가 적고 기존 보유자들의 만족도가 높아 시중에 나오는 매물 자체가 극히 드물며, 가장 최근 시장에 출회되었던 매물 호가는 20억 5000만원 선을 기록했습니다. 현재는 시장에 나와 있는 매도 매물이 없어 시세가 매매 문의 상태로 전환되었으나, 입회를 희망하는 법인 및 실수요층의 대기 매수세는 꾸준히 유지되고 있습니다. 매수를 고려하시는 경우 당사로 사전 대기 접수를 남겨주시면 매물 출회 시 조건을 확인하여 우선적으로 매칭해 드리겠습니다.
+                        비전힐스컨트리클럽은 강남이나 강동 지역에서 30분 안팎이면 닿을 수 있을 만큼 이동이 편하고 전체 회원 수가 199명 남짓으로 워낙 적어 여유로운 부킹을 자랑하는 남양주권 명문 구장입니다. 정회원과 함께 가족회원, 지정회원까지 등록할 수 있어 그린피 혜택이 좋고 주중에는 지정회원 단독 라운딩도 허용되어 실질적인 활용도가 아주 높습니다. 개인과 법인 사이의 매매는 자유롭게 진행할 수 있지만 구장 자체의 입회 심사가 꽤 까다로운 편이며, 기존 회원분들의 만족도가 커서 시중에 매물이 나오는 일 자체가 무척 드문데 현재 23억원 선에 귀한 물건이 하나 나와 있습니다. 평소 매도 물량이 거의 없어 대기하시던 법인이나 개인 실수요자분들이 항상 계시는 곳인 만큼, 이번에 나온 물건 역시 매수 조건을 검토하시는 분들을 중심으로 차분하게 거래 조율이 이루어질 것으로 예상됩니다.
                     </p>
                 </div>
             </div>
