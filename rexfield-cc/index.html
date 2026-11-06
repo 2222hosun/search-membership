@@ -169,21 +169,31 @@
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
-            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='/'">
-                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <!-- 좌우 여백을 모바일에서 살짝 줄여 공간 확보 -->
+        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            
+            <!-- 1. 로고 영역: 펼쳤을 때는 기존 그대로, 접었을 때만 로고 크기 축소 -->
+            <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center leading-none">
-                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
-                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                    <span class="font-bold text-[16px] sm:text-[19px] md:text-[22px] tracking-tight text-white whitespace-nowrap transition-all">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1 hidden sm:block">SEARCH MEMBERSHIP</span>
                 </div>
             </div>
-            <a href="/index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
-                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
-            </a>
+            
+            <!-- 2. 버튼 영역: hidden을 제거하여 접었을 때도 노출되도록 하고, 펼쳤을 때는 기존과 동일한 여백 유지 -->
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
+                </a>
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+                </a>
+            </div>
         </div>
     </nav>
     <div class="h-20 w-full"></div>
@@ -470,7 +480,7 @@
                         <tbody class="divide-y divide-gray-100">
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-white">정회원권 (개인 및 법인 상호 거래)</td>
-                                <td class="px-5 sm:px-6 py-5 text-right text-brand-accent font-bold text-xl bg-white whitespace-nowrap">11억 8,000만원</td>
+                                <td class="px-5 sm:px-6 py-5 text-right text-brand-accent font-bold text-xl bg-white whitespace-nowrap">11억 5,000만원</td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="px-5 sm:px-6 py-4 text-[14px] text-gray-500 bg-gray-50 text-center font-normal leading-[1.7]">
@@ -484,7 +494,7 @@
 
                 <!-- 최종 시세 기준일 표기 -->
                 <div class="text-right text-[13px] font-semibold text-gray-500 fade-up">
-                    최종 시세 기준일: 2026년 10월 22일
+                    최종 시세 기준일: 2026년 11월 6일
                 </div>
 
                 <!-- 최근 시황 브리핑 박스 -->
@@ -494,7 +504,7 @@
                         <h3 class="font-bold text-lg text-brand-dark">최근 시황 브리핑</h3>
                     </div>
                     <p class="text-gray-700 text-[15px] md:text-base leading-relaxed text-left md:text-justify">
-                        렉스필드컨트리클럽은 27홀 전 홀이 회원제로 운영되는 여주권 대표 명문 구장으로, 자연림을 살린 코스와 빠른 그린 스피드 등 수준 높은 코스 품질을 유지하고 있습니다.개인과 법인 간 교차 매매가 가능하지만, 분양가별로 가족회원 외 지정회원 등록 여부와 시세가 다르게 형성되며 위임 할인(월 주중 3회·주말 1회) 역시 월 동반 할인 횟수(주중·주말 각 4회) 내에서 차감되는 구조를 가지고 있습니다.최근 모기업인 웅진그룹의 골프장 매각 추진 이슈와 초고가 회원권 시장의 숨 고르기 장세가 맞물리면서, 과거 13억 원 이상을 호가하던 정회원권 시세는 현재 11억 8,000만 원 선에서 조정을 거치며 보합세를 나타내고 있습니다.초고가대 특성상 매도·매수 호가 격차가 존재하고 클럽 자체 운영위원회의 까다로운 입회 심사를 거쳐야 하는 만큼 거래 빈도가 높지는 않으나, 여유로운 부킹과 비즈니스 접대 환경을 목적으로 하는 법인 및 실수요층의 선별적인 저점 매수 문의가 이어지고 있습니다.
+                        여주권 대표 명문 구장인 렉스필드CC는 27홀 전 홀을 온전히 회원제로만 운영하며 뛰어난 자연림 코스와 빠른 그린 스피드로 방문하시는 분들의 칭찬이 자자한 곳입니다. 개인과 법인 간 자유롭게 교차 매매를 하실 수 있지만 분양가에 따라 지정회원 등재 조건이 다르고, 특히 무기명 위임 할인 혜택이 월 동반 할인 횟수 안에서 차감되는 독특한 구조라 매수 전에 꼼꼼한 확인이 필요하거든요. 최근 모기업인 웅진그룹의 골프장 매각 추진 소식과 함께 초고가 회원권 시장 전체가 잠시 쉬어가는 분위기가 겹치면서, 한때 13억 원을 넘보던 정회원권 호가는 현재 11억 5,000만 원 선에서 차분하게 조정을 거치고 있습니다. 워낙 고가이다 보니 매도자와 매수자 간의 희망 가격 차이가 꽤 있고 클럽 자체의 깐깐한 입회 심사까지 더해져 거래가 빈번하게 일어나지는 않지만, 확실한 부킹 보장과 여유로운 비즈니스 접대 환경을 원하시는 법인 대표님들을 중심으로 조심스럽게 저점 매수 기회를 노리시는 분위기입니다.
                     </p>
                 </div>
             </div>
@@ -591,10 +601,10 @@
                 <div class="relative z-10">
                     <p class="text-brand-accent font-medium tracking-widest text-sm md:text-[15px] mb-3">빛과 바람이 머무는 27색의 예술</p>
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-[1.4]">
-                        예술적 영감이 가득한 코스에서의 하루<br class="hidden sm:inline"/> 렉스필드CC만의 압도적인 자부심
+                        예술적 영감이 가득한 코스에서의 하루<br class="hidden sm:inline"/> 렉스필드CC
                     </h2>
                     <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-[16px] md:text-lg leading-[1.7] font-normal">
-                        완벽한 위임 환경과 철저한 회원 중심 예약 시스템<br>실시간 정확한 시세 확인부터 안전한 책임 거래까지 서치회원권이 약속드립니다
+                        완벽한 위임 환경과 철저한 회원 중심 예약 시스템<br>실시간 정확한 시세 확인부터 안전한 책임 거래까지 함께합니다.
                     </p>
                     
                     <div class="mt-6 w-full max-w-md flex flex-col sm:flex-row gap-3 mx-auto">
