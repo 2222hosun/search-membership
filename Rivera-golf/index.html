@@ -165,21 +165,31 @@
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
-            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
-                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <!-- 좌우 여백을 모바일에서 살짝 줄여 공간 확보 -->
+        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            
+            <!-- 1. 로고 영역: 펼쳤을 때는 기존 그대로, 접었을 때만 로고 크기 축소 -->
+            <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center leading-none">
-                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
-                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                    <span class="font-bold text-[16px] sm:text-[19px] md:text-[22px] tracking-tight text-white whitespace-nowrap transition-all">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1 hidden sm:block">SEARCH MEMBERSHIP</span>
                 </div>
             </div>
-            <a href="../index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
-                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
-            </a>
+            
+            <!-- 2. 버튼 영역: hidden을 제거하여 접었을 때도 노출되도록 하고, 펼쳤을 때는 기존과 동일한 여백 유지 -->
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
+                </a>
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+                </a>
+            </div>
         </div>
     </nav>
     <div class="h-20 w-full"></div>
@@ -536,7 +546,7 @@
                                 <tr>
                                     <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-white">정회원권</td>
                                     <td class="px-5 sm:px-6 py-5 text-gray-500 bg-white">정회원 1인</td>
-                                    <td class="px-5 sm:px-6 py-5 text-right text-brand-accent font-bold text-xl bg-white whitespace-nowrap">약 4,250만원</td>
+                                    <td class="px-5 sm:px-6 py-5 text-right text-brand-accent font-bold text-xl bg-white whitespace-nowrap">약 4,200만원</td>
                                 </tr>
                                 <tr>
                                     <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-gray-50/50">레드회원권</td>
@@ -551,7 +561,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <p class="text-[13px] text-stone-500 font-semibold text-center md:text-right mt-2 fade-up">최종 시세 기준일: 2026년 10월 23일</p>
+                    <p class="text-[13px] text-stone-500 font-semibold text-center md:text-right mt-2 fade-up">최종 시세 기준일: 2026년 11월 6일</p>
 
                     <!-- 최근 시황 브리핑 -->
                     <div class="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-100 shadow-sm border-l-4 border-l-brand-accent mt-8 mb-0 fade-up">
@@ -560,7 +570,7 @@
                             <h3 class="font-bold text-lg text-brand-dark">최근 시황 브리핑</h3>
                         </div>
                         <p class="text-gray-700 text-[15px] md:text-base leading-relaxed text-left md:text-justify">
-                            신안그룹이 운영하는 리베라컨트리클럽 회원권은 뛰어난 수도권 접근성과 36홀 대단지 코스의 장점을 바탕으로 꾸준한 실수요가 뒷받침되는 종목입니다. 최근 회원권 시장 전반의 숨 고르기 장세 속에서 리베라CC 정회원권 역시 연초 고점 대비 다소 조정을 거치며 현재 4,250만원 선에서 거래가 이루어지고 있습니다. 개인과 법인 간 교차 매매가 가능하고 법인 반구좌 입회가 허용되어 정회원권의 매수층은 탄탄하게 유지되고 있습니다. 반면 3구좌 묶음 형태인 레드회원권은 시중에 나온 매물 단가보다 일반 정회원권 3구좌를 각각 매입하는 것이 비용 면에서 조금 더 유리하다 보니 상대적으로 매수세가 덜한 편이며, 무기명 혜택이 주어지는 M-VIP 회원권은 이 레드회원권을 기반으로 10억원 또는 20억원의 추가 보증금을 납부하여 전환하는 방식으로 진행됩니다. 전반적으로 정회원권 위주의 실거래가 꾸준히 이어지며 안정적인 보합세를 보이고 있어, 수도권 인근에서 실속 있는 라운드를 계획하시는 분들의 대기 매수 문의가 지속되고 있습니다.
+                            수도권에서 이동하기 참 편한 36홀 규모의 리베라컨트리클럽은 신안그룹에서 운영하며 실이용을 원하시는 골퍼분들이 꾸준하게 찾으시는 구장입니다. 최근 회원권 시장이 전체적으로 쉬어가는 흐름을 보이면서 이곳 일반회원권 역시 연초 고점보다 살짝 가격이 내려와 현재 4,200만원 선에 맞춰져 있습니다. 개인과 법인 간 매매가 자유롭고 법인 반구좌 입회도 열려 있어서 기본 정회원권에 대한 수요층은 늘 탄탄하게 받쳐주는 편입니다. 다만 3구좌가 하나로 묶인 레드회원권은 일반회원권 3개를 따로 사시는 것보다 금액적으로 불리하다 보니 상대적으로 매수세가 덜하며, 여기에 10억원이나 20억원의 추가 보증금을 얹어 무기명 혜택이 있는 M-VIP로 전환하는 방식이라는 점도 참고해 두시면 좋습니다. 지금은 시세 변동이 크지 않은 가운데 정회원권 위주로 실수요자분들의 거래가 차분하게 소화되고 있어서 당분간은 큰 등락 없는 조용한 보합세가 유지될 것으로 보입니다.
                         </p>
                     </div>
                 </div>
