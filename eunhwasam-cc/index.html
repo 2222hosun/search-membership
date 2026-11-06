@@ -159,21 +159,31 @@
 
     <!-- 상단 네비게이션 -->
     <nav class="fixed w-full z-50 bg-[#143831] backdrop-blur-md shadow-sm transition-all duration-300 h-20 flex items-center border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center">
-            <div class="flex items-center gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='/'">
-                <div class="w-11 h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <!-- 좌우 여백을 모바일에서 살짝 줄여 공간 확보 -->
+        <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 w-full flex justify-between items-center">
+            
+            <!-- 1. 로고 영역: 펼쳤을 때는 기존 그대로, 접었을 때만 로고 크기 축소 -->
+            <div class="flex items-center gap-1.5 sm:gap-3.5 cursor-pointer flex-shrink-0" onclick="window.location.href='../index.html'">
+                <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-brand-accent flex items-center justify-center text-brand-dark shadow-md flex-shrink-0 transition-all">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center leading-none">
-                    <span class="font-bold text-[19px] md:text-[22px] tracking-tight text-white">서치회원권</span>
-                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1">SEARCH MEMBERSHIP</span>
+                    <span class="font-bold text-[16px] sm:text-[19px] md:text-[22px] tracking-tight text-white whitespace-nowrap transition-all">서치회원권</span>
+                    <span class="text-[12px] md:text-[13px] tracking-wider text-brand-accent font-semibold mt-1 hidden sm:block">SEARCH MEMBERSHIP</span>
                 </div>
             </div>
-            <a href="/index.html#search-box" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-3.5 py-2 rounded-lg text-xs md:text-sm font-medium transition-colors flex items-center gap-1.5 shadow-sm">
-                <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
-            </a>
+            
+            <!-- 2. 버튼 영역: hidden을 제거하여 접었을 때도 노출되도록 하고, 펼쳤을 때는 기존과 동일한 여백 유지 -->
+            <div class="flex items-center gap-1 sm:gap-2">
+                <a href="../index.html#unnamed" class="flex bg-brand-accent/20 hover:bg-brand-accent/30 border border-brand-accent/40 text-brand-accent px-1.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-bold transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph-fill ph-crown text-brand-accent"></i> 무기명 골프
+                </a>
+                <a href="../index.html#search-box" class="flex bg-white/10 hover:bg-white/20 border border-white/20 text-white px-1.5 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-[10.5px] min-[400px]:text-[11px] sm:text-xs md:text-sm font-medium transition-colors items-center gap-0.5 sm:gap-1 shadow-sm whitespace-nowrap tracking-tight">
+                    <i class="ph ph-magnifying-glass text-brand-accent"></i> 전체 매물·시세
+                </a>
+            </div>
         </div>
     </nav>
     <div class="h-20 w-full"></div>
@@ -563,7 +573,7 @@
                             </tr>
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-gray-50/50">주중 개인회원권 (분양가 3,000만원 - 남자)</td>
-                                <td class="px-5 sm:px-6 py-5 text-right text-brand-dark font-bold text-xl bg-gray-50/50 whitespace-nowrap">4,900만원</td>
+                                <td class="px-5 sm:px-6 py-5 text-right text-brand-dark font-bold text-xl bg-gray-50/50 whitespace-nowrap">4,800만원</td>
                             </tr>
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-white">주중 가족회원권 (분양가 4,000만원 - 여자)</td>
@@ -571,7 +581,7 @@
                             </tr>
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-gray-50/50">주중 가족회원권 (분양가 4,000만원 - 남자)</td>
-                                <td class="px-5 sm:px-6 py-5 text-right text-brand-dark font-bold text-xl bg-gray-50/50 whitespace-nowrap">7,350만원</td>
+                                <td class="px-5 sm:px-6 py-5 text-right text-brand-dark font-bold text-xl bg-gray-50/50 whitespace-nowrap">7,250만원</td>
                             </tr>
                             <tr>
                                 <td class="px-5 sm:px-6 py-5 font-semibold text-brand-dark bg-white">정회원권 (개인/법인)</td>
@@ -589,7 +599,7 @@
 
                 <!-- 최종 시세 기준일 표기 -->
                 <div class="text-right text-[13px] font-semibold text-gray-500 fade-up">
-                    최종 시세 기준일: 2026년 10월 19일
+                    최종 시세 기준일: 2026년 11월 6일
                 </div>
 
                 <!-- 최근 시황 브리핑 박스 -->
@@ -599,7 +609,7 @@
                         <h3 class="font-bold text-lg text-brand-dark">최근 시황 브리핑</h3>
                     </div>
                     <p class="text-gray-700 text-[15px] md:text-base leading-relaxed text-left md:text-justify">
-                        은화삼컨트리클럽 회원권은 수도권 인근에서 울창한 소나무 조경과 전통 있는 명문 18홀 코스를 누릴 수 있는 장점으로 인해 꾸준한 매수세를 보여주고 있습니다. 정회원권은 물론 남녀 구분 거래되는 주중회원권 역시 합리적인 금액대와 탄탄한 평일 혜택 덕분에 실수요자들의 문의가 끊이지 않고 이어지는 모습입니다. 개인과 법인 간의 자유로운 교차 매매와 법인 반구좌 입회가 지원되어 거래 유동성이 안정적으로 유지되고 있으며, 아놀드 파머 설계 특유의 깊이 있는 코스 완성도 덕분에 한번 입회한 회원들의 보유 만족도가 매우 높습니다. 당분간 큰 변동 없이 안정적인 수급 흐름 속에서 실수요 중심의 거래가 꾸준하게 지속될 것으로 전망됩니다.
+                        수도권에서 가깝고 수십 년 된 울창한 소나무 조경이 멋진 18홀 코스인 은화삼컨트리클럽은 아놀드 파머가 설계한 특유의 깊이 있는 완성도 덕분에 실이용객들의 꾸준한 선택을 받고 있습니다. 주중회원권의 경우 분양가와 성별에 따라 가격 차이가 있으며, 현재 3000 남자 주중회원권은 4,800만원, 4000 남자 주중회원권은 7,250만원 선에서 시세가 형성되어 있습니다. 개인과 법인 간 매매가 자유롭고 법인 반구좌 입회도 가능해 거래 조건이 유연한 데다, 평일 혜택이 탄탄해 한 번 구입하시면 오랫동안 보유하시는 회원분들이 많습니다. 최근 전체적인 시장 분위기가 차분해진 상황에서도 이곳은 뚜렷한 매수 목적을 가진 분들이 꾸준히 대기하고 계셔서, 당분간 큰 시세 변동 없이 실수요 위주의 조용한 보합세 흐름이 자연스럽게 이어질 것으로 예상됩니다.
                     </p>
                 </div>
             </div>
