@@ -63,7 +63,6 @@
       
   <!-- 3. 콘도/리조트 회원권 상세 페이지 -->
   <url><loc>https://www.searchmembership.co.kr/sono-suite/</loc></url>
-  <url><loc>https://www.searchmembership.co.kr/resom-spa/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/sono-executive/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/sono-gold/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/sono-royal/</loc></url>
@@ -74,6 +73,7 @@
   <url><loc>https://www.searchmembership.co.kr/resom-g70/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/anto-resort/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/ananti-resort/</loc></url>
+  <url><loc>https://www.searchmembership.co.kr/resom-spa/</loc><lastmod>2026-11-09</lastmod></url>
 
   <!-- 4. 호텔 피트니스 회원권 상세 페이지 -->
   <url><loc>https://www.searchmembership.co.kr/banyan-tree/</loc></url>
