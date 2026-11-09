@@ -47,6 +47,7 @@ const dataGolf = [
     { title: "마이다스밸리청평CC 회원권", sub: "뛰어난 강북권 접근성의 가평 18홀 명문 구장", tag: "경기 가평", link: "midas-cheongpyeong/" },
     { title: "안성베네스트CC 회원권", sub: "삼성물산의 철저한 코스 관리가 돋보이는 안성 36홀", tag: "경기 안성", link: "anseong-benest-cc/" },
     { title: "블랙스톤이천CC 회원권", sub: "제주 혜택이 연계되는 이천 27홀 프라이빗 구장", tag: "경기 이천", link: "blackstone-icheon/" },
+    { title: "김포씨사이드CC 회원권", sub: "수도권 유일의 탁 트인 서해바다 조망을 자랑하는 18홀", tag: "경기 김포", link: "gimpo-cc/" },
 ];
 
 const dataCondo = [
