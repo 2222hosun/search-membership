@@ -49,6 +49,7 @@ const dataGolf = [
     { title: "블랙스톤이천CC 회원권", sub: "제주 혜택이 연계되는 이천 27홀 프라이빗 구장", tag: "경기 이천", link: "blackstone-icheon/" },
     { title: "김포씨사이드CC 회원권", sub: "수도권 유일의 탁 트인 서해바다 조망을 자랑하는 18홀", tag: "경기 김포", link: "gimpo-cc/" },
     { title: "남부CC 회원권", sub: "194명의 극소수 정예로 운영되는 용인의 초고가 프라이빗 18홀", tag: "경기 용인", link: "namboo-cc/" },
+    { title: "남촌CC 회원권", sub: "소수 정예로 운영되는 경기 광주의 최고급 프라이빗 18홀", tag: "경기 광주", link: "namchon-cc/" },
 ];
 
 const dataCondo = [
