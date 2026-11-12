@@ -29,7 +29,6 @@
   <url><loc>https://www.searchmembership.co.kr/newspring-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/incheon-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/gold-cc/</loc></url>
-  <url><loc>https://www.searchmembership.co.kr/lakeside-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/rexfield-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/visionhills-cc/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/grand-cc/</loc></url>
@@ -62,6 +61,7 @@
   <url><loc>https://www.searchmembership.co.kr/namboo-cc/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.searchmembership.co.kr/namboo-cc/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.searchmembership.co.kr/seowonvalley-cc/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://www.searchmembership.co.kr/lakeside-cc/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.searchmembership.co.kr/giheung-cc/</loc><lastmod>2026-11-12</lastmod></url>
       
   <!-- 3. 콘도/리조트 회원권 상세 페이지 -->
@@ -81,7 +81,6 @@
   <!-- 4. 호텔 피트니스 회원권 상세 페이지 -->
   <url><loc>https://www.searchmembership.co.kr/banyan-tree/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/shilla-fitness/</loc></url>
-  <url><loc>https://www.searchmembership.co.kr/conrad-pulse8/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/vant-fitness/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/cosmopolitan/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/marriott-fitness/</loc></url>
@@ -89,6 +88,7 @@
   <url><loc>https://www.searchmembership.co.kr/novotel-fitness/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/hyatt-fitness/</loc></url>
   <url><loc>https://www.searchmembership.co.kr/metropolitan/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.searchmembership.co.kr/conrad-pulse8/</loc><lastmod>2026-11-12</lastmod></url>  
 
   <!-- 5. 무기명 회원권 특별관 상세 페이지 -->
   <url><loc>https://www.searchmembership.co.kr/unnamed-golf/</loc></url>
