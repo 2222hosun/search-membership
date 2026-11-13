@@ -51,6 +51,7 @@ const dataGolf = [
     { title: "남부CC 회원권", sub: "194명의 극소수 정예로 운영되는 용인의 초고가 프라이빗 18홀", tag: "경기 용인", link: "namboo-cc/" },
     { title: "남촌CC 회원권", sub: "소수 정예로 운영되는 경기 광주의 최고급 프라이빗 18홀", tag: "경기 광주", link: "namchon-cc/" },
     { title: "서원밸리CC 회원권", sub: "강북권 최고 수준의 잔디 관리와 철저한 소수 정예 18홀", tag: "경기 파주", link: "seowonvalley-cc/" },
+    { title: "아난티중앙CC 회원권", sub: "아난티 코브·남해 리조트 혜택이 연계되는 진천 27홀", tag: "충북 진천", link: "anantijoongang-cc/" },
 ];
 
 const dataCondo = [
@@ -101,6 +102,7 @@ const dataUnnamed = [
     { title: "골든베이CC 무기명", sub: "기명 1인 + 무기명 4인 · 투스칸빌리지 연계", tag: "충남 태안", link: "goldenbay-cc/#unnamed" },
     { title: "마론뉴데이CC 무기명", sub: "정회원 1인 + 무기명 4인 / 1일 2팀 예약 가능", tag: "충남 천안", link: "maronnewday-cc/" },
     { title: "블랙스톤이천CC 무기명", sub: "정회원 1인 + 지정 1인 + 무기명 4인", tag: "경기 이천", link: "blackstone-icheon/#unnamed" },
+    { title: "아난티중앙CC 무기명", sub: "정회원 1인 + 무기명 4인", tag: "충북 진천", link: "anantijoongang-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
