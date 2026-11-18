@@ -116,4 +116,5 @@ const dataExclusive = [
     { title: "라헨느CC 회원권", sub: "제주도 18홀 자연과 온전한 쉼을 선사하는 37평형 골프텔", tag: "제주 제주시", link: "lareine-cc/" },
     { title: "골든베이CC 회원권", sub: "태안의 바다를 품은 27홀 코스와 무기명 4인 혜택", tag: "충남 태안", link: "goldenbay-cc/" },
     { title: "오크밸리 타운하우스", sub: "국내 최대 90홀 인프라와 148평 단독 세컨드하우스", tag: "강원 원주", link: "oakvalley-village/" },
+    { title: "타미우스CC 회원권", sub: "제주 애월의 청정 자연을 품은 27홀 코스와 빌리지 혜택", tag: "제주 제주시", link: "tameus-cc/" },
 ];
