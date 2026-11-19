@@ -54,6 +54,7 @@ const dataGolf = [
     { title: "아난티중앙CC 회원권", sub: "아난티 코브·남해 리조트 혜택이 연계되는 진천 27홀", tag: "충북 진천", link: "anantijoongang-cc/" },
     { title: "화산CC 회원권", sub: "완벽한 코스 레이아웃을 자랑하는 용인의 하이엔드 18홀", tag: "경기 용인", link: "hwasan-cc/" },
     { title: "이포CC 회원권", sub: "넓고 평탄한 코스를 자랑하는 여주의 18홀 구장", tag: "경기 여주", link: "ipo-cc/" },
+    { title: "서서울CC 회원권", sub: "호반그룹 운영 서울 서북권 접근성이 뛰어난 파주 18홀", tag: "경기 파주", link: "seoseoul-cc/" },
 ];
 
 const dataCondo = [
