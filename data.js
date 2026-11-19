@@ -105,6 +105,7 @@ const dataUnnamed = [
     { title: "마론뉴데이CC 무기명", sub: "정회원 1인 + 무기명 4인 / 1일 2팀 예약 가능", tag: "충남 천안", link: "maronnewday-cc/" },
     { title: "블랙스톤이천CC 무기명", sub: "정회원 1인 + 지정 1인 + 무기명 4인", tag: "경기 이천", link: "blackstone-icheon/#unnamed" },
     { title: "아난티중앙CC 무기명", sub: "정회원 1인 + 무기명 4인", tag: "충북 진천", link: "anantijoongang-cc/#unnamed" },
+    { title: "서귀포팬텀CC 무기명", sub: "기명 1~2인 + 무기명 4~8인 / 골프텔 연계", tag: "제주 서귀포시", link: "seogwipo-phantom/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
@@ -117,4 +118,5 @@ const dataExclusive = [
     { title: "골든베이CC 회원권", sub: "태안의 바다를 품은 27홀 코스와 무기명 4인 혜택", tag: "충남 태안", link: "goldenbay-cc/" },
     { title: "오크밸리 타운하우스", sub: "국내 최대 90홀 인프라와 148평 단독 세컨드하우스", tag: "강원 원주", link: "oakvalley-village/" },
     { title: "타미우스CC 회원권", sub: "제주 애월의 청정 자연을 품은 27홀 코스와 빌리지 혜택", tag: "제주 제주시", link: "tameus-cc/" },
+    { title: "서귀포팬텀CC 회원권", sub: "한라산 남측 18홀 코스와 5년 반환형 무기명·골프텔 혜택", tag: "제주 서귀포시", link: "seogwipo-phantom/" },
 ];
