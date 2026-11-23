@@ -56,6 +56,7 @@ const dataGolf = [
     { title: "이포CC 회원권", sub: "넓고 평탄한 코스를 자랑하는 여주의 18홀 구장", tag: "경기 여주", link: "ipo-cc/" },
     { title: "서서울CC 회원권", sub: "호반그룹 운영 서울 서북권 접근성이 뛰어난 파주 18홀", tag: "경기 파주", link: "seoseoul-cc/" },
     { title: "플라자CC 용인 회원권", sub: "한화호텔앤드리조트 운영 전통의 라이온·타이거 36홀", tag: "경기 용인", link: "plaza-yongin-cc/" },
+    { title: "블랙스톤제주CC 회원권", sub: "제주 천연 지형 27홀·리조트와 블랙스톤이천CC 혜택", tag: "제주 제주시", link: "blackstone-jeju-cc/" },
 ];
 
 const dataCondo = [
@@ -109,6 +110,7 @@ const dataUnnamed = [
     { title: "아난티중앙CC 무기명", sub: "정회원 1인 + 무기명 4인", tag: "충북 진천", link: "anantijoongang-cc/#unnamed" },
     { title: "서귀포팬텀CC 무기명", sub: "기명 1~2인 + 무기명 4~8인", tag: "제주 서귀포시", link: "seogwipo-phantom/#unnamed" },
     { title: "플라자CC 용인 무기명", sub: "주중 무기명 4인 · 정회원+동반 3인", tag: "경기 용인", link: "plaza-yongin-cc/#unnamed" },
+    { title: "블랙스톤제주CC 무기명", sub: "정회원 2인 + 무기명 4인", tag: "제주 제주시", link: "blackstone-jeju-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
