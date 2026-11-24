@@ -57,6 +57,7 @@ const dataGolf = [
     { title: "서서울CC 회원권", sub: "호반그룹 운영 서울 서북권 접근성이 뛰어난 파주 18홀", tag: "경기 파주", link: "seoseoul-cc/" },
     { title: "플라자CC 용인 회원권", sub: "한화호텔앤드리조트 운영 전통의 라이온·타이거 36홀", tag: "경기 용인", link: "plaza-yongin-cc/" },
     { title: "블랙스톤제주CC 회원권", sub: "제주 천연 지형 27홀·리조트와 블랙스톤이천CC 혜택", tag: "제주 제주시", link: "blackstone-jeju-cc/" },
+    { title: "핀크스CC 회원권", sub: "SK그룹 운영 27홀·포도호텔 할인 및 국내외 제휴 혜택", tag: "제주 서귀포시", link: "pinx-cc/" },
 ];
 
 const dataCondo = [
