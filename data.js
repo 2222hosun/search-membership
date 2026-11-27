@@ -59,6 +59,7 @@ const dataGolf = [
     { title: "블랙스톤제주CC 회원권", sub: "제주 천연 지형 27홀·리조트와 블랙스톤이천CC 혜택", tag: "제주 제주시", link: "blackstone-jeju-cc/" },
     { title: "핀크스CC 회원권", sub: "SK그룹 운영 27홀·포도호텔 할인 및 국내외 제휴 혜택", tag: "제주 서귀포시", link: "pinx-cc/" },
     { title: "캐슬렉스CC 회원권", sub: "서울 송파·강남과 인접한 전통의 하남 18홀", tag: "경기 하남", link: "castlex-cc/" },
+    { title: "오크밸리CC 회원권", sub: "HDC리조트 운영 36홀·주중·정회원 및 골프·콘도 복합회원권", tag: "강원 원주", link: "oakvalley-cc/" },
 ];
 
 const dataCondo = [
@@ -113,6 +114,7 @@ const dataUnnamed = [
     { title: "서귀포팬텀CC 무기명", sub: "기명 1~2인 + 무기명 4~8인", tag: "제주 서귀포시", link: "seogwipo-phantom/#unnamed" },
     { title: "플라자CC 용인 무기명", sub: "주중 무기명 4인 · 정회원+동반 3인", tag: "경기 용인", link: "plaza-yongin-cc/#unnamed" },
     { title: "블랙스톤제주CC 무기명", sub: "정회원 2인 + 무기명 4인", tag: "제주 제주시", link: "blackstone-jeju-cc/#unnamed" },
+    { title: "오크밸리CC 무기명", sub: "정회원 1인 + 지정 3인 + 동반 2인", tag: "강원 원주", link: "oakvalley-cc/#unnamed" },
 ];
 
 // [분양 안내 섹션 데이터] - 여기에 원하는 분양 상품들을 추가하시면 카드가 자동으로 생성됩니다!
